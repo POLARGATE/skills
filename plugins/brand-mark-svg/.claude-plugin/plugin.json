@@ -1,0 +1,19 @@
+{
+  "name": "brand-mark-svg",
+  "description": "Logos y símbolos de marca en SVG limpio, con versiones en negativo, monocromo, favicon e icono de app.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "logo",
+    "svg",
+    "marca",
+    "favicon"
+  ]
+}

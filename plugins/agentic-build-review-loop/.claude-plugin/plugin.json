@@ -1,0 +1,20 @@
+{
+  "name": "agentic-build-review-loop",
+  "description": "Un cerebro construye y otro revisa antes de aceptar nada: criterios de aceptación, revisión del plan y del resultado, y el siguiente prompt corrector.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "review",
+    "agentes",
+    "claude-code",
+    "lovable",
+    "cursor"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "capacitor-store-release",
+  "description": "Publicar apps de Vite, React y Capacitor en App Store y Google Play sin rechazos: firma, permisos, privacidad y aspecto nativo.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "capacitor",
+    "app-store",
+    "google-play",
+    "ios",
+    "android"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "seo-geo",
+  "description": "SEO técnico, Core Web Vitals, datos estructurados y búsqueda con IA para webs en React, Vite, Next.js y más.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "geo",
+    "core-web-vitals",
+    "schema"
+  ]
+}

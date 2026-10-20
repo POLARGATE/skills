@@ -1,0 +1,93 @@
+{
+  "name": "polargate",
+  "owner": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai"
+  },
+  "metadata": {
+    "description": "Skills de Claude Code de Polargate, gratis y con licencia MIT.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "agentic-build-review-loop",
+      "source": "./plugins/agentic-build-review-loop",
+      "description": "Un cerebro construye y otro revisa antes de aceptar nada: criterios de aceptación, revisión del plan y del resultado, y el siguiente prompt corrector.",
+      "version": "1.0.0",
+      "category": "desarrollo",
+      "keywords": [
+        "review",
+        "agentes",
+        "claude-code",
+        "lovable",
+        "cursor"
+      ]
+    },
+    {
+      "name": "cto-product-review",
+      "source": "./plugins/cto-product-review",
+      "description": "Revisión de producto, arquitectura, UX/UI y producción para React, Vite, Tailwind, shadcn y Supabase, con prompt listo para pegar.",
+      "version": "1.0.0",
+      "category": "desarrollo",
+      "keywords": [
+        "review",
+        "arquitectura",
+        "ui",
+        "react",
+        "supabase"
+      ]
+    },
+    {
+      "name": "capacitor-store-release",
+      "source": "./plugins/capacitor-store-release",
+      "description": "Publicar apps de Vite, React y Capacitor en App Store y Google Play sin rechazos: firma, permisos, privacidad y aspecto nativo.",
+      "version": "1.0.0",
+      "category": "movil",
+      "keywords": [
+        "capacitor",
+        "app-store",
+        "google-play",
+        "ios",
+        "android"
+      ]
+    },
+    {
+      "name": "brand-mark-svg",
+      "source": "./plugins/brand-mark-svg",
+      "description": "Logos y símbolos de marca en SVG limpio, con versiones en negativo, monocromo, favicon e icono de app.",
+      "version": "1.0.0",
+      "category": "diseno",
+      "keywords": [
+        "logo",
+        "svg",
+        "marca",
+        "favicon"
+      ]
+    },
+    {
+      "name": "autopilot",
+      "source": "./plugins/autopilot",
+      "description": "Modo autónomo: decide lo reversible, para en lo irreversible y te entrega un resumen claro al final.",
+      "version": "1.0.0",
+      "category": "desarrollo",
+      "keywords": [
+        "agentes",
+        "autonomia",
+        "claude-code"
+      ]
+    },
+    {
+      "name": "seo-geo",
+      "source": "./plugins/seo-geo",
+      "description": "SEO técnico, Core Web Vitals, datos estructurados y búsqueda con IA para webs en React, Vite, Next.js y más.",
+      "version": "1.0.0",
+      "category": "marketing",
+      "keywords": [
+        "seo",
+        "geo",
+        "core-web-vitals",
+        "schema"
+      ]
+    }
+  ]
+}

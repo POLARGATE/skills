@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Brand mark system</title>
+<style>
+  :root{
+    --paper:#fafafa; --ink:#15171c; --muted:#71767f; --faint:#9aa0a8;
+    --line:#e7e8eb; --card:#fff; --dark:#0e1014; --bad:#c0362c; --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);
+    -webkit-font-smoothing:antialiased;line-height:1.5}
+  .wrap{max-width:960px;margin:0 auto;padding:56px 32px 100px}
+  .doc-head{margin-bottom:8px}
+  .kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--faint);margin:0 0 6px}
+  h1{font-size:30px;letter-spacing:-0.02em;margin:0 0 4px}
+  .sub{color:var(--muted);margin:0}
+  section{margin-top:48px}
+  h2{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+    margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .panel{border:1px solid var(--line);border-radius:16px;display:grid;place-items:center;aspect-ratio:16/9}
+  .panel.light{background:#fff;color:var(--ink)} .panel.dark{background:var(--dark);color:#fff}
+  .panel .m{width:34%;max-width:150px} .panel .m svg{width:100%;height:auto;display:block}
+  .vmatrix{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+  .v{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+  .v .box{aspect-ratio:4/3;display:grid;place-items:center;padding:14px}
+  .v.darkbox .box{background:var(--dark);color:#fff} .v.lightbox .box{color:var(--ink)}
+  .v .box .m{width:46%} .v .box .lk{display:flex;align-items:center;gap:8px}
+  .v .box .lk .m{width:28px} .v .box .lk b{font:700 12px/1 var(--font);letter-spacing:.1em}
+  .v figcaption{font-size:11px;color:var(--muted);padding:9px 12px;border-top:1px solid var(--line)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .clearspace{border:1px solid var(--line);border-radius:12px;padding:22px;background:#fff;position:relative}
+  .clearspace .frame{outline:1px dashed #c8cace;padding:22px;display:grid;place-items:center}
+  .clearspace .m{width:90px;color:var(--ink)}
+  .note{font-size:12.5px;color:var(--muted);margin:10px 2px 0}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line)}
+  th{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);font-weight:600}
+  .sw{width:22px;height:22px;border-radius:6px;border:1px solid rgba(0,0,0,.08);display:inline-block;vertical-align:middle}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+  .type .row{display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+  .type .lab{font-size:11px;color:var(--faint);width:90px;flex:none}
+  .icons{display:flex;gap:26px;align-items:flex-end;flex-wrap:wrap}
+  .icns{display:grid;gap:8px;justify-items:center}
+  .icns figcaption{font-size:10px;color:var(--faint)}
+  .tab{width:150px;height:32px;background:#ededf0;border-radius:9px 9px 0 0;display:flex;align-items:center;gap:7px;padding:0 9px;border:1px solid #e2e2e6;border-bottom:0}
+  .tab .fav{width:16px;color:var(--ink)} .tab .ttl{height:6px;width:50%;background:#c9cace;border-radius:3px}
+  .appicon{width:64px;height:64px;border-radius:15px;background:var(--dark);color:#fff;display:grid;place-items:center;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+  .appicon .m{width:60%}
+  .maskable{width:64px;height:64px;border-radius:50%;background:var(--dark);color:#fff;display:grid;place-items:center;position:relative}
+  .maskable .safe{position:absolute;inset:10%;border:1px dashed rgba(255,255,255,.4);border-radius:50%}
+  .maskable .m{width:48%}
+  .misuse{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:14px}
+  .dont{border:1px solid var(--line);border-radius:12px;padding:14px;display:grid;gap:8px;justify-items:center;position:relative}
+  .dont .box{width:56px;height:56px;display:grid;place-items:center;color:var(--ink)}
+  .dont .x{position:absolute;top:8px;right:8px;color:var(--bad);font-weight:700;font-size:14px}
+  .dont small{font-size:10.5px;color:var(--muted);text-align:center}
+  .apps{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+  .biz{aspect-ratio:1.6/1;background:#fff;border:1px solid var(--line);border-radius:8px;display:flex;align-items:flex-end;padding:12px}
+  .biz .m{width:30%;color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="doc-head">
+  <p class="kicker">Brand mark system</p>
+  <h1 id="brand">Brand</h1>
+  <p class="sub" id="tagline"></p>
+</div>
+
+<section>
+  <h2>Primary mark</h2>
+  <div class="hero">
+    <div class="panel light"><span class="m" id="hero-light"></span></div>
+    <div class="panel dark"><span class="m" id="hero-dark"></span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Variants</h2>
+  <div class="vmatrix" id="vmatrix"></div>
+</section>
+
+<section>
+  <h2>Clear space &amp; minimum size</h2>
+  <div class="two">
+    <div class="clearspace"><div class="frame"><span class="m" id="cs-mark"></span></div>
+      <p class="note" id="cs-note"></p></div>
+    <div class="clearspace"><div class="frame" style="gap:18px;grid-auto-flow:column">
+      <span style="width:24px" id="min-a"></span><span style="width:40px" id="min-b"></span></div>
+      <p class="note" id="min-note"></p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Color</h2>
+  <table id="colors"><thead><tr><th></th><th>Token</th><th>HEX</th><th>oklch</th></tr></thead>
+  <tbody></tbody></table>
+</section>
+
+<section>
+  <h2>Typography</h2>
+  <div class="type" id="type"></div>
+</section>
+
+<section>
+  <h2>Favicon &amp; app icon</h2>
+  <div class="icons">
+    <figure class="icns"><div class="tab"><span class="fav" id="fi-tab"></span><span class="ttl"></span></div><figcaption>browser tab 16px</figcaption></figure>
+    <figure class="icns"><div class="appicon"><span class="m" id="fi-app"></span></div><figcaption>iOS 180 solid</figcaption></figure>
+    <figure class="icns"><div class="maskable"><span class="safe"></span><span class="m" id="fi-mask"></span></div><figcaption>maskable safe zone</figcaption></figure>
+  </div>
+  <p class="note">SVG favicon plus PNG fallback (48, 32, 16), 180 Apple touch on a solid background, 192 and 512 maskable inside the 80 percent safe zone.</p>
+</section>
+
+<section>
+  <h2>Misuse</h2>
+  <div class="misuse">
+    <div class="dont"><span class="x">&times;</span><div class="box" style="transform:scaleX(1.5)"><span class="mm"></span></div><small>Do not stretch</small></div>
+    <div class="dont"><span class="x">&times;</span><div class="box" style="transform:rotate(18deg)"><span class="mm"></span></div><small>Do not rotate</small></div>
+    <div class="dont"><span class="x">&times;</span><div class="box" style="color:#d24"><span class="mm"></span></div><small>Do not recolor</small></div>
+    <div class="dont"><span class="x">&times;</span><div class="box" style="filter:drop-shadow(2px 3px 2px rgba(0,0,0,.5))"><span class="mm"></span></div><small>No effects</small></div>
+  </div>
+</section>
+
+<section>
+  <h2>Applications</h2>
+  <div class="apps">
+    <div class="biz"><span class="m" id="ap-card"></span></div>
+    <div class="panel dark" style="aspect-ratio:1.6/1;border-radius:8px"><span class="m" style="width:30%" id="ap-sign"></span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Motion</h2>
+  <p class="note" id="motion"></p>
+</section>
+</div>
+
+<script>
+/* ============================================================
+   FILL SYS for the winning mark.
+   ============================================================ */
+const SYS = {
+  brand:"Brand",
+  tagline:"One-line positioning.",
+  mark:`<svg viewBox="0 0 100 100" role="img" aria-label="Brand" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>Brand</title><path d="M20 78 L50 22 L80 78 L63 78 L50 51 L37 78 Z"/></svg>`,
+  wordmark:"BRAND",
+  clearSpace:"Clear space on all sides equals the height of the symbol counter (X).",
+  minSize:"Symbol minimum 24px digital. Below 24px use the symbol-only favicon variant.",
+  colors:[
+    {name:"Ink", hex:"#15171C", oklch:"oklch(0.21 0.01 270)"},
+    {name:"Accent", hex:"#4FA3FF", oklch:"oklch(0.72 0.13 250)"},
+    {name:"Paper", hex:"#FFFFFF", oklch:"oklch(1 0 0)"}
+  ],
+  fonts:[
+    {lab:"Wordmark", text:"Outlined custom type (set in Figma)", style:"font-weight:700;letter-spacing:.06em"},
+    {lab:"Display", text:"Display / voice typeface", style:"font-weight:600"},
+    {lab:"Text", text:"Workhorse UI and document typeface", style:"font-weight:400"}
+  ],
+  motion:"The mark builds along its primary path, then settles. Keep it under one second and true to the form."
+};
+
+function set(id,html){ const el=document.getElementById(id); if(el) el.innerHTML=html; }
+const M = SYS.mark;
+
+document.getElementById("brand").textContent = SYS.brand;
+document.getElementById("tagline").textContent = SYS.tagline;
+["hero-light","hero-dark","cs-mark","fi-tab","fi-app","fi-mask","ap-card","ap-sign","min-a","min-b"]
+  .forEach(id=>set(id,M));
+document.querySelectorAll(".mm").forEach(el=>el.innerHTML=M);
+set("cs-note", SYS.clearSpace);
+set("min-note", SYS.minSize);
+set("motion", SYS.motion);
+
+// variants
+const V = [
+  {cls:"lightbox", cap:"Symbol", html:`<span class="m">${M}</span>`},
+  {cls:"lightbox", cap:"Horizontal lockup", html:`<span class="lk"><span class="m">${M}</span><b>${SYS.wordmark}</b></span>`},
+  {cls:"lightbox", cap:"Stacked lockup", html:`<span style="display:grid;justify-items:center;gap:6px"><span class="m" style="width:34px">${M}</span><b style="font:700 11px/1 var(--font);letter-spacing:.1em">${SYS.wordmark}</b></span>`},
+  {cls:"lightbox", cap:"Mono positive", html:`<span class="m" style="color:#15171c">${M}</span>`},
+  {cls:"darkbox",  cap:"Mono reversed", html:`<span class="m" style="color:#fff">${M}</span>`},
+  {cls:"lightbox", cap:"Single-color print", html:`<span class="m" style="color:#000">${M}</span>`}
+];
+set("vmatrix", V.map(v=>`<figure class="v ${v.cls}"><div class="box">${v.html}</div><figcaption>${v.cap}</figcaption></figure>`).join(""));
+
+// colors
+const tb = document.querySelector("#colors tbody");
+tb.innerHTML = SYS.colors.map(c=>
+  `<tr><td><span class="sw" style="background:${c.hex}"></span></td><td>${c.name}</td><td><code>${c.hex}</code></td><td><code>${c.oklch}</code></td></tr>`
+).join("");
+
+// type
+set("type", SYS.fonts.map(f=>
+  `<div class="row"><span class="lab">${f.lab}</span><span style="${f.style}">${f.text}</span></div>`
+).join(""));
+</script>
+</body>
+</html>
