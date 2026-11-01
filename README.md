@@ -34,6 +34,7 @@ Para recibir las mejoras: `/plugin marketplace update polargate`.
 | [capacitor-store-release](plugins/capacitor-store-release) | Publicar apps de Vite, React y Capacitor en App Store y Google Play sin rechazos. | [Ver](https://biblioteca.polargate.ai/r/capacitor-store-release?utm_source=github&utm_medium=readme&utm_campaign=capacitor-store-release) |
 | [brand-mark-svg](plugins/brand-mark-svg) | Logos y símbolos de marca en SVG limpio, con todas sus versiones. | [Ver](https://biblioteca.polargate.ai/r/brand-mark-svg?utm_source=github&utm_medium=readme&utm_campaign=brand-mark-svg) |
 | [seo-geo](plugins/seo-geo) | SEO técnico, Core Web Vitals, datos estructurados y aparecer en las respuestas de las IA. | [Ver](https://biblioteca.polargate.ai/r/seo-geo?utm_source=github&utm_medium=readme&utm_campaign=seo-geo) |
+| [meeting-notes-ai](plugins/meeting-notes-ai) | Trabaja con tus reuniones grabadas: qué se decidió, qué queda pendiente y quién debe qué. Usa el conector de PolarParrot o las notas que pegues. | [Ver](https://biblioteca.polargate.ai/r/meeting-notes-ai?utm_source=github&utm_medium=readme) |
 
 Están escritas en inglés porque Claude las sigue mejor así. Te contestan en tu idioma.
 

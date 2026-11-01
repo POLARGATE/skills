@@ -88,6 +88,18 @@
         "core-web-vitals",
         "schema"
       ]
+    },
+    {
+      "name": "meeting-notes-ai",
+      "source": "./plugins/meeting-notes-ai",
+      "description": "Trabaja con tus reuniones grabadas: qué se decidió, qué queda pendiente y quién debe qué. Usa el conector de PolarParrot o las notas que pegues.",
+      "version": "1.0.0",
+      "category": "productividad",
+      "keywords": [
+        "reuniones",
+        "actas",
+        "mcp"
+      ]
     }
   ]
 }
