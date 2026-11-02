@@ -1,0 +1,19 @@
+{
+  "name": "polargate-resume-reuniones",
+  "description": "Claude te responde con lo que se dijo en tus reuniones, no con lo que le suena.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "reuniones",
+    "actas",
+    "mcp",
+    "polarparrot"
+  ]
+}
