@@ -40,6 +40,9 @@ Para recibir las mejoras: `/plugin marketplace update polargate`.
 | [polargate-haz-reels](plugins/polargate-haz-reels) | Le dices a Claude qué quieres contar y te devuelve el vídeo listo para subir. | [Ver](https://biblioteca.polargate.ai/r/polargate-haz-reels?utm_source=github&utm_medium=readme) |
 | [polargate-web-sin-pinta-de-ia](plugins/polargate-web-sin-pinta-de-ia) | Para que Claude deje de hacerte siempre la misma web. | [Ver](https://biblioteca.polargate.ai/r/polargate-web-sin-pinta-de-ia?utm_source=github&utm_medium=readme) |
 | [polargate-resume-reuniones](plugins/polargate-resume-reuniones) | Claude te responde con lo que se dijo en tus reuniones, no con lo que le suena. | [Ver](https://biblioteca.polargate.ai/r/polargate-resume-reuniones?utm_source=github&utm_medium=readme) |
+| [polargate-escribe-en-linkedin](plugins/polargate-escribe-en-linkedin) | Para que tus posts digan algo tuyo y suenen a ti. | [Ver](https://biblioteca.polargate.ai/r/polargate-escribe-en-linkedin?utm_source=github&utm_medium=readme) |
+| [polargate-preve-tus-numeros](plugins/polargate-preve-tus-numeros) | Para saber por dónde irán tus ventas, reservas o gastos. | [Ver](https://biblioteca.polargate.ai/r/polargate-preve-tus-numeros?utm_source=github&utm_medium=readme) |
+| [polargate-pide-animaciones-por-su-nombre](plugins/polargate-pide-animaciones-por-su-nombre) | Para explicarle a Claude justo el efecto que tienes en la cabeza. | [Ver](https://biblioteca.polargate.ai/r/polargate-pide-animaciones-por-su-nombre?utm_source=github&utm_medium=readme) |
 
 Están escritas en inglés porque Claude las sigue mejor así. Te contestan en tu idioma.
 
