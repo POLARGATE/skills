@@ -1,0 +1,19 @@
+{
+  "name": "seo-con-datos",
+  "description": "Datos de SEO reales en Claude con OpenSEO: palabras clave, competidores, auditorías y posiciones.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "openseo",
+    "dataforseo",
+    "mcp"
+  ]
+}
