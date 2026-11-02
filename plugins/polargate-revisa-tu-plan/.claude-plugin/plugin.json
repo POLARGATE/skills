@@ -1,0 +1,20 @@
+{
+  "name": "polargate-revisa-tu-plan",
+  "description": "Le pasas lo que te ha propuesto la IA y te dice qué cambiaría antes de construirlo.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "review",
+    "arquitectura",
+    "ui",
+    "react",
+    "supabase"
+  ]
+}

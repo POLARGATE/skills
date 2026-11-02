@@ -1,0 +1,18 @@
+{
+  "name": "polargate-trabaja-solo",
+  "description": "Decide lo pequeño sin molestarte y te pregunta antes de hacer algo peligroso.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "agentes",
+    "autonomia",
+    "claude-code"
+  ]
+}

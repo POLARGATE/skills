@@ -1,0 +1,19 @@
+{
+  "name": "polargate-sal-en-google",
+  "description": "Para arreglar lo que impide que encuentren tu web hecha con IA.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "geo",
+    "core-web-vitals",
+    "schema"
+  ]
+}

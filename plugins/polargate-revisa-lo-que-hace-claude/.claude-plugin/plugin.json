@@ -1,0 +1,20 @@
+{
+  "name": "polargate-revisa-lo-que-hace-claude",
+  "description": "Para no fiarte del «hecho» a la primera.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "review",
+    "agentes",
+    "claude-code",
+    "lovable",
+    "cursor"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "polargate-mira-tu-seo",
+  "description": "Pregúntale a Claude por qué no sales en Google y te responde con tus números, no con consejos de manual.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "openseo",
+    "dataforseo",
+    "mcp"
+  ]
+}

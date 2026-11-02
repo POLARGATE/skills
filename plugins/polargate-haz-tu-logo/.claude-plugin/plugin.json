@@ -1,0 +1,19 @@
+{
+  "name": "polargate-haz-tu-logo",
+  "description": "Le pides un logo y te lo entrega en SVG, listo para usar.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "logo",
+    "svg",
+    "marca",
+    "favicon"
+  ]
+}
