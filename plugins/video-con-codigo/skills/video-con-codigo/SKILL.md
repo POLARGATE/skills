@@ -16,7 +16,7 @@ npx hyperframes init mi-video
 cd mi-video
 ```
 
-Para el detalle de cada función, instala sus skills oficiales con `npx hyperframes skills update`, o usa `npx hyperframes docs <tema>`.
+Para el detalle de cada función, usa `npx hyperframes docs <tema>`.
 
 ## Formato para redes
 
@@ -65,7 +65,25 @@ En 1080x1920, el texto va entre 230 y 1440 px de alto y no pasa de 918 px de anc
 
 ## Estilos
 
-Si no sabes qué estilo poner, mira los 15 estilos de motion design de [mg-styles-15](https://github.com/Vincentwei1021/mg-styles-15) y escribe tu propia versión con los colores y la letra de tu marca.
+Si no sabes qué estilo poner, en la carpeta `estilos/` hay 15 encargos de motion design listos para usar:
+
+- `estilos/01-flat-vector.md`: Flat / Vector 2D Motion Graphics
+- `estilos/02-line-art.md`: Line Art / Line Animation
+- `estilos/03-isometric.md`: 2.5D Isometric / 2.5D
+- `estilos/04-3d-render.md`: 3D （C4D/Blender ） 3D Render / CGI Motion Design
+- `estilos/05-cel-boil.md`: Cel Animation / Frame-by-Frame & Line Boil
+- `estilos/06-collage.md`: Collage / Cutout Animation
+- `estilos/07-liquid.md`: Liquid Motion
+- `estilos/08-morph.md`: Morphing / Shape Morph
+- `estilos/09-bauhaus.md`: Geometric / Bauhaus Motion
+- `estilos/10-synthwave.md`: 80s Synthwave / Y2K ） Retro: 80s Synthwave / VHS / Y2K
+- `estilos/12-aurora-glass.md`: Gradient Blur (Aurora) & Glassmorphism
+- `estilos/18-hanazi.md`: Variety Show Kinetic Captions (Hanazi)
+- `estilos/19-paperclip.md`: MG（/） Bold-outline Sticker Explainer MG (PaperClip / Lin Chao style)
+- `estilos/20-pixel.md`: Pixel Art / 8-bit
+- `estilos/22-hud.md`: HUD / FUI Cyberpunk HUD / FUI (Fictional UI)
+
+Lee el que encaje y cámbialo: tu historia, tus colores y tu letra.
 
 ## Música y licencias
 

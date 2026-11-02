@@ -2,6 +2,8 @@
 
 Si alguien publica una skill buena, la traemos a este repo para mantenerla, adaptarla y mejorarla. Quien está conectado recibe las mejoras sin hacer nada.
 
+Nunca mandamos a nadie a instalar desde el GitHub de otro. Copiamos el código, lo revisamos, lo mejoramos y lo damos desde aquí, con guía, explicación e imágenes.
+
 ## Solo si la licencia lo permite
 
 - **MIT, Apache-2.0, BSD o CC-BY:** se puede. Guardamos el aviso de copyright y la licencia original dentro de la carpeta del plugin. Con Apache-2.0, también el NOTICE y una nota de qué hemos cambiado.

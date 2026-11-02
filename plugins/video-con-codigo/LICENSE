@@ -24,3 +24,7 @@ SOFTWARE.
 
 Esta skill explica cómo usar HyperFrames (https://github.com/heygen-com/hyperframes).
 HyperFrames: Apache License 2.0, HeyGen. No se incluye código ni texto suyo.
+
+La carpeta estilos/ adapta los prompts de mg-styles-15 (https://github.com/Vincentwei1021/mg-styles-15).
+MIT License, Copyright (c) 2026 Vincentwei1021. Cambios: sin el texto en chino, con formato
+vertical y signos de puntuación. Se conserva el permiso de la licencia MIT.

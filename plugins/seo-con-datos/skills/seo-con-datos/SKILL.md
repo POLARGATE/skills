@@ -11,7 +11,7 @@ Antes de nada, comprueba si hay conexión llamando a `whoami`. No des OpenSEO po
 
 ## Montarlo
 
-OpenSEO es de código abierto (licencia MIT). Hay versión de pago en openseo.so. Esta guía es para instalarlo en tu Cloudflare, sin servidor propio.
+OpenSEO es de código abierto (licencia MIT). Esta guía instala nuestra copia revisada, `POLARGATE/open-seo`, en tu Cloudflare, sin servidor propio.
 
 Hace falta:
 
@@ -23,7 +23,7 @@ Hace falta:
 Pasos, uno a uno, parando si alguno falla:
 
 ```bash
-git clone https://github.com/every-app/open-seo.git
+git clone https://github.com/POLARGATE/open-seo.git
 cd open-seo
 corepack enable
 pnpm install
@@ -44,7 +44,7 @@ Cuando termine:
 
 1. Abre en el navegador la URL que da el despliegue y crea la cuenta de administrador al momento: el registro se cierra con la primera cuenta, y hasta entonces cualquiera que encuentre la URL se la puede quedar. Usa una contraseña larga y que no uses en otro sitio. La escribe la persona, nunca Claude.
 2. Comprueba que `https://TU-WORKER/api/health` responde 200.
-3. En Claude, añade un conector personalizado con la URL `https://TU-WORKER/mcp` y entra con esa cuenta. Se añade una vez por cuenta de Claude. El botón de añadir de la web de OpenSEO lleva a su servicio de pago, no a tu instalación.
+3. En Claude, añade un conector personalizado con la URL `https://TU-WORKER/mcp` y entra con esa cuenta. Se añade una vez por cuenta de Claude.
 4. Abre una sesión nueva y llama a `whoami`.
 
 Para actualizar, lee antes los cambios, porque es código de un tercero:
@@ -78,7 +78,7 @@ pnpm deploy:selfhost --yes
 | Visibilidad en ChatGPT y otras IAs | `estimate_ai_visibility_cost`, `run_ai_visibility_check`, `get_ai_visibility_results` |
 | Datos propios de la web | `get_search_console_performance`, `get_google_analytics_organic_overview` |
 
-Las herramientas pueden cambiar con cada versión de OpenSEO. Si una no aparece, usa la lista real del conector. OpenSEO trae guías propias en `plugins/openseo/skills/` de su repo: si necesitas más detalle, lee la del trabajo que toque.
+Las herramientas pueden cambiar con cada versión de OpenSEO. Si una no aparece, usa la lista real del conector. Si necesitas más detalle, tu copia trae las guías de cada trabajo en `plugins/openseo/skills/`: lee la que toque.
 
 ## Lo que no se hace
 
