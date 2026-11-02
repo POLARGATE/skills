@@ -39,4 +39,4 @@ Detalles técnicos, si algo falla: `referencias/preparar-datos.md`, `referencias
 
 ## Procedencia
 
-Basada en TimesFM, de Google Research, con licencia Apache-2.0. Ver `NOTICE`.
+Basada en TimesFM, de Google Research, con licencia Apache-2.0. Ver `NOTICE.txt`.
