@@ -38,6 +38,7 @@ Para recibir las mejoras: `/plugin marketplace update polargate`.
 | [polargate-entiende-tu-proyecto](plugins/polargate-entiende-tu-proyecto) | Claude hace un mapa de tu código y deja de perderse en cada sesión. | [Ver](https://biblioteca.polargate.ai/r/polargate-entiende-tu-proyecto?utm_source=github&utm_medium=readme) |
 | [polargate-revisa-la-seguridad](plugins/polargate-revisa-la-seguridad) | Para saber qué agujeros tiene tu app antes de que los encuentre otro. | [Ver](https://biblioteca.polargate.ai/r/polargate-revisa-la-seguridad?utm_source=github&utm_medium=readme) |
 | [polargate-haz-reels](plugins/polargate-haz-reels) | Le dices a Claude qué quieres contar y te devuelve el vídeo listo para subir. | [Ver](https://biblioteca.polargate.ai/r/polargate-haz-reels?utm_source=github&utm_medium=readme) |
+| [polargate-web-sin-pinta-de-ia](plugins/polargate-web-sin-pinta-de-ia) | Para que Claude deje de hacerte siempre la misma web. | [Ver](https://biblioteca.polargate.ai/r/polargate-web-sin-pinta-de-ia?utm_source=github&utm_medium=readme) |
 | [polargate-resume-reuniones](plugins/polargate-resume-reuniones) | Claude te responde con lo que se dijo en tus reuniones, no con lo que le suena. | [Ver](https://biblioteca.polargate.ai/r/polargate-resume-reuniones?utm_source=github&utm_medium=readme) |
 
 Están escritas en inglés porque Claude las sigue mejor así. Te contestan en tu idioma.

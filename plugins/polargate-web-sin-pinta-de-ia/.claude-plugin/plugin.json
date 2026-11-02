@@ -1,0 +1,18 @@
+{
+  "name": "polargate-web-sin-pinta-de-ia",
+  "description": "Para que Claude deje de hacerte siempre la misma web.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "diseno",
+    "landing",
+    "web"
+  ]
+}
