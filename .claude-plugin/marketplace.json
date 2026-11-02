@@ -112,6 +112,17 @@
         "openseo",
         "mcp"
       ]
+    },
+    {
+      "name": "mapa-de-un-repo",
+      "source": "./plugins/mapa-de-un-repo",
+      "description": "Crea un mapa del código con Graphify para que Claude entienda un proyecto grande sin leerlo entero.",
+      "version": "1.0.0",
+      "category": "desarrollo",
+      "keywords": [
+        "codigo",
+        "graphify"
+      ]
     }
   ]
 }
