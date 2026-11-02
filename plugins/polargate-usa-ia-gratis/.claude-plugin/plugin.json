@@ -1,0 +1,19 @@
+{
+  "name": "polargate-usa-ia-gratis",
+  "description": "Para probar tus ideas con IA sin gastar dinero.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "CC0-1.0",
+  "keywords": [
+    "claude-code",
+    "ia",
+    "gratis",
+    "modelos"
+  ]
+}
