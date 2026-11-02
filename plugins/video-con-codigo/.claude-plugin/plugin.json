@@ -1,0 +1,18 @@
+{
+  "name": "video-con-codigo",
+  "description": "Vídeos verticales para redes hechos con código y HyperFrames, en local y sin editor de vídeo.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "reels",
+    "hyperframes"
+  ]
+}
