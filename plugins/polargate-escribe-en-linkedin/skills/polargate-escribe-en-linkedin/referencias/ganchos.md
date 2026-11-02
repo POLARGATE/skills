@@ -66,9 +66,9 @@ You don't own {audience}. You don't own {feed}. You're renting {attention}.
 [Reframe, stated as a plain sentence: what the real asset is. Do not bridge with "Here's what most people miss".]
 
 So I changed how I work:
-— [tactic 1]
-— [tactic 2]
-— [tactic 3]
+- [tactic 1]
+- [tactic 2]
+- [tactic 3]
 
 [Metaphor close: "castles on rented land vs roads"]
 [Product mention as natural conclusion, one sentence, no pitch verbs]
@@ -209,10 +209,10 @@ If it's wrong, I owe you a post admitting it.
 So I turned that workflow into {N named items}. [Drop them into X, type one command, get the output.]
 
 What's inside:
-— [Item 1]
-— [Item 2]
+- [Item 1]
+- [Item 2]
 ...
-— [Item 12]
+- [Item 12]
 
 Free. No email wall. [Light scarcity, "48 hours only, I'll DM the link personally"]
 

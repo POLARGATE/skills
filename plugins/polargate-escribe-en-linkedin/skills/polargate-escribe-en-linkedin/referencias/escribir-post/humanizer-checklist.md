@@ -5,7 +5,7 @@ Every post must pass this before the approval card is shown. If any fail, rewrit
 ## SCRUB (score, then delete or replace)
 
 ### Punctuation
-- [ ] Em dashes (`—`) at or under ~1 per 100 words (1-2 per post). Replace only the excess, with `,` or `:` or `( )` or a rewrite. Never with `.` (a split dash stacks fragments, a worse tell). Do not push to zero: zero is below the human baseline
+- [ ] Em dashes (U+2014) at or under ~1 per 100 words (1-2 per post). Replace only the excess, with `,` or `:` or `( )` or a rewrite. Never with `.` (a split dash stacks fragments, a worse tell). Do not push to zero: zero is below the human baseline
 - [ ] No en dashes (`–`) between clauses (number ranges stay)
 - [ ] No double dashes (`--`)
 - [ ] No curly quotes (convert to straight `"`)

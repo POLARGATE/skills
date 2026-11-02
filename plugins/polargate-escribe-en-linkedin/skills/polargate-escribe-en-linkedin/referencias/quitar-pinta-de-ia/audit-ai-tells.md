@@ -18,7 +18,7 @@ Scored the way readers read: by density per paragraph, not per word. One marker 
 
 | Pattern | Why | Fix |
 |---|---|---|
-| `\u2014` (em dash `—`) above ~1 per 100 words (1-2 per post) | Density tell, not a character tell. GPT-5.4 uses fewer than humans; 23% of top-creator LinkedIn posts contain one (author-relative ratio 1.09, not a tell). 3+ in a short post is the old GPT-4 glue habit | Replace only the excess: `,` or `:` or `( )` or a rewrite. Never `.` (fragment stacking is worse) |
+| `\u2014` (em dash, U+2014) above ~1 per 100 words (1-2 per post) | Density tell, not a character tell. GPT-5.4 uses fewer than humans; 23% of top-creator LinkedIn posts contain one (author-relative ratio 1.09, not a tell). 3+ in a short post is the old GPT-4 glue habit | Replace only the excess: `,` or `:` or `( )` or a rewrite. Never `.` (fragment stacking is worse) |
 | `\u2014` at zero across a 300+ word post that reads as if it wanted one | Below the human baseline; reads as dash self-censoring | Leave one in |
 | `\u2013` (en dash `–`) between clauses | Same family | Replace with `,`; number ranges stay |
 | `--` | Same family | Replace with `,` or rewrite |

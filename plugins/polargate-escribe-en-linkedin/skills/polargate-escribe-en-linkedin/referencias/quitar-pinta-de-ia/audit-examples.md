@@ -9,5 +9,5 @@
 > - L1 "In today's fast-paced world" (filler opener)
 > - L1 "fundamentally" (AI vocab)
 > - L1 "leveraging" (AI vocab)
-> - L1 em dash `—`
+> - L1 em dash (U+2014)
 > - **Suggested rewrite:** "Businesses are using AI to cut costs 40%. Here's what I learned."

@@ -41,9 +41,9 @@ Everyone calls what we do {low-status label}.
 That label sets the price. And the price is wrong.
 
 Because {the mechanism} means it behaves like {high-status category}:
-— {property 1 that the higher category has}
-— {property 2}
-— {property 3}
+- {property 1 that the higher category has}
+- {property 2}
+- {property 3}
 
 {The one-line reframe that changes how it should be valued.}
 ```

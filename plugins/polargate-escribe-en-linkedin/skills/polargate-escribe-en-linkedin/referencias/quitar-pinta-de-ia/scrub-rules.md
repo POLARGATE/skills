@@ -104,7 +104,7 @@ def em_dash_excess(text: str) -> int:
     """Return how many em dashes exceed the cap (~1 per 100 words, floor 1, ceiling 2 per post).
     0 = leave every em dash alone."""
     words = len(text.split())
-    em = text.count("—")
+    em = text.count("\u2014")
     cap = max(1, min(2, round(words / 100)))
     return max(0, em - cap)
 
@@ -381,7 +381,7 @@ AESTHETIC_VOCAB_REPLACE = {
 # treat any dash as suspicious (some academic forums). Even here: comma / colon / parentheses,
 # never a period. Know that zero dashes in a 300-word post is itself below the human baseline.
 AESTHETIC_PUNCT_STRIP = [
-    (r"\s*—\s*", ", "),
+    (r"\s*\u2014\s*", ", "),
     (r"–", "-"),
 ]
 ```
