@@ -157,6 +157,42 @@
         "diseno",
         "landing"
       ]
+    },
+    {
+      "name": "polargate-escribe-en-linkedin",
+      "source": "./plugins/polargate-escribe-en-linkedin",
+      "description": "Para que tus posts digan algo tuyo y suenen a ti.",
+      "version": "2.0.0",
+      "category": "Marketing",
+      "keywords": [
+        "linkedin",
+        "contenido",
+        "redes"
+      ]
+    },
+    {
+      "name": "polargate-preve-tus-numeros",
+      "source": "./plugins/polargate-preve-tus-numeros",
+      "description": "Para saber por dónde irán tus ventas, reservas o gastos.",
+      "version": "2.0.0",
+      "category": "Negocio",
+      "keywords": [
+        "prevision",
+        "ventas",
+        "excel"
+      ]
+    },
+    {
+      "name": "polargate-pide-animaciones-por-su-nombre",
+      "source": "./plugins/polargate-pide-animaciones-por-su-nombre",
+      "description": "Para explicarle a Claude justo el efecto que tienes en la cabeza.",
+      "version": "2.0.0",
+      "category": "Diseño",
+      "keywords": [
+        "animacion",
+        "prompts",
+        "video"
+      ]
     }
   ]
 }

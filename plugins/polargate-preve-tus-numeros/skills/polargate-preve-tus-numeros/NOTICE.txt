@@ -1,0 +1,7 @@
+Esta skill incluye código y guías de TimesFM (https://github.com/google-research/timesfm), Copyright Google, con licencia Apache-2.0, a partir del commit e51928e27119cb17bebc005be2696b75e0a9e688.
+
+Cambios de Polargate:
+- SKILL.md y REGLAS.md nuevos, en español.
+- Se limita el uso al modelo 2.5.
+- La instalación sale de la copia POLARGATE/timesfm.
+- Las guías se renombran y pasan a referencias/. scripts/ no cambia.
