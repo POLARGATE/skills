@@ -105,7 +105,7 @@
       "name": "seo-con-datos",
       "source": "./plugins/seo-con-datos",
       "description": "Datos de SEO reales en Claude con OpenSEO: palabras clave, competidores, auditorías y posiciones.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "marketing",
       "keywords": [
         "seo",
@@ -139,7 +139,7 @@
       "name": "video-con-codigo",
       "source": "./plugins/video-con-codigo",
       "description": "Vídeos verticales para redes hechos con código y HyperFrames, en local y sin editor de vídeo.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "marketing",
       "keywords": [
         "video",
