@@ -134,6 +134,18 @@
         "seguridad",
         "auditoria"
       ]
+    },
+    {
+      "name": "video-con-codigo",
+      "source": "./plugins/video-con-codigo",
+      "description": "Vídeos verticales para redes hechos con código y HyperFrames, en local y sin editor de vídeo.",
+      "version": "1.0.0",
+      "category": "marketing",
+      "keywords": [
+        "video",
+        "reels",
+        "hyperframes"
+      ]
     }
   ]
 }
