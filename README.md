@@ -36,6 +36,7 @@ Para recibir las mejoras: `/plugin marketplace update polargate`.
 | [seo-geo](plugins/seo-geo) | SEO técnico, Core Web Vitals, datos estructurados y aparecer en las respuestas de las IA. | [Ver](https://biblioteca.polargate.ai/r/seo-geo?utm_source=github&utm_medium=readme&utm_campaign=seo-geo) |
 | [seo-con-datos](plugins/seo-con-datos) | Datos de SEO reales en Claude con OpenSEO: palabras clave, competidores, auditorías y posiciones. | [Ver](https://biblioteca.polargate.ai/r/seo-con-datos?utm_source=github&utm_medium=readme) |
 | [mapa-de-un-repo](plugins/mapa-de-un-repo) | Crea un mapa del código con Graphify para que Claude entienda un proyecto grande sin leerlo entero. | [Ver](https://biblioteca.polargate.ai/r/mapa-de-un-repo?utm_source=github&utm_medium=readme) |
+| [revisar-seguridad](plugins/revisar-seguridad) | Revisa la seguridad de tu proyecto con el método abierto de Cloudflare y explica cada problema en claro. | [Ver](https://biblioteca.polargate.ai/r/revisar-seguridad?utm_source=github&utm_medium=readme) |
 | [meeting-notes-ai](plugins/meeting-notes-ai) | Trabaja con tus reuniones grabadas: qué se decidió, qué queda pendiente y quién debe qué. Usa el conector de PolarParrot o las notas que pegues. | [Ver](https://biblioteca.polargate.ai/r/meeting-notes-ai?utm_source=github&utm_medium=readme) |
 
 Están escritas en inglés porque Claude las sigue mejor así. Te contestan en tu idioma.
