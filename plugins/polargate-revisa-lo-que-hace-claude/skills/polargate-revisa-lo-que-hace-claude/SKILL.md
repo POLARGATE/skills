@@ -82,7 +82,7 @@ Ask the Builder for a plan, not code. In Claude Code use plan mode or ultraplan.
 
 ### Phase 2: Plan gate (Reviewer)
 
-Now switch brains. Review the plan with the quality lens from the `cto-product-review` skill (reuse before creation, token discipline, component architecture, responsive, states, a11y, no duplicate systems, cleanup, regression safety). The plan-review rubric there is the reference.
+Now switch brains. Review the plan with the quality lens from the `polargate-revisa-tu-plan` skill (reuse before creation, token discipline, component architecture, responsive, states, a11y, no duplicate systems, cleanup, regression safety). The plan-review rubric there is the reference.
 
 Catch problems here, where they cost one sentence to fix, not after execution where they cost a rebuild. Output one of: approve, approve with required changes, or reject and replan. Do not let a vague plan through. A plan that says "improve the dashboard" is not a plan.
 
@@ -204,7 +204,7 @@ Same loop. The Builder is the agent. The Reviewer is a fresh context: a new chat
 
 This skill is the orchestration. It does not re-implement the quality bar; it calls the bar at the two gates.
 
-- At the plan gate and result gate, apply `cto-product-review` as the Reviewer's standard (its plan-review rubric, UI audit, and verification block).
+- At the plan gate and result gate, apply `polargate-revisa-tu-plan` as the Reviewer's standard (its plan-review rubric, UI audit, and verification block).
 
 Keep this skill lean. Its only mandate is: enforce the two gates, classify findings, and stop on time.
 

@@ -9,7 +9,7 @@ This is the mode where the user hands you the wheel. They do not want to be aske
 
 That is a gift and a loaded gun. An autopilot that asks nothing is wonderful right up until it makes a decision that cannot be undone. So the real design is not "never ask". It is decide freely on everything reversible and cheap, and stop dead only on the few things that can hurt. Get that frontier right and the user can trust you with the wheel. Get it wrong once and they never will again.
 
-This mode does not invent a review process. Inside the run you ARE the `agentic-build-review-loop`, running with the human gates suppressed. You build with one brain and judge with another, silently, and only safety stops reach the user.
+This mode does not invent a review process. Inside the run you ARE the `polargate-revisa-lo-que-hace-claude`, running with the human gates suppressed. You build with one brain and judge with another, silently, and only safety stops reach the user.
 
 ---
 
@@ -96,13 +96,13 @@ Write the acceptance criteria for the task as yes/no items, plus which quality g
 
 ### Phase 1, build autonomously
 
-Execute the task end to end. Decide all GREEN items silently. Log YELLOW items. Park RED items (see below) and keep going on everything that does not depend on them. Internally run the two-gate discipline from `agentic-build-review-loop`, but do NOT surface plan-approval or result-approval questions to the user. The only thing that interrupts the user is a RED stop.
+Execute the task end to end. Decide all GREEN items silently. Log YELLOW items. Park RED items (see below) and keep going on everything that does not depend on them. Internally run the two-gate discipline from `polargate-revisa-lo-que-hace-claude`, but do NOT surface plan-approval or result-approval questions to the user. The only thing that interrupts the user is a RED stop.
 
 In Lovable, autonomy means you write strong complete prompts, send them, read the actual diff (not the preview), and send the next corrective prompt yourself, without bugging the user. In Claude Code, same, using plan mode and a subagent reviewer. In any builder, the human is out of the cadence loop.
 
 ### Phase 2, self-review
 
-Switch to the Reviewer brain and run the result gate against the Definition of Done and the quality bar from `cto-product-review`. Read the diff, check adherence and quality, classify findings as BLOCKER, MAJOR, MINOR. Loop back to build on blockers. Hard cap, 3 fix cycles on the same task; if blockers remain, stop looping and surface it, the approach is wrong, not the wording.
+Switch to the Reviewer brain and run the result gate against the Definition of Done and the quality bar from `polargate-revisa-tu-plan`. Read the diff, check adherence and quality, classify findings as BLOCKER, MAJOR, MINOR. Loop back to build on blockers. Hard cap, 3 fix cycles on the same task; if blockers remain, stop looping and surface it, the approach is wrong, not the wording.
 
 ### Phase 3, targeted research
 
@@ -162,8 +162,8 @@ If there were zero RED items and nothing to research, say so in one line instead
 ## How this composes
 
 This mode orchestrates, it does not re-implement.
-- Review discipline and the two gates come from `agentic-build-review-loop`, run silently.
-- The quality bar at the self-review is `cto-product-review`.
+- Review discipline and the two gates come from `polargate-revisa-lo-que-hace-claude`, run silently.
+- The quality bar at the self-review is `polargate-revisa-tu-plan`.
 
 Keep this skill lean. Its only mandate is autonomy with a safe frontier, a decision ledger, checkpoints, and a clean handback.
 
