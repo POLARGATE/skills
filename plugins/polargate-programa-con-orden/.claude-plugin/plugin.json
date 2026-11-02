@@ -1,0 +1,19 @@
+{
+  "name": "polargate-programa-con-orden",
+  "description": "Para que no se lance a escribir código sin pensar.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "programar",
+    "calidad",
+    "planificar"
+  ]
+}
