@@ -100,6 +100,18 @@
         "actas",
         "mcp"
       ]
+    },
+    {
+      "name": "seo-con-datos",
+      "source": "./plugins/seo-con-datos",
+      "description": "Datos de SEO reales en Claude con OpenSEO: palabras clave, competidores, auditorías y posiciones.",
+      "version": "1.0.0",
+      "category": "marketing",
+      "keywords": [
+        "seo",
+        "openseo",
+        "mcp"
+      ]
     }
   ]
 }
