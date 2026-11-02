@@ -146,6 +146,17 @@
         "reels",
         "hyperframes"
       ]
+    },
+    {
+      "name": "polargate-web-sin-pinta-de-ia",
+      "source": "./plugins/polargate-web-sin-pinta-de-ia",
+      "description": "Para que Claude deje de hacerte siempre la misma web.",
+      "version": "2.0.0",
+      "category": "diseno",
+      "keywords": [
+        "diseno",
+        "landing"
+      ]
     }
   ]
 }
