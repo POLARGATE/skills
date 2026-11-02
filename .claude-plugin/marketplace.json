@@ -123,6 +123,17 @@
         "codigo",
         "graphify"
       ]
+    },
+    {
+      "name": "revisar-seguridad",
+      "source": "./plugins/revisar-seguridad",
+      "description": "Revisa la seguridad de tu proyecto con el método abierto de Cloudflare y explica cada problema en claro.",
+      "version": "1.0.0",
+      "category": "desarrollo",
+      "keywords": [
+        "seguridad",
+        "auditoria"
+      ]
     }
   ]
 }
