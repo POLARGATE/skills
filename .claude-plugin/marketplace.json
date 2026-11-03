@@ -232,6 +232,20 @@
         "gratis",
         "modelos"
       ]
+    },
+    {
+      "name": "polargate-polaragency",
+      "source": "./plugins/polargate-polaragency",
+      "description": "Una agencia entera dentro de Claude Code: más de 200 especialistas de IA.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": [
+        "claude-code",
+        "agencia",
+        "especialistas",
+        "marketing",
+        "ventas"
+      ]
     }
   ]
 }

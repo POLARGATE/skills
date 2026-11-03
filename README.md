@@ -45,6 +45,7 @@ Para recibir las mejoras: `/plugin marketplace update polargate`.
 | [polargate-pide-animaciones-por-su-nombre](plugins/polargate-pide-animaciones-por-su-nombre) | Para explicarle a Claude justo el efecto que tienes en la cabeza. | [Ver](https://biblioteca.polargate.ai/r/polargate-pide-animaciones-por-su-nombre?utm_source=github&utm_medium=readme) |
 | [polargate-programa-con-orden](plugins/polargate-programa-con-orden) | Para que no se lance a escribir código sin pensar. | [Ver](https://biblioteca.polargate.ai/r/polargate-programa-con-orden?utm_source=github&utm_medium=readme) |
 | [polargate-ponle-un-experto](plugins/polargate-ponle-un-experto) | Para que piense como el profesional que te hace falta. | [Ver](https://biblioteca.polargate.ai/r/polargate-ponle-un-experto?utm_source=github&utm_medium=readme) |
+| [polargate-polaragency](plugins/polargate-polaragency) | Una agencia entera dentro de Claude Code: más de 200 especialistas de IA. | [Ver](https://biblioteca.polargate.ai/r/polargate-polaragency?utm_source=github&utm_medium=readme) |
 | [polargate-usa-ia-gratis](plugins/polargate-usa-ia-gratis) | Para probar tus ideas con IA sin gastar dinero. | [Ver](https://biblioteca.polargate.ai/r/polargate-usa-ia-gratis?utm_source=github&utm_medium=readme) |
 
 Están escritas en inglés porque Claude las sigue mejor así. Te contestan en tu idioma.

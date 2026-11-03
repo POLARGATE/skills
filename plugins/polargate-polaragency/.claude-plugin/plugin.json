@@ -1,0 +1,20 @@
+{
+  "name": "polargate-polaragency",
+  "description": "Una agencia entera dentro de Claude Code: más de 200 especialistas de IA.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Polargate",
+    "email": "hello@polargate.ai",
+    "url": "https://polargate.ai"
+  },
+  "homepage": "https://biblioteca.polargate.ai/r/polargate-polaragency",
+  "repository": "https://github.com/POLARGATE/skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agencia",
+    "especialistas",
+    "marketing",
+    "ventas"
+  ]
+}
