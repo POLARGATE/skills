@@ -208,19 +208,6 @@
       ]
     },
     {
-      "name": "polargate-ponle-un-experto",
-      "source": "./plugins/polargate-ponle-un-experto",
-      "description": "Para que piense como el profesional que te hace falta.",
-      "version": "2.0.0",
-      "category": "productivity",
-      "keywords": [
-        "claude-code",
-        "expertos",
-        "negocio",
-        "marketing"
-      ]
-    },
-    {
       "name": "polargate-usa-ia-gratis",
       "source": "./plugins/polargate-usa-ia-gratis",
       "description": "Para probar tus ideas con IA sin gastar dinero.",
