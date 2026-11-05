@@ -4,9 +4,9 @@ Para: perfiles muy concretos de otros sectores. El nombre de cada especialista e
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|
-| Accounts Payable Agent | Paga a proveedores, autónomos y facturas recurrentes de forma automática, con euros, dólares o criptomonedas, desde flujos de agentes de IA. | `expertos/specialized/accounts-payable-agent.md` |
+| Accounts Payable Agent | Prepara el pago a proveedores, autónomos y facturas recurrentes (euros, dólares o criptomonedas) y te lo deja listo para que lo apruebes; aquí no paga nada. | `expertos/specialized/accounts-payable-agent.md` |
 | Agentic Identity & Trust Architect | Diseña cómo los agentes de IA demuestran quiénes son, qué tienen permitido hacer y qué han hecho de verdad. | `expertos/specialized/agentic-identity-trust.md` |
-| Agents Orchestrator | Dirige de principio a fin el trabajo de desarrollo y coordina a los demás agentes para que el proyecto avance solo. | `expertos/specialized/agents-orchestrator.md` |
+| Agents Orchestrator | Dirige de principio a fin el trabajo de desarrollo y coordina a los demás agentes para que el proyecto avance por fases, parando en cada entrega. | `expertos/specialized/agents-orchestrator.md` |
 | Aging Parent Care Companion | Ayuda a quien cuida de un padre mayor a organizar citas, medicación y trato con los médicos, sin descuidarse a sí mismo. | `expertos/specialized/healthcare-aging-parent-care-companion.md` |
 | Automation Governance Architect | Revisa si una automatización (sobre todo en n8n) compensa, qué riesgos tiene y si se podrá mantener, antes de construirla. | `expertos/specialized/automation-governance-architect.md` |
 | Business Strategist | Te ayuda a decidir estrategia de negocio: analiza competencia, entrada en mercados, modelo de negocio y planes de crecimiento. | `expertos/specialized/business-strategist.md` |
@@ -45,14 +45,14 @@ Para: perfiles muy concretos de otros sectores. El nombre de cada especialista e
 | Master Plan Architect | Te explica la arquitectura, critica tu plan buscando fallos y escribe planes de implementación completos en Markdown, sin programar nada. | `expertos/specialized/specialized-master-plan-architect.md` |
 | MCP Builder | Crea y prueba servidores MCP, que dan a una IA herramientas y datos nuevos para conectarse con tus sistemas. | `expertos/specialized/specialized-mcp-builder.md` |
 | Medical Billing & Coding Specialist | Gestiona la facturación médica: codifica diagnósticos y actos, presenta reclamaciones, resuelve rechazos y cuida el cobro. | `expertos/specialized/medical-billing-coding-specialist.md` |
-| Model QA Specialist | Audita modelos de IA y estadísticos de punta a punta: documentación, datos, réplica, fiabilidad e informe listo para auditoría. | `expertos/specialized/specialized-model-qa.md` |
+| Model QA Specialist | Audita modelos de IA y estadísticos de principio a fin: documentación, datos, réplica, fiabilidad e informe listo para auditoría. | `expertos/specialized/specialized-model-qa.md` |
 | Operations Manager | Mejora cómo funciona una empresa por dentro: mapea procesos, planifica capacidad, fija indicadores y gestiona proveedores. | `expertos/specialized/operations-manager.md` |
 | Organizational Psychologist | Diagnostica cómo va un equipo (clima, confianza para hablar, riesgo de agotamiento, cultura) y propone cómo mejorarlo. | `expertos/specialized/organizational-psychologist.md` |
 | Personal Growth Mentor | Te ayuda a aclarar objetivos, crear hábitos, decidir y cumplir lo que te propones, sin frases motivacionales vacías. | `expertos/specialized/personal-growth-mentor.md` |
 | Pricing Analyst | Calcula qué precio poner a un producto estudiando mercado, competencia, costes y márgenes, con datos en vez de intuición. | `expertos/specialized/specialized-pricing-analyst.md` |
 | Real Estate Buyer & Seller | Asiste a agentes inmobiliarios con compradores y vendedores: anuncios, ofertas, negociación y cierre de la operación. | `expertos/specialized/real-estate-buyer-seller.md` |
 | Recruitment Specialist | Gestiona la contratación: atrae y filtra candidatos, evalúa talento y cuida la marca de empleador, según plataformas y leyes chinas. | `expertos/specialized/recruitment-specialist.md` |
-| Report Distribution Agent | Envía automáticamente los informes de ventas a cada comercial según su zona. | `expertos/specialized/report-distribution-agent.md` |
+| Report Distribution Agent | Prepara los informes de ventas de cada comercial según su zona y te deja el envío listo; aquí no los envía. | `expertos/specialized/report-distribution-agent.md` |
 | Resume Tailor | Adapta tu currículum a una oferta: ve qué pide, alinea tu experiencia real con sus palabras clave y reescribe sin inventar nada. | `expertos/specialized/resume-tailor.md` |
 | Retail Customer Returns | Gestiona devoluciones, cambios y reembolsos en tienda y online: aplica la política, evita fraudes y conserva al cliente. | `expertos/specialized/retail-customer-returns.md` |
 | Sales Data Extraction Agent | Vigila hojas de Excel y saca las cifras clave de ventas (del mes, del año y cierre anual) para los informes internos. | `expertos/specialized/sales-data-extraction-agent.md` |

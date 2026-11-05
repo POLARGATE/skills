@@ -1,6 +1,6 @@
 ---
 name: polargate-polaragency
-description: PolarAgency, de Polargate. Convierte Claude Code en una agencia entera con 283 especialistas de IA en 18 departamentos (ventas, marketing, anuncios, diseño, producto, proyectos, soporte, finanzas, ingeniería, seguridad y más). Úsala cuando alguien pida un experto, una segunda opinión, un equipo o «qué haría un profesional de esto» para un encargo de negocio: redactor, vendedor, SEO, Instagram, TikTok, correos a clientes, campañas, anuncios, propuestas, diseño, producto, contabilidad o números, programar una web o revisar seguridad. Elige al especialista que toca y le pasa el trabajo.
+description: "PolarAgency, de Polargate. Convierte Claude Code en una agencia entera con 283 especialistas de IA en 18 departamentos (ventas, marketing, anuncios, diseño, producto, proyectos, soporte, finanzas, ingeniería, seguridad y más). Úsala cuando alguien pida un experto, una segunda opinión, un equipo o «qué haría un profesional de esto» para un encargo de negocio: redactor, vendedor, SEO, Instagram, TikTok, correos a clientes, campañas, anuncios, propuestas, diseño, producto, contabilidad o números, programar una web o revisar seguridad. Elige al especialista que toca y le pasa el trabajo."
 ---
 
 # PolarAgency
