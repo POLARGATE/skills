@@ -1,15 +1,15 @@
 # Ventas: 9 especialistas
 
-Para: conseguir clientes, preparar reuniones, propuestas, cerrar ventas. Nombre y descripción como los escribió su autor (en inglés).
+Para: conseguir clientes, preparar reuniones, propuestas, cerrar ventas. El nombre de cada especialista es el que le puso su autor, en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|
-| Account Strategist | Expert post-sale account strategist specializing in land-and-expand execution, stakeholder mapping, QBR facilitation, and net revenue retention. Turns closed deals into long-term platform relationships through systematic expansion planning and multi-threaded account development. | `expertos/sales/sales-account-strategist.md` |
-| Deal Strategist | Senior deal strategist specializing in MEDDPICC qualification, competitive positioning, and win planning for complex B2B sales cycles. Scores opportunities, exposes pipeline risk, and builds deal strategies that survive forecast review. | `expertos/sales/sales-deal-strategist.md` |
-| Discovery Coach | Coaches sales teams on elite discovery methodology — question design, current-state mapping, gap quantification, and call structure that surfaces real buying motivation. | `expertos/sales/sales-discovery-coach.md` |
-| Offer & Lead Gen Strategist | Top-of-funnel architect who designs irresistible offers and lead magnets that attract qualified buyers at scale. Specializes in value-equation offer construction, lead magnet typology, multi-channel lead generation, and compounding reach through customers, employees, agencies, and affiliates. | `expertos/sales/sales-offer-lead-gen-strategist.md` |
-| Outbound Strategist | Signal-based outbound specialist who designs multi-channel prospecting sequences, defines ICPs, and builds pipeline through research-driven personalization — not volume. | `expertos/sales/sales-outbound-strategist.md` |
-| Pipeline Analyst | Revenue operations analyst specializing in pipeline health diagnostics, deal velocity analysis, forecast accuracy, and data-driven sales coaching. Turns CRM data into actionable pipeline intelligence that surfaces risks before they become missed quarters. | `expertos/sales/sales-pipeline-analyst.md` |
-| Proposal Strategist | Strategic proposal architect who transforms RFPs and sales opportunities into compelling win narratives. Specializes in win theme development, competitive positioning, executive summary craft, and building proposals that persuade rather than merely comply. | `expertos/sales/sales-proposal-strategist.md` |
-| Sales Coach | Expert sales coaching specialist focused on rep development, pipeline review facilitation, call coaching, deal strategy, and forecast accuracy. Makes every rep and every deal better through structured coaching methodology and behavioral feedback. | `expertos/sales/sales-coach.md` |
-| Sales Engineer | Senior pre-sales engineer specializing in technical discovery, demo engineering, POC scoping, competitive battlecards, and bridging product capabilities to business outcomes. Wins the technical decision so the deal can close. | `expertos/sales/sales-engineer.md` |
+| Account Strategist | Hace crecer a los clientes que ya te han comprado: planifica ventas adicionales y la relación con cada contacto. | `expertos/sales/sales-account-strategist.md` |
+| Deal Strategist | Puntúa tus oportunidades de venta grandes, detecta riesgos y te dice cómo ganarlas frente a la competencia. | `expertos/sales/sales-deal-strategist.md` |
+| Discovery Coach | Enseña a tu equipo a hacer las preguntas correctas en la primera reunión para descubrir qué necesita de verdad el cliente. | `expertos/sales/sales-discovery-coach.md` |
+| Offer & Lead Gen Strategist | Diseña ofertas y regalos de captación (guías, demos) que atraen a compradores interesados en lugar de curiosos. | `expertos/sales/sales-offer-lead-gen-strategist.md` |
+| Outbound Strategist | Define a quién escribir y prepara secuencias de mensajes personalizados para conseguir reuniones con clientes ideales. | `expertos/sales/sales-outbound-strategist.md` |
+| Pipeline Analyst | Lee los datos de tu CRM para ver qué ventas van bien o mal y avisarte antes de que se pierda el trimestre. | `expertos/sales/sales-pipeline-analyst.md` |
+| Proposal Strategist | Convierte un concurso o una oportunidad en una propuesta que convenza, con un mensaje claro de por qué ganar tú. | `expertos/sales/sales-proposal-strategist.md` |
+| Sales Coach | Entrena a tus comerciales: revisa sus llamadas y sus ventas abiertas y les da consejos para vender más. | `expertos/sales/sales-coach.md` |
+| Sales Engineer | Hace de experto técnico en la venta: demos, pruebas de concepto y respuestas técnicas que ayudan a cerrar. | `expertos/sales/sales-engineer.md` |

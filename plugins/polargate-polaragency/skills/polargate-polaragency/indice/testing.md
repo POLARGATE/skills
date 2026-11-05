@@ -1,15 +1,15 @@
 # Pruebas: 9 especialistas
 
-Para: probar que una web o app funciona bien. Nombre y descripción como los escribió su autor (en inglés).
+Para: probar que una web o app funciona bien. El nombre de cada especialista es el que le puso su autor, en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|
-| Accessibility Auditor | Expert accessibility specialist who audits interfaces against WCAG standards, tests with assistive technologies, and ensures inclusive design. Defaults to finding barriers — if it's not tested with a screen reader, it's not accessible. | `expertos/testing/testing-accessibility-auditor.md` |
-| API Tester | Expert API testing specialist focused on comprehensive API validation, performance testing, and quality assurance across all systems and third-party integrations | `expertos/testing/testing-api-tester.md` |
-| Evidence Collector | Screenshot-obsessed, fantasy-allergic QA specialist - Reports reproducible issues with evidence and marks untested scope honestly | `expertos/testing/testing-evidence-collector.md` |
-| Performance Benchmarker | Expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance across all applications and infrastructure | `expertos/testing/testing-performance-benchmarker.md` |
-| Reality Checker | Stops fantasy approvals, evidence-based certification - Default to "NEEDS WORK", requires overwhelming proof for production readiness | `expertos/testing/testing-reality-checker.md` |
-| Test Automation Engineer | Expert end-to-end test automation engineer for Playwright and Cypress — resilient selectors, flake elimination, isolated test data, CI parallelization, and trace-driven failure debugging. | `expertos/testing/testing-test-automation-engineer.md` |
-| Test Results Analyzer | Expert test analysis specialist focused on comprehensive test result evaluation, quality metrics analysis, and actionable insight generation from testing activities | `expertos/testing/testing-test-results-analyzer.md` |
-| Tool Evaluator | Expert technology assessment specialist focused on evaluating, testing, and recommending tools, software, and platforms for business use and productivity optimization | `expertos/testing/testing-tool-evaluator.md` |
-| Workflow Optimizer | Expert process improvement specialist focused on analyzing, optimizing, and automating workflows across all business functions for maximum productivity and efficiency | `expertos/testing/testing-workflow-optimizer.md` |
+| Accessibility Auditor | Revisa si tu web o app la puede usar todo el mundo, probándola con lectores de pantalla y según la norma WCAG. | `expertos/testing/testing-accessibility-auditor.md` |
+| API Tester | Prueba que tus API y las integraciones con terceros funcionan bien, aguantan carga y no fallan. | `expertos/testing/testing-api-tester.md` |
+| Evidence Collector | Prueba tu producto y te da los fallos con capturas y pasos para repetirlos, diciendo con honestidad lo que no ha probado. | `expertos/testing/testing-evidence-collector.md` |
+| Performance Benchmarker | Mide la velocidad de tus aplicaciones y servidores, encuentra qué las frena y propone cómo mejorarlas. | `expertos/testing/testing-performance-benchmarker.md` |
+| Reality Checker | Frena aprobaciones optimistas: solo da el visto bueno para publicar si hay pruebas claras de que todo funciona. | `expertos/testing/testing-reality-checker.md` |
+| Test Automation Engineer | Crea pruebas automáticas de principio a fin con Playwright o Cypress, estables y que se ejecutan solas en CI. | `expertos/testing/testing-test-automation-engineer.md` |
+| Test Results Analyzer | Analiza los resultados de las pruebas, saca métricas de calidad y te dice qué conviene arreglar primero. | `expertos/testing/testing-test-results-analyzer.md` |
+| Tool Evaluator | Evalúa herramientas, programas y plataformas y te recomienda cuáles encajan mejor en tu negocio. | `expertos/testing/testing-tool-evaluator.md` |
+| Workflow Optimizer | Analiza cómo trabaja tu empresa y mejora o automatiza los procesos para que se pierda menos tiempo. | `expertos/testing/testing-workflow-optimizer.md` |

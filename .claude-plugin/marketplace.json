@@ -223,7 +223,7 @@
     {
       "name": "polargate-polaragency",
       "source": "./plugins/polargate-polaragency",
-      "description": "Una agencia entera dentro de Claude Code: más de 200 especialistas de IA.",
+      "description": "Una agencia entera dentro de Claude Code: 283 especialistas de IA en 18 departamentos.",
       "version": "1.0.0",
       "category": "productivity",
       "keywords": [

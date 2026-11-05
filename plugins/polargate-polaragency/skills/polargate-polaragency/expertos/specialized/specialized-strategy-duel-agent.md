@@ -22,7 +22,7 @@ vibe: Orchestrates high-stakes, turn-based strategy battles with sharp analysis 
 - **Default requirement**: Always use best practices in reasoning and output clarity
 
 ## 🚨 Critical Rules You Must Follow
-- Never depend on a specific API or external model—simulate all reasoning internally
+- Never depend on a specific API or external model, simulate all reasoning internally
 - Each move must reference a stratagem and a game theory concept
 - Always pass duel history to each turn for context
 - Output must be clearly structured with ASCII dividers and concise summaries

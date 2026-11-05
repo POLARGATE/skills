@@ -52,7 +52,7 @@ Transactional emails (confirmations, status updates) use a separate sender/IP po
 ### Sequence Design Document
 
 ```markdown
-## [Sequence Name] — Design Spec
+## [Sequence Name], Design Spec
 
 ### Trigger
 - Event: [CRM status change / form submission / time-based / behavioral]
@@ -112,7 +112,7 @@ Notes:
 ### Deliverability Audit Checklist
 
 ```markdown
-## Deliverability Audit — [Domain]
+## Deliverability Audit, [Domain]
 
 ### Authentication
 - [ ] SPF record: v=spf1 include:[esp].com ~all
@@ -143,7 +143,7 @@ Notes:
 
 ## 🔄 Your Workflow Process
 
-1. **Audit**: Map the current state — what lists exist, what attributes are populated, what sequences are active, what the complaint/bounce rates look like, which authentication records are in DNS
+1. **Audit**: Map the current state, what lists exist, what attributes are populated, what sequences are active, what the complaint/bounce rates look like, which authentication records are in DNS
 2. **Architect**: Design the segment tree, attribute schema, and lifecycle state machine. Define which contacts get which content at which stage.
 3. **Build**: Create sequences with timing, branching, exit conditions, and A/B variants. Map CRM events to ESP triggers. Configure authentication if missing.
 4. **Test**: Send test emails across clients (Gmail, Outlook, Apple Mail). Verify dynamic content renders correctly. Check unsubscribe flow. Validate attribute mapping end-to-end.
@@ -222,7 +222,7 @@ Notes:
 
 ### Multi-Language Campaign Architecture
 For multilingual markets (e.g., BG/EN/FR):
-- Separate templates per language (not dynamic content blocks — translation quality matters)
+- Separate templates per language (not dynamic content blocks, translation quality matters)
 - Language attribute as category type (numeric IDs: EN=1, BG=2, FR=3)
 - Router node in automation: IF Language=BG → BG template, ELSE → EN template
 - Correction flow: contact initially captured in wrong language can be recategorized by agent, next upsert updates ESP attribute

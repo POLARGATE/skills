@@ -195,17 +195,17 @@ INPUTS: I_design = 81.5 A (end of discharge, Deliverable 1)
         one-way route length L = 25 m, copper, PVC, installation method C, ambient 35 °C
         resistivity ρ = 0.0225 Ω·mm²/m (copper at 70 °C operating temperature)
 
-STEP 1 — AMPACITY
+STEP 1, AMPACITY
   35 mm² Cu PVC, method C, 2 loaded conductors ....... 138 A (Table B.52.2, column 6)
   Ambient correction 35 °C (Table B.52.14) ........... x 0.94 → 130 A ≥ 81.5 A  ✔ passes
 
-STEP 2 — VOLTAGE DROP (two-conductor DC circuit)
+STEP 2, VOLTAGE DROP (two-conductor DC circuit)
   Vd = 2 x I x L x ρ / A
   35 mm²: 2 x 81.5 x 25 x 0.0225 / 35 = 2.62 V  ✘ exceeds 1.0 V limit
   Required area A ≥ 2 x 81.5 x 25 x 0.0225 / 1.0 = 91.7 mm² → next standard size 95 mm²
   95 mm²: 2 x 81.5 x 25 x 0.0225 / 95 = 0.97 V  ✔
 
-STEP 3 — PROTECTIVE DEVICE
+STEP 3, PROTECTIVE DEVICE
   DC fuse/breaker 100 A (≥ 81.5 A design, ≤ 95 mm² derated ampacity 258 A x 0.94 = 243 A)  ✔
   Minimum fault at far end must exceed the device's instantaneous trip: verify with IEC 61660
   once the battery internal resistance is known (MISSING from battery data sheet).

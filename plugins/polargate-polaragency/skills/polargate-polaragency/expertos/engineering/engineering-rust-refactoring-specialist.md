@@ -73,7 +73,7 @@ Explicit authorization is also required for production dependency changes, toolc
 Every audit finding includes:
 
 ```markdown
-### RUST-007 — Ownership — Avoid repeated path allocation
+### RUST-007, Ownership, Avoid repeated path allocation
 
 - **Location**: `crates/config/src/loader.rs`, `load_workspace`
 - **Evidence**: All four callers already retain a borrowed `&Path`, but the function
@@ -198,9 +198,9 @@ For implementation work, return:
 [Preserved contracts and intentional corrections or migrations]
 
 ## Verification
-- `cargo fmt --all -- --check` — passed
-- `cargo test -p target-crate` — passed
-- `cargo clippy -p target-crate --all-targets -- -D warnings` — passed
+- `cargo fmt --all -- --check`, passed
+- `cargo test -p target-crate`, passed
+- `cargo clippy -p target-crate --all-targets -- -D warnings`, passed
 
 ## Remaining Risk
 [Unverified targets, pre-existing failures, and deferred opportunities]

@@ -1,13 +1,13 @@
 # Anuncios: 7 especialistas
 
-Para: Google Ads, anuncios en redes, creatividades, auditar cuentas. Nombre y descripción como los escribió su autor (en inglés).
+Para: Google Ads, anuncios en redes, creatividades, auditar cuentas. El nombre de cada especialista es el que le puso su autor, en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|
-| Ad Creative Strategist | Paid media creative specialist focused on ad copywriting, RSA optimization, asset group design, and creative testing frameworks across Google, Meta, Microsoft, and programmatic platforms. Bridges the gap between performance data and persuasive messaging. | `expertos/paid-media/paid-media-creative-strategist.md` |
-| Paid Media Auditor | Comprehensive paid media auditor who systematically evaluates Google Ads, Microsoft Ads, and Meta accounts across 200+ checkpoints spanning account structure, tracking, bidding, creative, audiences, and competitive positioning. Produces actionable audit reports with prioritized recommendations and projected impact. | `expertos/paid-media/paid-media-auditor.md` |
-| Paid Social Strategist | Cross-platform paid social advertising specialist covering Meta (Facebook/Instagram), LinkedIn, TikTok, Pinterest, X, and Snapchat. Designs full-funnel social ad programs from prospecting through retargeting with platform-specific creative and audience strategies. | `expertos/paid-media/paid-media-paid-social-strategist.md` |
-| PPC Campaign Strategist | Senior paid media strategist specializing in large-scale search, shopping, and performance max campaign architecture across Google, Microsoft, and Amazon ad platforms. Designs account structures, budget allocation frameworks, and bidding strategies that scale from $10K to $10M+ monthly spend. | `expertos/paid-media/paid-media-ppc-strategist.md` |
-| Programmatic & Display Buyer | Display advertising and programmatic media buying specialist covering managed placements, Google Display Network, DV360, trade desk platforms, partner media (newsletters, sponsored content), and ABM display strategies via platforms like Demandbase and 6Sense. | `expertos/paid-media/paid-media-programmatic-buyer.md` |
-| Search Query Analyst | Specialist in search term analysis, negative keyword architecture, and query-to-intent mapping. Turns raw search query data into actionable optimizations that eliminate waste and amplify high-intent traffic across paid search accounts. | `expertos/paid-media/paid-media-search-query-analyst.md` |
-| Tracking & Measurement Specialist | Expert in conversion tracking architecture, tag management, and attribution modeling across Google Tag Manager, GA4, Google Ads, Meta CAPI, LinkedIn Insight Tag, and server-side implementations. Ensures every conversion is counted correctly and every dollar of ad spend is measurable. | `expertos/paid-media/paid-media-tracking-specialist.md` |
+| Ad Creative Strategist | Escribe y prueba los textos y creatividades de tus anuncios en Google, Meta y Microsoft para que funcionen mejor. | `expertos/paid-media/paid-media-creative-strategist.md` |
+| Paid Media Auditor | Revisa tus cuentas de Google Ads, Microsoft Ads y Meta punto por punto y te da un informe con qué arreglar primero. | `expertos/paid-media/paid-media-auditor.md` |
+| Paid Social Strategist | Diseña tus anuncios en Instagram, Facebook, LinkedIn, TikTok y otras redes, desde captar gente nueva hasta volver a impactarla. | `expertos/paid-media/paid-media-paid-social-strategist.md` |
+| PPC Campaign Strategist | Monta la estructura y el reparto de presupuesto de tus campañas de pago en Google, Microsoft y Amazon. | `expertos/paid-media/paid-media-ppc-strategist.md` |
+| Programmatic & Display Buyer | Compra publicidad de banners y anuncios en webs (Google Display, DV360 y otras) y llega a empresas concretas. | `expertos/paid-media/paid-media-programmatic-buyer.md` |
+| Search Query Analyst | Revisa qué buscan quienes ven tus anuncios, descarta las búsquedas inútiles y ahorra presupuesto. | `expertos/paid-media/paid-media-search-query-analyst.md` |
+| Tracking & Measurement Specialist | Configura el seguimiento de ventas y contactos (GA4, Tag Manager, Meta) para saber qué anuncio da dinero. | `expertos/paid-media/paid-media-tracking-specialist.md` |

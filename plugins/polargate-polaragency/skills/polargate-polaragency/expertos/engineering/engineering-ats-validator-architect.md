@@ -58,7 +58,7 @@ Never present an opaque, unexplainable score. Every point deduction must link to
 
 ### 5. Separate Recall (Knockout Filters) from Precision (Recruiter Viewport)
 - **Recall**: Match core mandatory qualifications, certifications, and technical proficiencies to pass Boolean knockout filters.
-- **Precision**: Front-load the top 3 high-impact accomplishments into the **First Third** (the upper 30% of page 1), ensuring the human recruiter—who scans for only 6 to 7.4 seconds—instantly identifies role fit.
+- **Precision**: Front-load the top 3 high-impact accomplishments into the **First Third** (the upper 30% of page 1), ensuring the human recruiter, who scans for only 6 to 7.4 seconds, instantly identifies role fit.
 
 ### 6. Strict PDF Text Layer Verification
 Never approve a resume exported as a canvas bitmap, an image-only PDF, or a document with subsetted fonts that fail `/ToUnicode` translation. The document must satisfy ISO 19005-2 (PDF/A-2u) Unicode text layer standards.
@@ -215,7 +215,7 @@ When performing an ATS audit or designing an ATS validation engine, you must pro
 | **1. Keywords & Hard Skills** | 40% | [0-100]% | 🟢/🟡/🔴 | [X of Y core technical competencies detected] |
 | **2. Google/IBM X-Y-Z Impact** | 30% | [0-100]% | 🟢/🟡/🔴 | [X% of bullets contain verified metrics; Seniority target: Z%] |
 | **3. Structural Parseability** | 15% | [0-100]% | 🟢/🟡/🔴 | [Clean single-column flow, standard headers, no PUA traps] |
-| **4. Reading Density & Volume** | 15% | [0-100]% | 🟢/🟡/🔴 | [[Word Count] words — optimal window for [1/2] page(s)] |
+| **4. Reading Density & Volume** | 15% | [0-100]% | 🟢/🟡/🔴 | [[Word Count] words, optimal window for [1/2] page(s)] |
 ```
 
 ### Deliverable 2: Structural & Layout Linearization Audit

@@ -35,7 +35,7 @@ Para la mayoría de encargos basta con uno de estos.
 | Estrategia de redes | `expertos/marketing/marketing-social-media-strategist.md` |
 | Instagram | `expertos/marketing/marketing-instagram-curator.md` |
 | TikTok | `expertos/marketing/marketing-tiktok-strategist.md` |
-| Carruseles | `expertos/marketing/marketing-carousel-growth-engine.md` |
+| Carruseles (prepara el plan y los textos; no publica) | `expertos/marketing/marketing-carousel-growth-engine.md` |
 | Correos a clientes | `expertos/marketing/marketing-email-strategist.md` |
 | Prensa y comunicación | `expertos/marketing/marketing-pr-communications-manager.md` |
 
@@ -120,4 +120,4 @@ Para la mayoría de encargos basta con uno de estos.
 
 ## Créditos
 
-Basada en agency-agents, de AgentLand Contributors, con licencia MIT (aviso en `LICENSE`). Los ficheros de `expertos/` son los originales, sin cambios.
+Basada en agency-agents, de AgentLand Contributors, con licencia MIT (aviso en `LICENSE`). Los ficheros de `expertos/` son los originales en inglés; solo hemos cambiado la raya larga por comas o dos puntos.

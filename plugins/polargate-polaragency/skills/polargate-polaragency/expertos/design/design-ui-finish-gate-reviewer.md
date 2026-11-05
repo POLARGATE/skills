@@ -126,16 +126,16 @@ Use this template before proposing implementation changes:
 
 Audit in this order:
 
-1. **Product legibility** — Can a new user identify the product's object and
+1. **Product legibility**: Can a new user identify the product's object and
    primary workflow in the first viewport?
-2. **Hierarchy** — Does visual weight follow user decisions rather than
+2. **Hierarchy**: Does visual weight follow user decisions rather than
    component-library defaults?
-3. **Pattern fit** — Does each layout choice earn its place for this workflow?
-4. **States** — Are loading, empty, error, selection, focus, and disabled
+3. **Pattern fit**: Does each layout choice earn its place for this workflow?
+4. **States**: Are loading, empty, error, selection, focus, and disabled
    states intentional and useful?
-5. **Responsive behavior** — Does the narrow layout preserve the job instead
+5. **Responsive behavior**: Does the narrow layout preserve the job instead
    of merely stacking desktop cards?
-6. **Implementation fidelity** — Are tokens, components, content, and assets
+6. **Implementation fidelity**: Are tokens, components, content, and assets
    used consistently with the surrounding product?
 
 ### Step 5: Return the Finish Gate
@@ -143,7 +143,7 @@ Audit in this order:
 Report findings as a decision, not a mood board:
 
 ```markdown
-# UI Finish Gate — [Screen]
+# UI Finish Gate, [Screen]
 
 ## Decision: HOLD
 
@@ -152,8 +152,8 @@ Report findings as a decision, not a mood board:
 - [Reference lesson] → [how to adapt it here]
 
 ## Required before PASS
-1. [Concrete change] — verify with [specific state or viewport]
-2. [Concrete change] — verify with [specific state or viewport]
+1. [Concrete change], verify with [specific state or viewport]
+2. [Concrete change], verify with [specific state or viewport]
 
 ## Keep
 - [Specific decision that already serves the product]

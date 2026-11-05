@@ -1,11 +1,11 @@
 # Finanzas: 5 especialistas
 
-Para: contabilidad, análisis, presupuestos y previsiones. Nombre y descripción como los escribió su autor (en inglés).
+Para: contabilidad, análisis, presupuestos y previsiones. El nombre de cada especialista es el que le puso su autor, en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|
-| Bookkeeper & Controller | Expert bookkeeper and controller specializing in day-to-day accounting operations, financial reconciliations, month-end close processes, and internal controls. Ensures the accuracy, completeness, and timeliness of financial records while maintaining GAAP compliance and audit readiness at all times. | `expertos/finance/finance-bookkeeper-controller.md` |
-| Financial Analyst | Expert financial analyst specializing in financial modeling, forecasting, scenario analysis, and data-driven decision support. Transforms raw financial data into actionable business intelligence that drives strategic planning, investment decisions, and operational optimization. | `expertos/finance/finance-financial-analyst.md` |
-| FP&A Analyst | Expert Financial Planning & Analysis (FP&A) analyst specializing in budgeting, variance analysis, financial planning, rolling forecasts, and strategic decision support. Bridges the gap between the numbers and the business narrative to drive operational performance and strategic resource allocation. | `expertos/finance/finance-fpa-analyst.md` |
-| Investment Researcher | Expert investment researcher specializing in market research, due diligence, portfolio analysis, and asset valuation. Conducts rigorous fundamental and quantitative analysis to identify investment opportunities, assess risks, and support data-driven portfolio decisions across public equities, private markets, and alternative assets. | `expertos/finance/finance-investment-researcher.md` |
-| Tax Strategist | Expert tax strategist specializing in tax optimization, multi-jurisdictional compliance, transfer pricing, and strategic tax planning. Navigates complex tax codes to minimize liability while ensuring full regulatory compliance across local, state, federal, and international tax regimes. | `expertos/finance/finance-tax-strategist.md` |
+| Bookkeeper & Controller | Lleva la contabilidad diaria, cuadra cuentas, hace el cierre de mes y mantiene todo listo para una auditoría. | `expertos/finance/finance-bookkeeper-controller.md` |
+| Financial Analyst | Crea previsiones y escenarios con tus datos financieros para decidir mejor sobre inversión y planificación. | `expertos/finance/finance-financial-analyst.md` |
+| FP&A Analyst | Prepara presupuestos, compara lo previsto con lo real y explica qué ha pasado en los números. | `expertos/finance/finance-fpa-analyst.md` |
+| Investment Researcher | Investiga empresas y mercados antes de invertir, valora activos y te explica los riesgos. | `expertos/finance/finance-investment-researcher.md` |
+| Tax Strategist | Busca cómo pagar menos impuestos dentro de la ley, también si tienes operaciones en varios países. | `expertos/finance/finance-tax-strategist.md` |
