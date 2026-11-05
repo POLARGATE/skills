@@ -208,19 +208,6 @@
       ]
     },
     {
-      "name": "polargate-ponle-un-experto",
-      "source": "./plugins/polargate-ponle-un-experto",
-      "description": "Para que piense como el profesional que te hace falta.",
-      "version": "2.0.0",
-      "category": "productivity",
-      "keywords": [
-        "claude-code",
-        "expertos",
-        "negocio",
-        "marketing"
-      ]
-    },
-    {
       "name": "polargate-usa-ia-gratis",
       "source": "./plugins/polargate-usa-ia-gratis",
       "description": "Para probar tus ideas con IA sin gastar dinero.",
@@ -231,6 +218,20 @@
         "ia",
         "gratis",
         "modelos"
+      ]
+    },
+    {
+      "name": "polargate-polaragency",
+      "source": "./plugins/polargate-polaragency",
+      "description": "Una agencia entera dentro de Claude Code: 283 especialistas de IA en 18 departamentos.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": [
+        "claude-code",
+        "agencia",
+        "especialistas",
+        "marketing",
+        "ventas"
       ]
     }
   ]
