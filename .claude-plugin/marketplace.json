@@ -139,12 +139,14 @@
       "name": "polargate-haz-reels",
       "source": "./plugins/polargate-haz-reels",
       "description": "Le dices a Claude qué quieres contar y te devuelve el vídeo listo para subir.",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "category": "marketing",
       "keywords": [
         "video",
         "reels",
-        "hyperframes"
+        "hyperframes",
+        "polarmotion",
+        "estilos"
       ]
     },
     {
