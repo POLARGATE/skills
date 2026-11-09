@@ -24,7 +24,7 @@ Abre solo la lista que toque. Cada fila trae número, nombre, qué es y un ejemp
 ## Qué hacer
 
 1. **Busca.** Lee lo que describe la persona y elige hasta tres nombres que encajen.
-2. **Pregunta poco.** Dale los nombres con una frase cada uno, y su enlace de muestra si lo tiene, para que vea cuál quiere.
+2. **Pregunta poco.** Dale los nombres con una frase cada uno, para que elija el que quiere.
 3. **Concreta.** Añade cuánto dura, con qué fuerza y qué se mueve. Con eso el resultado se acerca a lo que imaginaba.
 4. **Hazlo o déjalo escrito.**
    - Si está en un proyecto con código, constrúyelo con lo que ya use ese proyecto.
@@ -35,6 +35,6 @@ Si van varios efectos en la misma pieza, que se mueva una cosa cada vez y haya u
 
 Si lo que describe no está en las listas, dilo y descríbelo con palabras claras. No te inventes un nombre.
 
-## Procedencia
+## Licencia
 
-Basada en Motion Prompt, de Shohei Ohtaki, con licencia MIT. Las listas son las suyas en español.
+Los avisos de licencia están en el `LICENSE` y el `NOTICE.md` del plugin. Las listas están en español.

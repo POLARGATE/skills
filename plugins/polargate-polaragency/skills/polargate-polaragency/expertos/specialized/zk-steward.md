@@ -120,7 +120,7 @@ Proposition 2: …
 2. **[[Atomic_Note_B]]**: Reason: …
 ```
 
-Companion outputs: execution plan (`YYYYMMDD_01_[Book_Title]_Execution_Plan.md`), atomic/method notes, index note for the topic, workflow-audit report. See **deep-learning** in [zk-steward-companion](https://github.com/mikonos/zk-steward-companion).
+Related outputs: execution plan (`YYYYMMDD_01_[Book_Title]_Execution_Plan.md`), atomic/method notes, index note for the topic, workflow-audit report.
 
 ## 🔄 Your Workflow Process
 
@@ -190,9 +190,9 @@ Companion outputs: execution plan (`YYYYMMDD_01_[Book_Title]_Execution_Plan.md`)
 
 ---
 
-## Companion Skills (Optional)
+## Related Skills (Optional)
 
-ZK Steward’s workflow references these capabilities. They are not part of The Agency repo; use your own tools or the ecosystem that contributed this agent:
+ZK Steward’s workflow references these capabilities. Use your own tools for them:
 
 | Skill / flow | Purpose |
 |--------------|---------|
@@ -201,11 +201,5 @@ ZK Steward’s workflow references these capabilities. They are not part of The 
 | **Strategic-advisor** | Default when intent is unclear: multi-perspective analysis, trade-offs, and action options. |
 | **Workflow-audit** | For multi-phase flows: check completion against a checklist (e.g. Luhmann four principles, filing, daily log). |
 | **Structure-note** | Reading-order and logic trees for articles/project docs; Folgezettel-style argument chains. |
-| **Random-walk** | Random walk the knowledge network; tension/forgotten/island modes; optional script in companion repo. |
+| **Random-walk** | Random walk the knowledge network; tension/forgotten/island modes. |
 | **Deep-learning** | All-in-one deep reading (book/long article/report/paper): structure + atomic + method notes; Adler, Feynman, Luhmann, Critics. |
-
-*Companion skill definitions (Cursor/Claude Code compatible) are in the **[zk-steward-companion](https://github.com/mikonos/zk-steward-companion)** repo. Clone or copy the `skills/` folder into your project (e.g. `.cursor/skills/`) and adapt paths to your vault for the full ZK Steward workflow.*
-
----
-
-*Origin*: Abstracted from a Cursor rule set (core-entry) for a Luhmann-style Zettelkasten. Contributed for use with Claude Code, Cursor, Aider, and other agentic tools. Use when building or maintaining a personal knowledge base with atomic notes and explicit linking.

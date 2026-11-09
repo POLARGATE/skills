@@ -32,6 +32,6 @@ Esta skill deja borradores. No publica, no programa, no comenta y no se conecta 
 
 Si te da permiso, guarda su banco de historias y su voz en la carpeta del proyecto, en `linkedin/historias.md` y `linkedin/voz.md`, con las plantillas de `referencias/`. Así no hay que preguntar lo mismo dos veces. Nunca guardes contraseñas ni datos de clientes.
 
-## Procedencia
+## Licencia
 
-Basada en LinkedIn Skills, de Serge Bulaev, con licencia MIT. Las guías y referencias siguen en inglés, tal como las escribió el autor salvo los cambios de `REGLAS.md`. Escribe siempre en el idioma de la persona, no en el de las guías.
+Los avisos de licencia están en el `LICENSE` y el `NOTICE.md` del plugin. Las guías y referencias están en inglés. Escribe siempre en el idioma de la persona, no en el de las guías.

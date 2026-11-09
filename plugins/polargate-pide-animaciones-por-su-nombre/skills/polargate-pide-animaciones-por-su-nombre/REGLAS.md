@@ -4,4 +4,3 @@
 - Respeta sus colores, su letra y su marca. Un nombre dice cómo se mueve algo, no cómo tiene que verse.
 - Quien tiene activado reducir movimiento en su aparato debe ver una versión sin animación.
 - Una animación está para explicar algo. Si no aporta, quítala.
-- Los enlaces de muestra llevan a la galería del autor original. Son para ver el efecto en movimiento: no hay que instalar nada de allí.

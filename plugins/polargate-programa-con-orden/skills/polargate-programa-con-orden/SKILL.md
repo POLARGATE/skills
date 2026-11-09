@@ -48,4 +48,4 @@ Cuando una guía nombra otra skill, es la guía de ese nombre en esta misma carp
 
 Adapta el esfuerzo al tamaño del encargo. Un cambio de una línea no necesita plan.
 
-Basada en agent-skills, de Addy Osmani, con licencia MIT.
+Los avisos de licencia están en el `LICENSE` y el `NOTICE.md` del plugin.

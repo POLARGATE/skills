@@ -10,13 +10,17 @@ Nunca mandamos a nadie a instalar desde el GitHub de otro. Copiamos el código, 
 - **GPL o parecidas:** se puede, y nuestra versión sigue con esa misma licencia.
 - **Sin licencia:** no la copiamos. Sin licencia, todos los derechos son de su autor. Le pedimos permiso por escrito o escribimos una propia desde cero, sin copiar su texto.
 
-## Siempre con crédito
+## El crédito, solo en la licencia
 
-Cada skill adoptada lleva en su README el autor, el repo original y el commit del que partimos: "Basada en la skill de X".
+Cada herramienta sale con nombre propio de Polargate. El README, la ficha de la Biblioteca, los vídeos, los carruseles, los textos para redes y las descripciones de los pull requests no nombran el repo, el GitHub, las estrellas ni el autor de partida.
 
-## Siguiendo al original
+El crédito que exige la licencia va solo en los ficheros de licencia del plugin: `LICENSE` con el aviso de copyright y la licencia de partida, y `NOTICE.md` con la obra de partida (repo y commit) y lo que hemos cambiado. Así se cumple la licencia y se puede auditar.
 
-Revisamos los cambios del original y los traemos con un pull request, que alguien lee antes de mezclarlo. Una skill da instrucciones a una IA que trabaja en tu ordenador: nada entra sin revisar.
+Nada de lo que publicamos lleva firma de una IA: ni líneas de coautoría de una IA, ni enlaces de sesión, ni avisos de que lo ha hecho una IA. Antes de mezclar un pull request, los cambios pasan un filtro automático y tres revisiones por separado.
+
+## Siguiendo las mejoras
+
+Revisamos los cambios de la base y los traemos con un pull request, que alguien lee antes de mezclarlo. Una skill da instrucciones a una IA que trabaja en tu ordenador: nada entra sin revisar.
 
 ## ¿Has hecho una skill que quieres que mantengamos?
 

@@ -23,4 +23,4 @@ La lista está en `proveedores.json`: cada servicio con su web, sus modelos, sus
 - `context` es cuánto texto admite de una vez.
 - `country` es el país del servicio. `CN` es China.
 
-Basada en awesome-free-llm-apis, de mnfst, con licencia CC0.
+Los avisos de licencia están en el `LICENSE` y el `NOTICE.md` del plugin.

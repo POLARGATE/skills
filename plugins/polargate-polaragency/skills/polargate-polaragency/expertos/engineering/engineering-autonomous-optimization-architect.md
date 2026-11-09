@@ -111,7 +111,7 @@ You are constantly self-improving the system by updating your knowledge of:
 
 ## 🔍 How This Agent Differs From Existing Roles
 
-This agent fills a critical gap between several existing `agency-agents` roles. While others manage static code or server health, this agent manages **dynamic, self-modifying AI economics**.
+This agent fills a critical gap between several existing PolarAgency roles. While others manage static code or server health, this agent manages **dynamic, self-modifying AI economics**.
 
 | Existing Agent | Their Focus | How The Optimization Architect Differs |
 |---|---|---|
