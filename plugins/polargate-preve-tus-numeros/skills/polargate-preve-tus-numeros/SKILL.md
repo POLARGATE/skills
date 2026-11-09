@@ -35,8 +35,8 @@ Si falta Python, dile cómo instalarlo en su sistema y espera.
 5. **Compruébala.** Si hay historia de sobra, guarda aparte el último trozo, prevé ese trozo y compáralo con lo que pasó de verdad. Di cuánto se equivocó, en lenguaje normal: «en los últimos 6 meses falló de media un 8 %».
 6. **Enséñala.** Una tabla corta y un gráfico sencillo con el histórico, la previsión y la horquilla `lower_80` a `upper_80`. Explícala así: «lo normal es que quede entre X e Y».
 
-Detalles técnicos, si algo falla: `referencias/preparar-datos.md`, `referencias/requisitos.md` y `referencias/guia-original.md`.
+Detalles técnicos, si algo falla: `referencias/preparar-datos.md`, `referencias/requisitos.md` y `referencias/guia-tecnica.md`.
 
-## Procedencia
+## Licencia
 
-Basada en TimesFM, de Google Research, con licencia Apache-2.0. Ver `NOTICE.txt`.
+Los avisos de licencia están en el `LICENSE` y el `NOTICE.md` del plugin.

@@ -1,4 +1,4 @@
-> Guía del autor original, en inglés. Manda `REGLAS.md`. Para instalar, usa solo los pasos de `SKILL.md`: el paquete de PyPI es una versión antigua. No uses el modelo 3.0.
+> Guía en inglés. Manda `REGLAS.md`. Para instalar, usa solo los pasos de `SKILL.md`: el paquete de PyPI es una versión antigua. No uses el modelo 3.0.
 
 # TimesFM Forecasting
 

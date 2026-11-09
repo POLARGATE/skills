@@ -1,6 +1,6 @@
 ---
 name: polargate-programa-con-orden
-description: Hace que Claude programe con el orden de un buen equipo: aclara qué hay que hacer, lo parte en pasos pequeños, prueba cada paso, revisa antes de dar nada por hecho y publica sin sustos. Usar cuando alguien vaya a construir una función, arreglar un error, revisar código, escribir pruebas, mejorar la seguridad o la velocidad, preparar una publicación, o diga «hazlo bien», «sin romper nada» o «planifica esto antes».
+description: "Hace que Claude programe con el orden de un buen equipo: aclara qué hay que hacer, lo parte en pasos pequeños, prueba cada paso, revisa antes de dar nada por hecho y publica sin sustos. Usar cuando alguien vaya a construir una función, arreglar un error, revisar código, escribir pruebas, mejorar la seguridad o la velocidad, preparar una publicación, o diga «hazlo bien», «sin romper nada» o «planifica esto antes»."
 ---
 
 # Programa con orden
@@ -48,4 +48,4 @@ Cuando una guía nombra otra skill, es la guía de ese nombre en esta misma carp
 
 Adapta el esfuerzo al tamaño del encargo. Un cambio de una línea no necesita plan.
 
-Basada en agent-skills, de Addy Osmani, con licencia MIT.
+Los avisos de licencia están en el `LICENSE` y el `NOTICE.md` del plugin.

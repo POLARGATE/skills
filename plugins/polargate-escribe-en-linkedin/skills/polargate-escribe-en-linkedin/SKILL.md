@@ -1,6 +1,6 @@
 ---
 name: polargate-escribe-en-linkedin
-description: Escribe posts de LinkedIn en español que suenan a la persona y no a una IA. Primero le saca historias y datos reales con preguntas, luego elige un gancho, escribe el borrador y le quita las muletillas de IA. También convierte un artículo, vídeo o hilo en un post, planifica un mes de contenido y mejora el perfil. Usar cuando alguien pida un post de LinkedIn, ideas para LinkedIn, revisar un borrador, reescribir algo que suena a ChatGPT, o «write me a LinkedIn post». Solo deja borradores: nunca publica.
+description: "Escribe posts de LinkedIn en español que suenan a la persona y no a una IA. Primero le saca historias y datos reales con preguntas, luego elige un gancho, escribe el borrador y le quita las muletillas de IA. También convierte un artículo, vídeo o hilo en un post, planifica un mes de contenido y mejora el perfil. Usar cuando alguien pida un post de LinkedIn, ideas para LinkedIn, revisar un borrador, reescribir algo que suena a ChatGPT, o «write me a LinkedIn post». Solo deja borradores: nunca publica."
 ---
 
 # Escribe en LinkedIn
@@ -32,6 +32,6 @@ Esta skill deja borradores. No publica, no programa, no comenta y no se conecta 
 
 Si te da permiso, guarda su banco de historias y su voz en la carpeta del proyecto, en `linkedin/historias.md` y `linkedin/voz.md`, con las plantillas de `referencias/`. Así no hay que preguntar lo mismo dos veces. Nunca guardes contraseñas ni datos de clientes.
 
-## Procedencia
+## Licencia
 
-Basada en LinkedIn Skills, de Serge Bulaev, con licencia MIT. Las guías y referencias siguen en inglés, tal como las escribió el autor salvo los cambios de `REGLAS.md`. Escribe siempre en el idioma de la persona, no en el de las guías.
+Los avisos de licencia están en el `LICENSE` y el `NOTICE.md` del plugin. Las guías y referencias están en inglés. Escribe siempre en el idioma de la persona, no en el de las guías.

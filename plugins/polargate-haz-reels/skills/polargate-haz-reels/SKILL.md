@@ -1,6 +1,6 @@
 ---
 name: polargate-haz-reels
-description: Hace vídeos con código en tu ordenador, sin cámara y sin pagar nada. Tiene dos motores: HyperFrames (HTML y animación que se renderizan a MP4, con 15 estilos de motion design listos) y PolarMotion (66 estilos de película: pizarra, acuarela, tinta china, dibujos animados, noticiario antiguo, pixel art, infografía, producto en 3D…, con voz y música locales). Usar para reels, TikToks, explicaciones, títulos y animaciones con texto, o cuando pidan un vídeo en un estilo concreto, con el formato vertical listo para publicar en redes.
+description: "Hace vídeos con código en tu ordenador, sin cámara y sin pagar nada. Tiene dos motores: HyperFrames (HTML y animación que se renderizan a MP4, con 15 estilos de motion design listos) y PolarMotion (66 estilos de película: pizarra, acuarela, tinta china, dibujos animados, noticiario antiguo, pixel art, infografía, producto en 3D…, con voz y música locales). Usar para reels, TikToks, explicaciones, títulos y animaciones con texto, o cuando pidan un vídeo en un estilo concreto, con el formato vertical listo para publicar en redes."
 ---
 
 # Vídeo con código

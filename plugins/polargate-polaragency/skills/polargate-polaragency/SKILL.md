@@ -118,6 +118,6 @@ Para la mayoría de encargos basta con uno de estos.
 | Mapas y datos geográficos | mapas, ubicaciones y análisis del territorio | 13 | `indice/gis.md` |
 | Especialistas | perfiles muy concretos de otros sectores | 59 | `indice/specialized.md` |
 
-## Créditos
+## Licencia
 
-Basada en agency-agents, de AgentLand Contributors, con licencia MIT (aviso en `LICENSE`). Los ficheros de `expertos/` son los originales en inglés; solo hemos cambiado la raya larga por comas o dos puntos.
+Los avisos de licencia están en el `LICENSE` y el `NOTICE.md` del plugin. Los ficheros de `expertos/` están en inglés.

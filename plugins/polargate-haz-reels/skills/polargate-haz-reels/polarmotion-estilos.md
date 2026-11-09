@@ -1,10 +1,10 @@
 # Los 66 estilos de PolarMotion
 
-Busca el estilo por su nombre en español. La carpeta es la que se lee después en `~/polarmotion/styles/<carpeta>/STYLE.md`. El nombre original (en inglés) también vale.
+Busca el estilo por su nombre en español. La carpeta es la que se lee después en `~/polarmotion/styles/<carpeta>/STYLE.md`. El nombre en inglés también vale.
 
 ## Montaje y documental (8)
 
-| Estilo | Nombre original | Carpeta | Para |
+| Estilo | Nombre en inglés | Carpeta | Para |
 |---|---|---|---|
 | Noticia con rótulos | Caption News | `caption-news` | noticias para redes, explicar un informe, datos en vídeo corto; se entiende sin sonido |
 | Noticiario de los años 20 | 1920s Newsreel | `newsreel` | historias del pasado, modas y épocas, aniversarios |
@@ -17,7 +17,7 @@ Busca el estilo por su nombre en español. La carpeta es la que se lee después 
 
 ## Explicar con pruebas (8)
 
-| Estilo | Nombre original | Carpeta | Para |
+| Estilo | Nombre en inglés | Carpeta | Para |
 |---|---|---|---|
 | Informe por satélite | Satellite Briefing | `satellite-briefing` | clima, noticias explicadas, geografía |
 | Panel de ingeniería | Engineering Briefing Board | `briefing-board` | ingeniería, comparar opciones, informes |
@@ -30,7 +30,7 @@ Busca el estilo por su nombre en español. La carpeta es la que se lee después 
 
 ## Dibujo y pintura (8)
 
-| Estilo | Nombre original | Carpeta | Para |
+| Estilo | Nombre en inglés | Carpeta | Para |
 |---|---|---|---|
 | Cuento con ceras | Crayon Picture Book | `crayon-book` | cuentos infantiles, historias para dormir, aprender jugando |
 | Acuarela | Watercolor Brush | `watercolor` | documentales de naturaleza, viajes, ciencia explicada |
@@ -43,7 +43,7 @@ Busca el estilo por su nombre en español. La carpeta es la que se lee después 
 
 ## Tradiciones de Asia (4)
 
-| Estilo | Nombre original | Carpeta | Para |
+| Estilo | Nombre en inglés | Carpeta | Para |
 |---|---|---|---|
 | Teatro de sombras | Shadow Puppetry | `shadow-puppet` | mitos y leyendas, patrimonio, fiestas |
 | Ukiyo-e (grabado japonés) | Ukiyo-e | `ukiyoe` | viajes, cultura japonesa, poesía |
@@ -52,7 +52,7 @@ Busca el estilo por su nombre en español. La carpeta es la que se lee después 
 
 ## Imprenta y grabado (6)
 
-| Estilo | Nombre original | Carpeta | Para |
+| Estilo | Nombre en inglés | Carpeta | Para |
 |---|---|---|---|
 | Impresión risográfica | Risograph Print | `risograph` | marcas independientes, fanzines, estilo de vida |
 | Expediente en trama de puntos | Halftone Dossier | `halftone-dossier` | humor, mascotas, vídeos cortos para redes |
@@ -63,7 +63,7 @@ Busca el estilo por su nombre en español. La carpeta es la que se lee después 
 
 ## Gráfico y tipografía (7)
 
-| Estilo | Nombre original | Carpeta | Para |
+| Estilo | Nombre en inglés | Carpeta | Para |
 |---|---|---|---|
 | Diseño suizo en movimiento | Swiss Motion Graphics | `swiss-motion` | identidad de marca, eventos, enseñar diseño |
 | Créditos de espías de los 60 | 60s Spy Title Sequence | `spy-titles` | cabeceras, aperturas de eventos, tráileres |
@@ -75,7 +75,7 @@ Busca el estilo por su nombre en español. La carpeta es la que se lee después 
 
 ## Información y presentaciones (8)
 
-| Estilo | Nombre original | Carpeta | Para |
+| Estilo | Nombre en inglés | Carpeta | Para |
 |---|---|---|---|
 | Historia con datos | Data Storytelling | `dataviz` | periodismo de datos, informes, clima y ciencia |
 | Infografía isométrica | Isometric Infographic | `iso-infographic` | explicar un proceso, cadenas de suministro, memorias anuales |
@@ -88,7 +88,7 @@ Busca el estilo por su nombre en español. La carpeta es la que se lee después 
 
 ## Dibujos animados y anime (4)
 
-| Estilo | Nombre original | Carpeta | Para |
+| Estilo | Nombre en inglés | Carpeta | Para |
 |---|---|---|---|
 | Dibujos animados de los años 30 | 1930s Rubber Hose Cartoon | `rubber-hose` | comida y bebida, anuncios retro, niños |
 | Anime de los 80 | 80s Cel Anime | `cel-anime-80s` | videoclips, tráileres de juegos, nostalgia |
@@ -97,7 +97,7 @@ Busca el estilo por su nombre en español. La carpeta es la que se lee después 
 
 ## Videojuegos (4)
 
-| Estilo | Nombre original | Carpeta | Para |
+| Estilo | Nombre en inglés | Carpeta | Para |
 |---|---|---|---|
 | Juego de rol en píxeles (16 bits) | 16-bit Pixel RPG | `pixel-rpg` | tráileres de juegos, resúmenes, nostalgia |
 | HD-2D | HD-2D | `hd-2d` | tráileres de juegos, fantasía, historias |
@@ -106,14 +106,14 @@ Busca el estilo por su nombre en español. La carpeta es la que se lee después 
 
 ## Cine de época (2)
 
-| Estilo | Nombre original | Carpeta | Para |
+| Estilo | Nombre en inglés | Carpeta | Para |
 |---|---|---|---|
 | Cine mudo de los años 20 | 1920s Silent Film | `silent-film` | humor, marcas retro, historias sin palabras |
 | Grabación encontrada inquietante | Liminal Found Footage | `backrooms` | terror, misterio, adelantos de juegos |
 
 ## Materiales y 3D (7)
 
-| Estilo | Nombre original | Carpeta | Para |
+| Estilo | Nombre en inglés | Carpeta | Para |
 |---|---|---|---|
 | Piezas de construcción | Brick Toy | `brick-toy` | juguetes y niños, montar un producto, espacio |
 | Libro desplegable | Paper Pop-up Book | `paper-popup` | libros infantiles, tráileres de juegos, historias |

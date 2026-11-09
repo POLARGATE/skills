@@ -1,6 +1,6 @@
 ---
 name: polargate-mira-tu-seo
-description: Trae datos SEO reales a Claude con OpenSEO, una herramienta abierta que se instala en tu propia cuenta y paga DataForSEO por uso: palabras clave, competidores, enlaces, auditoría de webs, posiciones, SEO local y visibilidad en IAs. Usar cuando pidan investigar keywords, ver por qué posiciona un competidor, auditar una web o seguir posiciones, y también para montar OpenSEO por primera vez.
+description: "Trae datos SEO reales a Claude con OpenSEO, una herramienta abierta que se instala en tu propia cuenta y paga DataForSEO por uso: palabras clave, competidores, enlaces, auditoría de webs, posiciones, SEO local y visibilidad en IAs. Usar cuando pidan investigar keywords, ver por qué posiciona un competidor, auditar una web o seguir posiciones, y también para montar OpenSEO por primera vez."
 ---
 
 # SEO con datos reales

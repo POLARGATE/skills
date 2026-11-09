@@ -1,4 +1,4 @@
-> Guía del autor original, en inglés. Manda `REGLAS.md`. Los pasos de publicar y de conectar servicios se han quitado.
+> Guía en inglés. Manda `REGLAS.md`. Los pasos de publicar y de conectar servicios se han quitado.
 
 # LinkedIn Interviewer
 

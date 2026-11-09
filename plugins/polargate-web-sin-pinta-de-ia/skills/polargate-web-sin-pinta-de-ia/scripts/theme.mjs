@@ -404,7 +404,7 @@ async function photos() {
         const url = thumbOf(p, w);
         if (!url.startsWith('https://upload.wikimedia.org/')) throw new Error('not a Wikimedia Commons file');
         let res;
-        for (let t = 0; t < 4; t++) { res = await fetch(url, { headers: { 'User-Agent': 'Hallmark/2.0 (https://github.com/Nutlope/hallmark; theme.mjs photos --save)' }, signal: AbortSignal.timeout(60000) }); if (res.status !== 429) break; await new Promise((ok) => setTimeout(ok, 10000 * (t + 1))); }
+        for (let t = 0; t < 4; t++) { res = await fetch(url, { headers: { 'User-Agent': 'Polargate-web/1.0 (https://polargate.ai; hello@polargate.ai; theme.mjs photos --save)' }, signal: AbortSignal.timeout(60000) }); if (res.status !== 429) break; await new Promise((ok) => setTimeout(ok, 10000 * (t + 1))); }
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         if (!/^image\//.test(res.headers.get('content-type') || '')) throw new Error(`not an image (${res.headers.get('content-type') || 'no content-type'})`);
         writeFileSync(file, Buffer.from(await res.arrayBuffer())); p.saved = file;
