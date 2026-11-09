@@ -1,6 +1,6 @@
 ---
 name: polargate-mira-tu-seo
-description: "Trae datos SEO reales a Claude con OpenSEO, una herramienta abierta que se instala en tu propia cuenta y paga DataForSEO por uso: palabras clave, competidores, enlaces, auditoría de webs, posiciones, SEO local y visibilidad en IAs. Usar cuando pidan investigar keywords, ver por qué posiciona un competidor, auditar una web o seguir posiciones, y también para montar OpenSEO por primera vez."
+description: "Trae datos SEO reales a Claude con el panel de SEO de Polargate, que se instala en tu propia cuenta, y pagas a DataForSEO solo lo que consultas: palabras clave, competidores, enlaces, auditoría de webs, posiciones, SEO local y visibilidad en IAs. Usar cuando pidan investigar keywords, ver por qué posiciona un competidor, auditar una web o seguir posiciones, y también para montar el panel por primera vez."
 ---
 
 # SEO con datos reales
@@ -11,7 +11,7 @@ Antes de nada, comprueba si hay conexión llamando a `whoami`. No des OpenSEO po
 
 ## Montarlo
 
-OpenSEO es de código abierto (licencia MIT). Esta guía instala nuestra copia revisada, `POLARGATE/open-seo`, en tu Cloudflare, sin servidor propio.
+El panel de SEO de Polargate es de código abierto (licencia MIT). Esta guía lo instala desde `POLARGATE/open-seo` en tu Cloudflare, sin servidor propio.
 
 Hace falta:
 
@@ -47,7 +47,7 @@ Cuando termine:
 3. En Claude, añade un conector personalizado con la URL `https://TU-WORKER/mcp` y entra con esa cuenta. Se añade una vez por cuenta de Claude.
 4. Abre una sesión nueva y llama a `whoami`.
 
-Para actualizar, lee antes los cambios, porque es código de un tercero:
+Para actualizar, lee antes los cambios:
 
 ```bash
 git pull --ff-only

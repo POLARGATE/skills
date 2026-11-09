@@ -1,6 +1,6 @@
 # Proyectos: 7 especialistas
 
-Para: planificar, coordinar, actas y seguimiento. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: planificar, coordinar, actas y seguimiento. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

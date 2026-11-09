@@ -5,7 +5,7 @@
 ## Overview
 
 TimesFM (Time Series Foundation Model) is a pretrained decoder-only foundation model
-developed by Google Research for time-series forecasting. It works **zero-shot**, feed it
+for time-series forecasting. It works **zero-shot**, feed it
 any univariate time series and it returns point forecasts with calibrated quantile
 prediction intervals, no training required.
 
@@ -58,7 +58,7 @@ This script checks:
 4. **Python version**, requires 3.10+
 5. **Existing installation**, checks if `timesfm` and `torch` are installed
 
-> **Note:** Model weights are **NOT stored in this repository**. TimesFM weights (~800 MB)
+> **Note:** Model weights are **not included in this skill**. TimesFM weights (~800 MB)
 > download on-demand from HuggingFace on first use and cache in `~/.cache/huggingface/`.
 
 ```mermaid
@@ -441,13 +441,6 @@ cd examples/covariates-forecasting && python demo_covariates.py
 
 - TimesFM 1.0/2.0: must pass `freq=[0]` for monthly data
 - TimesFM 2.5: no frequency flag, it was removed
-
-## Resources
-
-- **Paper**: [A Decoder-Only Foundation Model for Time-Series Forecasting](https://arxiv.org/abs/2310.10688) (ICML 2024)
-- **HuggingFace**: https://huggingface.co/collections/google/timesfm-release-66e4be5fdb56e960c1e482a6
-- **Google Blog**: https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/
-- **BigQuery Integration**: https://cloud.google.com/bigquery/docs/timesfm-model
 
 ## Quality Checklist
 

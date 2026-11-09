@@ -68,11 +68,11 @@ If the user knows what they want the post to earn, start here, then narrow by to
 
 ## Steps
 
-**Voice profile first (all drafts).** If `../referencias/plantilla-voz.md` has `filled: yes`, load it and match the user's voice fingerprint, hard rules, and CTA/link style throughout. If it is not filled, mention once that `linkedin-humanizer --mode profile` can learn their voice from a few posts, then proceed with the generic voice rules. If `../referencias/plantilla-historias.md` has `filled: yes`, load it too and take concrete details (numbers, dates, named projects) from there instead of asking mid-draft. Never invent a figure that is not in it; if the bank has nothing that fits, ask the user or offer `linkedin-interviewer`.
+**Voice profile first (all drafts).** If `linkedin/voz.md` has `filled: yes`, load it and match the user's voice fingerprint, hard rules, and CTA/link style throughout. If it is not filled, mention once that `quitar-pinta-de-ia --mode profile` can learn their voice from a few posts, then proceed with the generic voice rules. If `linkedin/historias.md` has `filled: yes`, load it too and take concrete details (numbers, dates, named projects) from there instead of asking mid-draft. Never invent a figure that is not in it; if the bank has nothing that fits, ask the user or offer `entrevista`.
 
 **Founder mode (when the writer is a founder).** Before picking a formula, open `../referencias/comun/founder-topics.md` and offer a founder **angle** (A1-A10) that fits their goal. The angle picks the *territory* (reprice the category, the scarce-shots math, the delegation line, and so on); several angles pin the formula for you (A9 uses F17, A10 uses F18+F20). Founder angles compound trust with a narrow audience of investors, hires, and design partners rather than chasing broad reach. Fill the angle's bracketed slots with the founder's real numbers, then continue from step 3.
 
-**Spine from an interview (skip the asking).** If `linkedin-interviewer --mode post` handed over a five-line spine (Moment, Number, Correction, Opposition, Ask), that spine is the skeleton: Moment opens the post, Number is the proof, Correction is the turn, Opposition fixes the audience, Ask is the close. Do not re-ask for anything the spine already carries, and do not fill a line the interview left labelled empty. Pick the formula that fits the spine rather than bending the spine to a formula; if none fits, say which line is the obstacle.
+**Spine from an interview (skip the asking).** If `entrevista --mode post` handed over a five-line spine (Moment, Number, Correction, Opposition, Ask), that spine is the skeleton: Moment opens the post, Number is the proof, Correction is the turn, Opposition fixes the audience, Ask is the close. Do not re-ask for anything the spine already carries, and do not fill a line the interview left labelled empty. Pick the formula that fits the spine rather than bending the spine to a formula; if none fits, say which line is the obstacle.
 
 1. **Gather inputs.** Topic, angle, draft ideas if the user has them, target audience (founders / operators / marketers), desired length (short 300-500 / medium 900-1300 / long 1500-1900 chars).
 2. **Pick the formula.** First ask (or infer) the goal: comments, reposts, likes, or saves. Use the "Pick by goal first" table to shortlist, then suggest 2-3 formulas that also fit the topic and let the user pick. Show the reference engagement number next to each, plus the formula's 2026 caveat if it has one. Two hook rules apply regardless of formula: **never open with a question** (-34% median likes; the question goes at the close, +3%) and **prefer a number-first line** (+34% median likes; both MagicPost vendor data, proprietary AI-score). If the best hook you have is a question, invert it into the number that answers it.
@@ -85,7 +85,7 @@ If the user knows what they want the post to earn, start here, then narrow by to
    - 0-2 hashtags, placed at end
    - No external links in body (move to first comment)
 4. **Humanizer pass.** Scrub 2026 AI vocab by density, cap em dashes (about one per 100 words), break stacked triads, generic openers and reveal bridges. Add at least 1 specific number, 1 named entity, 1 first-person concrete detail per 100 words.
-5. **Run audit.** Optionally invoke `linkedin-humanizer --mode audit` for algorithm + voice checks before showing to user.
+5. **Run audit.** Optionally invoke `quitar-pinta-de-ia --mode audit` for algorithm + voice checks before showing to user.
 7. **Approval card.** Show: formula used, full draft, char count, suggested posting window (Tue/Wed/Thu 7:30-9:00 AM local), reaction targets from likely commenters, and the illustration (if any).
 
 ## Hard rules (from user feedback)
@@ -120,5 +120,4 @@ Global voice rules: see root `SKILL.md` §Voice rules. Additional skill-specific
 
 ## Related skills
 
-- `linkedin-humanizer`, aggressive AI-tell scrubber, plus `--mode audit` for pre-publish review
-- `linkedin-hook-extractor`, reverse-engineer a hook from a viral post you admire
+- `quitar-pinta-de-ia`, aggressive AI-tell scrubber, plus `--mode audit` for pre-publish review

@@ -1,6 +1,6 @@
 # Especialistas: 59 especialistas
 
-Para: perfiles muy concretos de otros sectores. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: perfiles muy concretos de otros sectores. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

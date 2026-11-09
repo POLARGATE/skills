@@ -177,7 +177,6 @@ description: |
   service tickets (TGS) with RC4 encryption within a short time window.
   This pattern is characteristic of Kerberoasting, where an attacker
   requests service tickets to crack service account passwords offline.
-author: Threat Intelligence Analyst
 date: 2024/01/15
 modified: 2024/06/01
 references:
@@ -215,7 +214,6 @@ description: |
   Detects common PowerShell download cradle patterns used by threat actors
   for initial payload delivery. Covers Net.WebClient, Invoke-WebRequest,
   Invoke-Expression combinations, and encoded command variants.
-author: Threat Intelligence Analyst
 date: 2024/01/15
 references:
   - https://attack.mitre.org/techniques/T1059/001/

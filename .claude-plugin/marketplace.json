@@ -105,7 +105,7 @@
       "name": "polargate-mira-tu-seo",
       "source": "./plugins/polargate-mira-tu-seo",
       "description": "Pregúntale a Claude por qué no sales en Google y te responde con tus números, no con consejos de manual.",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "category": "marketing",
       "keywords": [
         "seo",
@@ -117,7 +117,7 @@
       "name": "polargate-entiende-tu-proyecto",
       "source": "./plugins/polargate-entiende-tu-proyecto",
       "description": "Claude hace un mapa de tu código y deja de perderse en cada sesión.",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "category": "desarrollo",
       "keywords": [
         "codigo",
@@ -128,7 +128,7 @@
       "name": "polargate-revisa-la-seguridad",
       "source": "./plugins/polargate-revisa-la-seguridad",
       "description": "Para saber qué agujeros tiene tu app antes de que los encuentre otro.",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "category": "desarrollo",
       "keywords": [
         "seguridad",
@@ -139,7 +139,7 @@
       "name": "polargate-haz-reels",
       "source": "./plugins/polargate-haz-reels",
       "description": "Le dices a Claude qué quieres contar y te devuelve el vídeo listo para subir.",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "category": "marketing",
       "keywords": [
         "video",
@@ -164,7 +164,7 @@
       "name": "polargate-escribe-en-linkedin",
       "source": "./plugins/polargate-escribe-en-linkedin",
       "description": "Para que tus posts digan algo tuyo y suenen a ti.",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "category": "Marketing",
       "keywords": [
         "linkedin",
@@ -176,7 +176,7 @@
       "name": "polargate-preve-tus-numeros",
       "source": "./plugins/polargate-preve-tus-numeros",
       "description": "Para saber por dónde irán tus ventas, reservas o gastos.",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "category": "Negocio",
       "keywords": [
         "prevision",
@@ -200,7 +200,7 @@
       "name": "polargate-programa-con-orden",
       "source": "./plugins/polargate-programa-con-orden",
       "description": "Para que no se lance a escribir código sin pensar.",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "category": "development",
       "keywords": [
         "claude-code",
@@ -213,7 +213,7 @@
       "name": "polargate-usa-ia-gratis",
       "source": "./plugins/polargate-usa-ia-gratis",
       "description": "Para probar tus ideas con IA sin gastar dinero.",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "category": "development",
       "keywords": [
         "claude-code",
@@ -226,7 +226,7 @@
       "name": "polargate-polaragency",
       "source": "./plugins/polargate-polaragency",
       "description": "Una agencia entera dentro de Claude Code: 283 especialistas de IA en 18 departamentos.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "productivity",
       "keywords": [
         "claude-code",

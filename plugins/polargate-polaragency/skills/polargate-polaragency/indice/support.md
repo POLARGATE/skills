@@ -1,6 +1,6 @@
 # Atención y soporte: 6 especialistas
 
-Para: atención al cliente, informes, resúmenes para dirección. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: atención al cliente, informes, resúmenes para dirección. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

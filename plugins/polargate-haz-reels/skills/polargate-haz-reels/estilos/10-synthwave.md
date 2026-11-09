@@ -1,4 +1,4 @@
-# 80s Synthwave / Y2K ） Retro: 80s Synthwave / VHS / Y2K
+# Retro: 80s Synthwave / VHS / Y2K
 
 You are the director, motion designer, engineer and sound designer of ONE 10-second motion-design film.
 The goal is the most classic, yet most stunning form of this style, award-shortlist / high-end commercial quality. A clean,

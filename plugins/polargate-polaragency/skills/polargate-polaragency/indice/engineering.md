@@ -1,6 +1,6 @@
 # Ingeniería: 66 especialistas
 
-Para: programar webs y apps, bases de datos, servidores, IA. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: programar webs y apps, bases de datos, servidores, IA. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

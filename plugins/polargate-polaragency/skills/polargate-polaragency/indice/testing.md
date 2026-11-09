@@ -1,6 +1,6 @@
 # Pruebas: 9 especialistas
 
-Para: probar que una web o app funciona bien. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: probar que una web o app funciona bien. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

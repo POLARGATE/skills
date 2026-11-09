@@ -1,13 +1,13 @@
 # LinkedIn Rules Explainer
 
-The educational backbone for the humanizer package. Every rule in `linkedin-humanizer` came from somewhere, Wikipedia's "Signs of AI writing" taxonomy, OriginalityAI's heuristics, GPTZero's stylometry, or 2026 LinkedIn-specific patterns. Some are real forensics (a `[oaicite:0]` marker is undefendable). Some are corporate-speak bans the user wants out for taste reasons. Some are aesthetic overreach, patterns Lincoln, Dickinson, and Didion built careers on, now flagged because GPT-4 happens to use them too.
+The educational backbone for the humanizer package. Every rule in `quitar-pinta-de-ia` came from somewhere, Wikipedia's "Signs of AI writing" taxonomy, OriginalityAI's heuristics, GPTZero's stylometry, or 2026 LinkedIn-specific patterns. Some are real forensics (a `[oaicite:0]` marker is undefendable). Some are corporate-speak bans the user wants out for taste reasons. Some are aesthetic overreach, patterns Lincoln, Dickinson, and Didion built careers on, now flagged because GPT-4 happens to use them too.
 
 This skill answers a simple question: **for any given rule, is the AI-tell verdict forensic, strict, or aesthetic, and how strong is the defense?**
 
 ## When to use
 
 - Defending a stylistic choice that a detector flagged ("but Emily Dickinson uses em dashes")
-- Arguing the controversial post about AI-rule overreach
+- Arguing that a rule is aesthetic overreach, not a real AI signal
 - Auditing humanizer output before applying a rewrite
 - Teaching a team which rules are real signals vs which are taste calls
 - Reviewing a false positive from OriginalityAI / GPTZero / Pangram
@@ -53,7 +53,7 @@ These are patterns flagged because LLMs happen to use them, not because they sig
 
 Examples: a single em dash (Emily Dickinson, Cormac McCarthy), the rule of three (Lincoln, Caesar, Churchill), passive voice (Watson & Crick, Joan Didion, all scientific writing), the word "robust" (a century of epidemiology and engineering papers), curly quotes (automatic in Word/Pages, New Yorker house style since 1925).
 
-**Defense strength: high.** These are the rules Sergey's controversial post is built on.
+**Defense strength: high.** These patterns are taste calls, not evidence of AI, so the strict tier leaves them alone.
 
 ## Non-negotiable rules
 
@@ -79,5 +79,5 @@ Examples: a single em dash (Emily Dickinson, Cormac McCarthy), the rule of three
 
 ## Related skills
 
-- `linkedin-humanizer`, applies the rules (this skill explains them)
+- `quitar-pinta-de-ia`, applies the rules (this skill explains them)
 - `post-audit.md` (sibling), flags rules in a draft

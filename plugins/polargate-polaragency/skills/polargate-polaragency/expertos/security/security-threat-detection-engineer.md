@@ -79,7 +79,6 @@ description: |
 references:
   - https://attack.mitre.org/techniques/T1059/001/
   - https://attack.mitre.org/techniques/T1027/010/
-author: Detection Engineering Team
 date: 2025/03/15
 modified: 2025/06/20
 tags:

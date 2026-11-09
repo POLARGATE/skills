@@ -1,6 +1,6 @@
 # Investigación: 1 especialista
 
-Para: estudiar un tema a fondo. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: estudiar un tema a fondo. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

@@ -1,6 +1,6 @@
 # Mapas y datos geográficos: 13 especialistas
 
-Para: mapas, ubicaciones y análisis del territorio. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: mapas, ubicaciones y análisis del territorio. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|
