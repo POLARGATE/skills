@@ -19,7 +19,7 @@ En Claude Code:
 Y después instala las que quieras, por ejemplo:
 
 ```
-/plugin install agentic-build-review-loop@polargate
+/plugin install polargate-revisa-lo-que-hace-claude@polargate
 ```
 
 Para recibir las mejoras: `/plugin marketplace update polargate`.
