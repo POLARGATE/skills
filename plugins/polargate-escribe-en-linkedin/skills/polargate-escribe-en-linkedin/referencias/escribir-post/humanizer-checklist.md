@@ -95,7 +95,7 @@ Decaying 2023-24 set (delve, tapestry, realm, journey, paradigm, cultivate): cou
 ## Final voice check
 
 - Capitalize all proper names (people, companies, products)
-- Capitalize company/product names (HubSpot, Claude, Co.Actor)
+- Capitalize company/product names (HubSpot, Claude, Polargate)
 - Don't frame LinkedIn as inferior on LinkedIn
 - Don't name-drop own product more than once
 - One sharp insight, not three vague ones

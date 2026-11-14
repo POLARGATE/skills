@@ -1,6 +1,6 @@
 # Anuncios: 7 especialistas
 
-Para: Google Ads, anuncios en redes, creatividades, auditar cuentas. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: Google Ads, anuncios en redes, creatividades, auditar cuentas. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

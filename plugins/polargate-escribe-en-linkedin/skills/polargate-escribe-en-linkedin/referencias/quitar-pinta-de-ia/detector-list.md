@@ -43,7 +43,7 @@ Five primary detectors plus optional extras. Each entry covers: API endpoint, au
 **Known issues:**
 - Marketed as "99% accurate" but multiple independent tests put real-world accuracy in the 60-80% range.
 - Aggressively flags any text that has been edited by Grammarly or similar tools, since editing patterns mimic LLM patterns.
-- Sergey's team meeting test (2026): scored a hand-written article **100% AI** while GPTZero scored the same article 82% and ZeroGPT scored 50%. 50-point spread on identical text.
+- A 2026 team test: one detector scored a hand-written article **100% AI** while GPTZero scored the same article 82% and ZeroGPT scored 50%. 50-point spread on identical text.
 
 
 ---

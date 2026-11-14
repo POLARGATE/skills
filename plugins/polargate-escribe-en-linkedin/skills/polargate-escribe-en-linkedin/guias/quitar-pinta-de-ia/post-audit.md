@@ -5,7 +5,7 @@ Run any post draft through the 2026 heuristic checklist. Catches AI tells, timin
 ## When to use
 
 - Before publishing a hand-written or AI-drafted post
-- When `linkedin-post-writer` finishes a draft (auto-invoked)
+- When `escribir-post` finishes a draft (auto-invoked)
 - When a recent post didn't land and the user wants a post-mortem
 
 ## Input
@@ -75,5 +75,5 @@ See `../../referencias/quitar-pinta-de-ia/audit-examples.md` for worked examples
 
 ## Related skills
 
-- `linkedin-humanizer`, aggressive rewrite if audit fails
-- `linkedin-post-writer`, regenerate draft using a proven formula
+- `quitar-pinta-de-ia`, aggressive rewrite if audit fails
+- `escribir-post`, regenerate draft using a proven formula

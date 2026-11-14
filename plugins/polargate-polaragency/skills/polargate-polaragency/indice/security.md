@@ -1,6 +1,6 @@
 # Seguridad: 12 especialistas
 
-Para: revisar riesgos, proteger datos y sistemas. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: revisar riesgos, proteger datos y sistemas. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

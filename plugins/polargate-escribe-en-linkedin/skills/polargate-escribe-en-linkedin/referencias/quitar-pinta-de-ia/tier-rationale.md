@@ -48,7 +48,7 @@ Corporate-speak. Bad LinkedIn style regardless of who wrote it. AI uses these be
 - **Grammar markers (nominalisations, "-ing" clause openers)**: "Leveraging our data, we..." runs at 5.3x the human rate. Readers feel the register shift even when they cannot name it.
 - **fundamentally / essentially / ultimately**: filler adverbs that add no information. Strunk & White flagged these in 1918. They were bad style before AI existed.
 - **"in today's fast-paced world"** and the reveal bridges ("The result?", "Here's what", "Stop X, start Y"): openers and pivots that LinkedIn measurably down-ranks (-4.3% to -6.7% reach, vendor data). Removing them improves reach regardless of who wrote them.
-- **Negative parallelism ("X isn't Y, it's Z")**: per Sergey's 2026-04-27 hard ban, now backed by -4.9% reach data. Used by JFK historically, but in 2026 LinkedIn context it reads as ChatGPT in 90% of cases.
+- **Negative parallelism ("X isn't Y, it's Z")**: a hard ban since April 2026, now backed by -4.9% reach data. Used by JFK historically, but in 2026 LinkedIn context it reads as ChatGPT in 90% of cases.
 - **Stacked or perfectly parallel triads, and any third triad in a post**: tricolon at 2x expert-human density in 2026 models. The form is innocent; the density and the interchangeable items are the tell. One natural triad stays.
 - **Staccato stacks and reveal bridges** ("Short. Punchy. Done.", "No X. No Y. Just Z.", one-word paragraphs): the top 2026 reader-cited tell, and the signature of every prompt-style humanizer. V2 used to add these. V3 removes them.
 
@@ -107,7 +107,7 @@ Patterns AI uses but humans use legitimately. Banning them blindly catches Hemin
 For LinkedIn posts and comments by founders / creators / serious writers in 2026:
 
 ```
-linkedin-humanizer --mode strict <text>
+quitar-pinta-de-ia --mode strict <text>
 ```
 
 This applies forensic + strict but leaves aesthetic patterns alone. It catches real AI leakage and corporate-speak without flattening the writer's voice. Aesthetic mode is for the rare case where audience-fit demands maximum scrub (e.g., contributing to Wikipedia, posting in an AI-detection-paranoid academic forum).
@@ -160,6 +160,6 @@ Consequence: Pass 3 asks for one odd-precision number WITH a named referent, one
 
 ### 7. Over-correction is the new tell
 
-Humanizer output has its own fingerprint (DAMAGE 2025; the slopotron de-slop skill's own findings) [weak]. "Writing slightly worse on purpose" now reads as a tell. Zero em dashes, zero triads, zero long sentences and a flat, reaction-free tone together read as "processed."
+Humanizer output has its own fingerprint (DAMAGE 2025) [weak]. "Writing slightly worse on purpose" now reads as a tell. Zero em dashes, zero triads, zero long sentences and a flat, reaction-free tone together read as "processed."
 
 Consequence: Pass 4 SELF-CHECK. Edits proportional to real problems, no fixed quota. When in doubt whether a pattern is the author or the model, leave it.
