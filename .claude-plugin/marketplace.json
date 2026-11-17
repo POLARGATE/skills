@@ -105,7 +105,7 @@
       "name": "polargate-mira-tu-seo",
       "source": "./plugins/polargate-mira-tu-seo",
       "description": "Pregúntale a Claude por qué no sales en Google y te responde con tus números, no con consejos de manual.",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "category": "marketing",
       "keywords": [
         "seo",
