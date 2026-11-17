@@ -1,6 +1,6 @@
 # 20 LinkedIn Hook Formulas, 2026 Edition
 
-Each formula has a skeleton, why it works, and a reference engagement multiplier from the original post that defined it. Canonical draft labels (e.g. `01-platform-risk-anaphora`) refer to the curator's private notebook of source posts and are NOT shipped in this public repo. The skeletons + reference posts below are sufficient to apply each formula.
+Each formula has a skeleton, why it works, and a reference engagement multiplier from the original post that defined it. The skeletons and reference posts below are enough to apply each formula.
 
 F1-F10 are the original long-form thought-leadership set. F11-F16 were validated in 2026 against a large corpus of above-average performers across 10 verticals; they skew shorter and more emotional, and each is tagged with its primary engagement goal (comments / reposts / likes / saves). F17-F20 are **structural formulas**: they shape the *logic* of a post (a controlled comparison, a false binary, an evidence bridge, two diverging curves) rather than its topic, and they recur across the best-performing founder posts. Pick by goal first (see "Engagement-goal split" below), then by topic.
 

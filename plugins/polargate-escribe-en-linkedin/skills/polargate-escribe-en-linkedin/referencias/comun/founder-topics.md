@@ -6,8 +6,8 @@ gives you the *territory*, the specific tensions a founder can mine that a
 marketer, operator, or job-seeker cannot. Each angle is a reusable template you
 fill with your own numbers and story, not a fixed post.
 
-Use this with `linkedin-post-writer` (pick an angle, then a formula) and with
-`linkedin-content-planner` (a founders-edition pillar set, below).
+Use this with `escribir-post` (pick an angle, then a formula) and with
+`calendario` (a founders-edition pillar set, below).
 
 ## Why founders need their own angles
 

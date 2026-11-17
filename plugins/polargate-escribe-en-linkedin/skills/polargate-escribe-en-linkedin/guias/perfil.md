@@ -59,7 +59,7 @@ A structured audit + rewrite in this shape:
 | 8 | **Custom URL** | `linkedin.com/in/firstnamelastname` (not the default hash) |
 | 9 | **Recommendations** | At least 3 recent, specific (not generic), from diverse contexts |
 
-## Key benchmarks (from co.actor research)
+## Key benchmarks
 
 - Optimized About sections: **3.9x more views**
 - 5+ listed skills: **3x more connection requests**
@@ -86,6 +86,6 @@ Global voice rules: see root `SKILL.md` §Voice rules. Additional skill-specific
 
 ## Related skills
 
-- `linkedin-content-planner`, post pillars should echo the profile's headline/About thesis
-- `linkedin-post-writer`, Featured section rotates quarterly; pin your flagship post
-- `linkedin-humanizer`, scrub profile copy for the same AI tells we scrub from posts
+- `calendario`, post pillars should echo the profile's headline/About thesis
+- `escribir-post`, Featured section rotates quarterly; pin your flagship post
+- `quitar-pinta-de-ia`, scrub profile copy for the same AI tells we scrub from posts

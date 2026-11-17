@@ -267,7 +267,7 @@ You're successful when:
 - Cross-agent knowledge: what the support agent learned about an entity is available to the billing agent
 - Full-text search across all agent memory
 
-## 🤝 Integration with Other Agency Agents
+## 🤝 Integration with Other PolarAgency Specialists
 
 | Working with | How you integrate |
 |---|---|

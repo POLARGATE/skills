@@ -12,11 +12,11 @@ Produce a 7-day LinkedIn plan built around the 3-pillar discipline (Authority 40
 
 ## Input
 
-- **Theme** (optional): e.g., "AI agents shipping in production", "first 6 months of Co.Actor"
+- **Theme** (optional): e.g., "AI agents shipping in production", "first 6 months of our startup"
 - **Audience description:** e.g., "B2B founders, AI ops leaders, marketing VPs"
 - **Pillar mix** (optional): defaults to 40% Authority / 30% Narrative / 20% Community / 10% Product
 - **Posting days** (optional): defaults to Tue/Wed/Thu/Fri (4 posts)
-- **Voice samples** (optional): only if `../referencias/plantilla-voz.md` is not filled yet
+- **Voice samples** (optional): only if `linkedin/voz.md` is not filled yet
 
 ## Output
 
@@ -96,9 +96,9 @@ Every formula earns a primary reaction: comments, reposts, likes, or saves (see 
 
 ## Steps
 
-**Story bank first.** If `../referencias/plantilla-historias.md` has `filled: yes`, load it before planning anything. The week's angles come from material that already exists: a dated turning point, a number with a named referent, a position the user holds and pays for. Planning a week against an empty bank is how a calendar fills with themes no draft can execute, so if the bank is not filled, say once that `linkedin-interviewer` fills it in 20 to 40 minutes, then plan from the theme the user gave.
+**Story bank first.** If `linkedin/historias.md` has `filled: yes`, load it before planning anything. The week's angles come from material that already exists: a dated turning point, a number with a named referent, a position the user holds and pays for. Planning a week against an empty bank is how a calendar fills with themes no draft can execute, so if the bank is not filled, say once that `entrevista` fills it in 20 to 40 minutes, then plan from the theme the user gave.
 
-**Voice profile.** If `../referencias/plantilla-voz.md` has `filled: yes`, load it and respect the CTA and link style it records when picking CTA types. If it is not filled, mention once that `linkedin-humanizer --mode profile` can learn it from a few posts, then use the generic voice rules.
+**Voice profile.** If `linkedin/voz.md` has `filled: yes`, load it and respect the CTA and link style it records when picking CTA types. If it is not filled, mention once that `quitar-pinta-de-ia --mode profile` can learn it from a few posts, then use the generic voice rules.
 
 1. Gather inputs. Ask user for theme, audience, pillar preferences if not provided.
 2. Validate pillar mix sums to 100%; warn if any pillar >60%.
@@ -122,13 +122,10 @@ See `../referencias/calendario/example-plan-week.md` for a filled-in 7-day plan.
 - `../referencias/calendario/example-plan-week.md`, worked example
 - `../referencias/calendario/pillars-framework.md`, the 3-pillar discipline explained
 - `../referencias/comun/founder-topics.md`, founders-edition angle library (A1-A10) and founder pillar set
-- `../referencias/plantilla-historias.md`, the material the week's angles are drawn from
-- `../referencias/plantilla-voz.md`, voice fingerprint and CTA style
+- `linkedin/historias.md`, the material the week's angles are drawn from
+- `linkedin/voz.md`, voice fingerprint and CTA style
 
 ## Related skills
 
-- `linkedin-interviewer`, fills the Story Bank the plan draws its angles from
-- `linkedin-post-writer`, generate each day's draft from the plan
-- `linkedin-comment-drafter`, execute the daily comment targets
-- `linkedin-thread-monitor`, track inbound from the comment strategy
-- `linkedin-engager-analytics`, segment audience on each post
+- `entrevista`, fills the Story Bank the plan draws its angles from
+- `escribir-post`, generate each day's draft from the plan

@@ -1,6 +1,6 @@
 # Salud: 3 especialistas
 
-Para: temas del sector salud. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: temas del sector salud. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

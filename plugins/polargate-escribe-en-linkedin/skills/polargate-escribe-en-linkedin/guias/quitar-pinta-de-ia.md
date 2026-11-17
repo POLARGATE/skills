@@ -15,7 +15,7 @@ Evidence tier in brackets: [strong] = replicated across 2+ independent 2025-2026
 - **Forced burstiness is the #1 2026 tell, not the fix.** LLM sentence-length variance is half of human [strong], but detectors do not score it, mechanical long/short alternation is a learnable humanizer fingerprint [weak: DAMAGE 2025], and on LinkedIn sentence-length variance is not an engagement lever in either direction (our corpus, n=397, within-creator: null to slightly negative) [strong]. "Short. Punchy. Done.", "No X. No Y. Just Z.", one-word paragraphs and "The result?" reveals are the current top tells. Pass 2 is now RHYTHM, not BREAK: fix machine-flat rhythm, never manufacture variance.
 - **Rule of three is still a tell, at density.** Tricolon runs at 2x expert-human rate across 2026 frontier models [strong: arXiv 2604.19768]. Stacked, perfectly parallel triads and 3+ per post get scrubbed. One natural triple stays (26% of top human tweets have one).
 - **Fingerprint injection was half wrong.** Named entities and concreteness are supported [strong: lower entity density in LLM text across 3 studies]; an odd-precision number with a referent in line 1 lifts likes 34% [vendor]. Bare numbers are not a discriminator, and inserted hedges and confessions backfire: performed hesitancy is 2x more common in LLM text than expert human text, and sincerity announcements ("let me be honest") are a named 2026 tell [strong: tropes.fyi false vulnerability; Schilke & Reimann 2025]. Pass 3 now asks for a flat, dated, uncomfortable fact instead.
-- **Over-correction guard.** Humanizer output has its own fingerprint; "writing slightly worse on purpose" now reads as a tell [weak: DAMAGE 2025; slopotron]. Pass 4 checks whether Passes 1-3 introduced the very patterns they were meant to remove. Edits are proportional to real problems. When in doubt, leave it.
+- **Over-correction guard.** Humanizer output has its own fingerprint; "writing slightly worse on purpose" now reads as a tell [weak: DAMAGE 2025]. Pass 4 checks whether Passes 1-3 introduced the very patterns they were meant to remove. Edits are proportional to real problems. When in doubt, leave it.
 
 See `quitar-pinta-de-ia/rules-explainer.md` for per-rule justification, defenses, and citations, and `../referencias/quitar-pinta-de-ia/tier-rationale.md` §V3 for the evidence.
 
@@ -39,32 +39,34 @@ Any text (post, comment, reply, DM). Optional: target voice samples (past human 
 
 ## Modes
 
-```bash
+These are not shell commands. The user asks in plain words (for example «quítale la pinta de IA en modo strict» or «revisa este borrador sin reescribirlo») and you apply that mode of this guide:
+
+```text
 # Default: forensic + strict (recommended for LinkedIn)
-linkedin-humanizer <text>
+quitar-pinta-de-ia <text>
 
 # Forensic only: minimum-touch, just kill the leakage
-linkedin-humanizer --mode forensic <text>
+quitar-pinta-de-ia --mode forensic <text>
 
 # Strict: forensic + density-scored 2026 vocabulary, reveal bridges, staccato (the LinkedIn-default config)
-linkedin-humanizer --mode strict <text>
+quitar-pinta-de-ia --mode strict <text>
 
 # Aesthetic: strict + style rules (single natural triads, passive voice, defendable vocab)
 # Use when target audience is Wikipedia editors / academic readers / AI-tell hunters
-linkedin-humanizer --mode aesthetic <text>
+quitar-pinta-de-ia --mode aesthetic <text>
 
 # All: every rule. Maximum scrub. Will flatten literary writing and trip the Pass 4 guard.
-linkedin-humanizer --mode all <text>
+quitar-pinta-de-ia --mode all <text>
 
 # Audit: detection-only pass-fail review. No rewrite.
 # Runs the 2026 algorithm checklist: length, hook, CTA, structure, AI tells.
 # Returns Blockers + Warnings + suggested fixes. See quitar-pinta-de-ia/post-audit.md.
-linkedin-humanizer --mode audit <text>
+quitar-pinta-de-ia --mode audit <text>
 
 # Profile: build/update the user's Voice & Brand Profile so every writing
-# skill drafts in their real voice. Learns from 3-6 pasted posts (portable, no
-# ../referencias/plantilla-voz.md. See quitar-pinta-de-ia/voice-profile.md.
-linkedin-humanizer --mode profile
+# guide drafts in their real voice. Learns from 3-6 pasted posts and saves the
+# profile in linkedin/voz.md. See quitar-pinta-de-ia/voice-profile.md.
+quitar-pinta-de-ia --mode profile
 ```
 
 ## The four passes
@@ -127,7 +129,7 @@ Global voice rules: see root `SKILL.md` §Voice rules. Additional skill-specific
 - Never introduce facts that weren't in the input. If a number is missing, ask, or ship without it. Do not fabricate.
 - Never introduce sincerity markers, hedges, or confessional frames. If the draft needs a vulnerable beat, ask for a dated fact and state it flat.
 - Keep the user's sentence-level voice quirks (lowercase starts, `..` soft pauses, one em dash, one natural triad).
-- Negative parallelism is a HARD ban (per Sergey 2026-04-27, now backed by -4.9% reach data): the strict tier always strips all 6 forms.
+- Negative parallelism is a HARD ban (since April 2026, backed by -4.9% reach data): the strict tier always strips all 6 forms.
 
 ## Tier rationale (short version)
 
@@ -157,9 +159,9 @@ See `../referencias/quitar-pinta-de-ia/examples.md` for worked examples.
 - `quitar-pinta-de-ia/post-audit.md`, pre-publish audit workflow (detection-only, no rewrite)
 - `quitar-pinta-de-ia/rules-explainer.md`, when to defend a flagged rule (em dash, rule of three, passive voice)
 - `quitar-pinta-de-ia/emoji-detector.md`, scan / score / suggest workflow for emoji density
-- `quitar-pinta-de-ia/voice-profile.md`, build/update the user's Voice & Brand Profile (`--mode profile`); the filled `../referencias/plantilla-voz.md` is then read by every writing skill so drafts match the user's real voice
+- `quitar-pinta-de-ia/voice-profile.md`, build/update the user's Voice & Brand Profile (`--mode profile`); the filled `linkedin/voz.md` is then read by every writing skill so drafts match the user's real voice
 - Detector-script deps (`requests`, `python-dotenv`) come from the bundle's root `requirements.txt` / `requirements-lock.txt`, not a manifest of their own
 
 ## Related skills
 
-- `linkedin-post-writer`, generates drafts that already pass the humanizer
+- `escribir-post`, generates drafts that already pass the humanizer

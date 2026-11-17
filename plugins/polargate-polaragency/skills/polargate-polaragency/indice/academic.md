@@ -1,6 +1,6 @@
 # Académico: 6 especialistas
 
-Para: investigar, escribir y enseñar con rigor. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: investigar, escribir y enseñar con rigor. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

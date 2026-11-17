@@ -1,18 +1,15 @@
 # Voice & Brand Profile
 
-Your voice, niche, and rules in one place. Fill this once (or let
-`linkedin-humanizer` build it from a few of your real posts), and every writing
-skill in this bundle reads it before drafting, so you stop re-explaining who you
-are on every request. This file is yours: edit it freely, keep it as long or
-short as you like. Nothing here is sent to us or to any service; it only steers
-the drafts.
+Your voice, niche, and rules in one place. This is the empty template: your
+filled copy lives in your project as `linkedin/voz.md`. Fill it once (or let
+`quitar-pinta-de-ia` build it from a few of your real posts), and every guide in
+this skill reads it before drafting, so you stop re-explaining who you are on
+every request. Edit it freely, keep it as long or short as you like. The skill
+never publishes it: Claude reads it in your session to steer the drafts, like
+anything else you share with Claude.
 
-> **It is a file in this repository, though, so git can carry it.** If you
-> cloned or forked this repo and you push, a filled profile goes wherever you
-> push it, including a public fork. Either add `plantilla-voz.md` to
-> your `.gitignore`, or keep the filled copy outside the repo and paste it in
-> when you need it. The shipped template is empty; what you add is yours to
-> protect.
+> With your OK the skill creates `linkedin/voz.md` from this template and adds
+> it to `.gitignore` first, so a push does not carry it.
 
 Skills only load this profile when `filled: yes` below. An empty template is
 ignored, so drafts fall back to the generic voice rules until you populate it.

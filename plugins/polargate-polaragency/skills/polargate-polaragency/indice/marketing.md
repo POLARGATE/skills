@@ -1,6 +1,6 @@
 # Marketing: 37 especialistas
 
-Para: contenidos, redes, SEO, correos, marca personal, crecimiento. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: contenidos, redes, SEO, correos, marca personal, crecimiento. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|
@@ -39,5 +39,5 @@ Para: contenidos, redes, SEO, correos, marca personal, crecimiento. El nombre de
 | WeChat Official Account Manager | Gestiona tu cuenta oficial de WeChat: contenidos, suscriptores y conversión a clientes. | `expertos/marketing/marketing-wechat-official-account.md` |
 | Weibo Strategist | Lleva tu marca en Weibo: temas del momento, comunidades de fans, reputación y publicidad, para ganar alcance en China. | `expertos/marketing/marketing-weibo-strategist.md` |
 | X/Twitter Intelligence Analyst | Investiga X (Twitter): detecta tendencias, vigila cuentas y saca datos sobre tu audiencia a partir de información pública. | `expertos/marketing/marketing-x-twitter-intelligence-analyst.md` |
-| Xiaohongshu Specialist | Crea contenido de estilo de vida para Xiaohongshu (la red china tipo Instagram) y hazlo crecer con la comunidad. | `expertos/marketing/marketing-xiaohongshu-specialist.md` |
+| Xiaohongshu Specialist | Crea contenido de estilo de vida para Xiaohongshu (la red china tipo Instagram) y lo hace crecer con la comunidad. | `expertos/marketing/marketing-xiaohongshu-specialist.md` |
 | Zhihu Strategist | Responde preguntas en Zhihu, la web china de preguntas y respuestas, para ganar prestigio como experto. | `expertos/marketing/marketing-zhihu-strategist.md` |

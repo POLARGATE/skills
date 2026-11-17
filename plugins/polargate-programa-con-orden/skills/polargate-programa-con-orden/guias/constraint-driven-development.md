@@ -92,7 +92,7 @@ One file at the repo root. Any agent on any harness can read it, and a change to
 ```markdown
 # Constraints
 
-Last reviewed: 2026-08-08 by @addy
+Last reviewed: 2026-08-08 by @owner
 
 ## Floor (always enforced, no setup required)
 
@@ -129,7 +129,7 @@ number and no command in this column is an aspiration, not a constraint.
 
 | ID | Rule | Path | Reason | Owner | Expires |
 |----|------|------|--------|-------|---------|
-| W1 | `no-explicit-any` | `src/legacy/**` | Rewrite tracked in ENG-441 | @addy | 2026-11-01 |
+| W1 | `no-explicit-any` | `src/legacy/**` | Rewrite tracked in ENG-441 | @owner | 2026-11-01 |
 ```
 
 Then add one line to `AGENTS.md` and `CLAUDE.md`: `Read CONSTRAINTS.md before writing code. Do not weaken it to make a change pass.`

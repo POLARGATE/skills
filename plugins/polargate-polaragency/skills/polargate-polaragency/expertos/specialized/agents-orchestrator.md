@@ -292,7 +292,7 @@ You're successful when:
 - Identify when teams hit quality stride vs. struggle phases
 - Predict completion confidence based on early task performance
 
-## 🤖 Available Specialist Agents
+## 🧠 Available Specialist Agents
 
 The following agents are available for orchestration based on task requirements:
 

@@ -8,14 +8,14 @@ Every writing skill in this bundle reads it before drafting, so it stops asking
 you for "a specific number or moment" on every single request and starts drawing
 from what you already told it once.
 
-> **Keep this out of git.** It holds career detail, figures, failures and named
-> people. It is a file in this repository, so a push carries it wherever you push,
-> a public fork included. Add `plantilla-historias.md` to your `.gitignore`
-> before you fill it, or keep the filled copy outside the repo. Nothing here is
-> sent to us or to any service; git is the only way it travels.
+> **This is the empty template.** Your filled copy lives in your project as
+> `linkedin/historias.md`. With your OK the skill creates it from this template
+> and adds it to `.gitignore` first, because it holds career detail, figures,
+> failures and named people. The skill never publishes it: Claude reads it in
+> your session to draft, like anything else you share with Claude.
 
-Fill it by running `linkedin-interviewer`, which interviews you and writes this
-file. You can also edit it by hand at any time; the skill reads whatever is here.
+Fill your copy by running `entrevista`, which interviews you and writes it. You
+can also edit it by hand at any time; the skill reads whatever is there.
 
 ## Status
 

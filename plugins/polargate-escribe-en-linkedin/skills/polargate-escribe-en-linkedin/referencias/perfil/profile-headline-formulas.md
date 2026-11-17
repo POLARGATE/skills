@@ -19,7 +19,7 @@ Three parts separated by `|`. Each part does one job:
 2. **Be specific about who you help.** "B2B SaaS founders 1-10M ARR" beats "business owners".
 3. **Include keywords recruiters search for.** Search-matched headlines appear in 3x more recruiter results.
 4. **No filler adjectives.** Cut "passionate", "driven", "results-oriented".
-5. **Capitalize names, products, companies**, "Claude", "HubSpot", "Co.Actor".
+5. **Capitalize names, products, companies**, "Claude", "HubSpot", "Polargate".
 
 ## Before → After
 

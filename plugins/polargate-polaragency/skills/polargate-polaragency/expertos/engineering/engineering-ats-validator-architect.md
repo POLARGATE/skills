@@ -265,7 +265,7 @@ When performing an ATS audit or designing an ATS validation engine, you must pro
 ### Deliverable 5: Agent-Native Export Prompt
 
 ````markdown
-## 🤖 Prompt Pronto para Agentes Externos (Claude / ChatGPT / Cursor)
+## 🧠 Prompt Pronto para Agentes Externos (Claude / ChatGPT / Cursor)
 
 ```markdown
 VOCÊ É O RESUME TAILOR & RECRUITMENT ARCHITECT.

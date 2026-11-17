@@ -1,9 +1,9 @@
 ---
 name: polargate-revisa-la-seguridad
-description: Revisa la seguridad de un proyecto y responde dudas de seguridad sobre código, APIs, servicios y apps, con el método de auditoría de Cloudflare. Usar para dudas de seguridad, revisar una parte concreta, antes de sacar algo a producción, o cuando pidan una auditoría. La auditoría completa solo se lanza si la piden expresamente.
+description: Revisa la seguridad de un proyecto y responde dudas de seguridad sobre código, APIs, servicios y apps. Usar para dudas de seguridad, revisar una parte concreta, antes de sacar algo a producción, o cuando pidan una auditoría. La auditoría completa solo se lanza si la piden expresamente.
 ---
 
-> **Adaptada por Polargate.** Reglas que mandan sobre el resto de este texto:
+> **Reglas de Polargate.** Mandan sobre el resto de este texto:
 >
 > - **Empieza siempre en pequeño.** Por defecto revisa solo lo que te han pedido, sin crear ficheros.
 > - **Pregunta antes de la auditoría completa.** Usa muchos agentes y gasta mucho uso. Dilo y espera un sí.
@@ -57,7 +57,7 @@ In full audit mode, resolve these values before reconnaissance:
 - **Skill directory**: the absolute directory containing this `SKILL.md`.
 - **Target**: the absolute repository root under review.
 - **Repo name**: a stable repository identifier from the directory or local Git remote.
-- **Output directory**: a new writable directory outside the target, defaulting to `~/security-audit-skill/<repo-name>/run-<N>`, where `<N>` is the next unused integer. Use a directory inside the target only when the user explicitly selects it and the parent verifies that version control ignores the whole directory. Otherwise stop and request an external path.
+- **Output directory**: a new writable directory outside the target, defaulting to `~/polargate-revisa-la-seguridad/<repo-name>/run-<N>`, where `<N>` is the next unused integer. Use a directory inside the target only when the user explicitly selects it and the parent verifies that version control ignores the whole directory. Otherwise stop and request an external path.
 - **Source ref**: the reviewed commit and whether the worktree is dirty. Do not treat unreviewed generated or modified files as another revision.
 
 ### Write isolation

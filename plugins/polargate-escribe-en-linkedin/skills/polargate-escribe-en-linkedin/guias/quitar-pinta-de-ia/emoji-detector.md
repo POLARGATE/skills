@@ -7,7 +7,7 @@ Pattern data from MagicPost LinkedIn analysis (Feb 2026, 220 engagement viral po
 ## When to use
 
 - Before publishing any AI-drafted post or comment
-- As a pre-pass before `linkedin-humanizer` (catches a tell humanizer doesn't fix)
+- As a pre-pass before `quitar-pinta-de-ia` (catches a tell humanizer doesn't fix)
 - When the audit pass flags "feels AI" without a specific reason
 - When auditing a backlog of scheduled posts for AI signature emojis
 
@@ -99,6 +99,6 @@ Default mode is between the two: flag if score >20.
 
 ## Related skills
 
-- `linkedin-humanizer`, runs after emoji detector to scrub AI vocabulary and rhythm
+- `quitar-pinta-de-ia`, runs after emoji detector to scrub AI vocabulary and rhythm
 - `post-audit.md` (sibling), broader pre-publish check (calls this internally)
-- `linkedin-post-writer`, generates drafts that already avoid AI-pattern emojis
+- `escribir-post`, generates drafts that already avoid AI-pattern emojis

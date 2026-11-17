@@ -1,9 +1,9 @@
 ---
 name: polargate-usa-ia-gratis
-description: Busca dónde usar modelos de IA sin pagar, con sus límites y lo que hacen con tus datos, y ayuda a montarlo. Trae 15 servicios con plan gratis, como Google Gemini, Groq, Mistral, Cloudflare u OpenRouter. Usar cuando alguien quiera probar una idea con IA sin gastar, abaratar una tarea, elegir un modelo gratis o pregunte «¿hay alguna IA gratis para esto?».
+description: "PolarFree, de Polargate. Busca dónde usar modelos de IA sin pagar, con sus límites y lo que hacen con tus datos, y ayuda a montarlo. Trae 15 servicios con plan gratis, como Google Gemini, Groq, Mistral, Cloudflare u OpenRouter. Usar cuando alguien quiera probar una idea con IA sin gastar, abaratar una tarea, elegir un modelo gratis o pregunte «¿hay alguna IA gratis para esto?»."
 ---
 
-# Usa IA gratis
+# PolarFree
 
 Lee `REGLAS.md` antes de empezar.
 

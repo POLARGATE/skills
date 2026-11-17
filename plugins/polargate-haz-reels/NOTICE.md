@@ -1,7 +1,5 @@
 # Avisos de licencia
 
-Este plugin parte de trabajo publicado con licencia libre. Los textos de licencia completos están en `LICENSE`.
-
-Basado en [HyperFrames](https://github.com/heygen-com/hyperframes), de HeyGen, con licencia Apache-2.0, a partir del commit `618c486734b3cbb697bd432bace7e9642e48b6be`. El texto de esta skill es nuestro: explica cómo usar HyperFrames y no copia su código ni sus guías. Incluye estilos adaptados de [mg-styles-15](https://github.com/Vincentwei1021/mg-styles-15), de Vincentwei1021, con licencia MIT.
-
-PolarMotion parte de Lemo-Opuscar, de LemoLab, con licencia MIT (código) y CC BY 4.0 (estilos y demos). Los avisos completos van en el NOTICE de POLARGATE/polarmotion.
+- La carpeta `estilos/` de la skill polargate-haz-reels adapta textos publicados con licencia MIT (Copyright (c) 2026 Vincentwei1021). El aviso y el permiso están en `LICENSE`. Cambios de Polargate: sin el texto en chino, con formato vertical y con signos de puntuación.
+- PolarMotion no viene en este kit. La skill lo descarga de POLARGATE/polarmotion, en una versión fija y solo cuando la persona lo acepta, y llega con sus propios avisos de licencia (`LICENSE` y `NOTICE.md`).
+- El resto es de Polargate, con licencia MIT.

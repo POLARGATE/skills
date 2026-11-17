@@ -1,6 +1,6 @@
 ---
 name: polargate-preve-tus-numeros
-description: Saca una previsión de ventas, reservas, demanda, visitas, ingresos o gastos a partir de un Excel o CSV con fechas, con una horquilla de lo normal, usando TimesFM 2.5 de Google en el propio ordenador y sin entrenar nada. Usar cuando alguien pida prever, proyectar o estimar cómo irá un número en las próximas semanas o meses, cuánto stock pedir, o «cuánto venderé el mes que viene». Los datos no salen del ordenador.
+description: "Saca una previsión de ventas, reservas, demanda, visitas, ingresos o gastos a partir de un Excel o CSV con fechas, con una horquilla de lo normal, usando TimesFM 2.5 de Google en el propio ordenador y sin entrenar nada. Usar cuando alguien pida prever, proyectar o estimar cómo irá un número en las próximas semanas o meses, cuánto stock pedir, o «cuánto venderé el mes que viene». La previsión se calcula en el ordenador: los datos no se suben a ningún servicio de previsión."
 ---
 
 # Prevé tus números
@@ -9,7 +9,7 @@ Lee `REGLAS.md` antes de empezar.
 
 ## Si falta en este ordenador
 
-Hazlo tú, sin pedírselo a la persona. Avísale antes de que baja unos 1,5 GB entre programas y modelo, y que solo pasa la primera vez.
+Hazlo tú, sin pedírselo a la persona. Antes de instalarlo, avísale de que necesita unos 2 GB libres entre programas y modelo, y de que la descarga solo se hace la primera vez.
 
 ```bash
 python3 --version   # hace falta 3.10 o más nuevo
@@ -22,7 +22,7 @@ Si falta Python, dile cómo instalarlo en su sistema y espera.
 ## Cómo se hace
 
 1. **Mira los datos.** Si es un Excel, pásalo a CSV. Busca la columna de fecha y la del número. Comprueba que las fechas van seguidas, y mira huecos, duplicados y filas de totales. Di qué has limpiado.
-2. **Comprueba que hay bastante historia.** Con menos de 30 datos el resultado vale poco: dilo. Para que se vea la temporada, hacen falta al menos dos años de datos mensuales.
+2. **Comprueba que hay bastante historia.** Con menos de 32 datos el modelo no da previsión: dilo. Para que se vea la temporada, con datos mensuales hacen falta unos tres años (32 datos o más).
 3. **Pregunta solo lo que falte:** hasta cuándo quiere ver.
 4. **Lanza la previsión.** `<carpeta>` es la de este fichero.
 

@@ -1,6 +1,6 @@
 # Finanzas: 5 especialistas
 
-Para: contabilidad, análisis, presupuestos y previsiones. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: contabilidad, análisis, presupuestos y previsiones. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

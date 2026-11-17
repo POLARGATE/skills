@@ -5,7 +5,7 @@ description: "Hace que Claude programe con el orden de un buen equipo: aclara qu
 
 # Programa con orden
 
-Lee `REGLAS.md` antes de empezar. Después elige la guía que toque y léela entera: dentro está el proceso paso a paso. Las guías están en inglés, las escribió su autor así. Tú hablas siempre en el idioma de la persona.
+Lee `REGLAS.md` antes de empezar. Después elige la guía que toque y léela entera: dentro está el proceso paso a paso. Las guías están en inglés. Tú hablas siempre en el idioma de la persona.
 
 ## Qué guía toca
 

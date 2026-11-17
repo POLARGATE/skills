@@ -1,6 +1,6 @@
 # Diseño: 10 especialistas
 
-Para: marca, pantallas, experiencia de usuario, imágenes. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: marca, pantallas, experiencia de usuario, imágenes. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

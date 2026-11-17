@@ -58,5 +58,5 @@ LinkedIn crops banners aggressively on mobile. Before finalizing:
 
 - Banner + photo = first visual impression; visitors decide whether to scroll in under 2 seconds
 - Profile with a real, current photo: **14x more profile views** than one without
-- High-quality banner: **+23% profile view duration** (correlation, from Co.Actor's 2026 data)
+- High-quality banner: **+23% profile view duration** (correlation, 2026 data)
 - Banner space is essentially free advertising, 90% of users waste it on a default or stock image

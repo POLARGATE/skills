@@ -13,11 +13,11 @@ This skill transforms, it does not generate. It reads your source, keeps the ide
 - "This worked on Threads, adapt it for LinkedIn"
 - "I have a rough idea in another format, make it native here"
 
-Not for a blank-page draft (use `linkedin-post-writer`) and not for reviewing a finished LinkedIn draft (use `linkedin-humanizer --mode audit`).
+Not for a blank-page draft (use `escribir-post`) and not for reviewing a finished LinkedIn draft (use `quitar-pinta-de-ia --mode audit`).
 
 ## How it works
 
-**Voice profile first (all drafts).** If `../referencias/plantilla-voz.md` has `filled: yes`, load it and match the user's voice fingerprint, hard rules, and CTA/link style throughout. If it is not filled, mention once that `linkedin-humanizer --mode profile` can learn their voice from a few posts, then proceed with the generic voice rules. If `../referencias/plantilla-historias.md` has `filled: yes`, load it too and take concrete details (numbers, dates, named projects) from there instead of asking mid-draft. Never invent a figure that is not in it; if the bank has nothing that fits, ask the user or offer `linkedin-interviewer`.
+**Voice profile first (all drafts).** If `linkedin/voz.md` has `filled: yes`, load it and match the user's voice fingerprint, hard rules, and CTA/link style throughout. If it is not filled, mention once that `quitar-pinta-de-ia --mode profile` can learn their voice from a few posts, then proceed with the generic voice rules. If `linkedin/historias.md` has `filled: yes`, load it too and take concrete details (numbers, dates, named projects) from there instead of asking mid-draft. Never invent a figure that is not in it; if the bank has nothing that fits, ask the user or offer `entrevista`.
 
 1. **Take the source.** Any format: a tweet or thread, a video or script, a blog paragraph, a caption, a transcript, a bullet list, a link to read. Ask for the source and the goal (comments / reposts / likes / saves) if not given.
 2. **Extract the spine.** Strip the source platform's shell and pull out the one claim, story, or number worth keeping. Repurposing fails when it keeps the words instead of the point.
@@ -66,6 +66,5 @@ Global voice rules: see root `SKILL.md` §Voice rules. Additional skill-specific
 
 ## Related skills
 
-- `linkedin-post-writer` - write a fresh post from scratch
-- `linkedin-humanizer` - scrub AI tells, plus `--mode audit` to review the result
-- `linkedin-hook-extractor` - reverse-engineer a hook from a post you admire
+- `escribir-post` - write a fresh post from scratch
+- `quitar-pinta-de-ia` - scrub AI tells, plus `--mode audit` to review the result

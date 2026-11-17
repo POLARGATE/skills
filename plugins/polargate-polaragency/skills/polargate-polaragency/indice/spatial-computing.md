@@ -1,6 +1,6 @@
 # Realidad virtual y aumentada: 6 especialistas
 
-Para: gafas, 3D e interfaces espaciales. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: gafas, 3D e interfaces espaciales. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|

@@ -1,6 +1,6 @@
 ---
 name: polargate-escribe-en-linkedin
-description: "Escribe posts de LinkedIn en español que suenan a la persona y no a una IA. Primero le saca historias y datos reales con preguntas, luego elige un gancho, escribe el borrador y le quita las muletillas de IA. También convierte un artículo, vídeo o hilo en un post, planifica un mes de contenido y mejora el perfil. Usar cuando alguien pida un post de LinkedIn, ideas para LinkedIn, revisar un borrador, reescribir algo que suena a ChatGPT, o «write me a LinkedIn post». Solo deja borradores: nunca publica."
+description: "Escribe posts de LinkedIn en español que suenan a la persona y no a una IA. Primero le saca historias y datos reales con preguntas, luego elige un gancho, escribe el borrador y le quita las muletillas de IA. También convierte un artículo, vídeo o hilo en un post, planifica una semana de contenido y mejora el perfil. Usar cuando alguien pida un post de LinkedIn, ideas para LinkedIn, revisar un borrador, reescribir algo que suena a ChatGPT, o «write me a LinkedIn post». Solo deja borradores: nunca publica."
 ---
 
 # Escribe en LinkedIn
@@ -30,7 +30,7 @@ Esta skill deja borradores. No publica, no programa, no comenta y no se conecta 
 
 ## Dónde guardar lo que aprendas de la persona
 
-Si te da permiso, guarda su banco de historias y su voz en la carpeta del proyecto, en `linkedin/historias.md` y `linkedin/voz.md`, con las plantillas de `referencias/`. Así no hay que preguntar lo mismo dos veces. Nunca guardes contraseñas ni datos de clientes.
+Si te da permiso, guarda su banco de historias y su voz en la carpeta del proyecto, en `linkedin/historias.md` y `linkedin/voz.md`, con las plantillas de `referencias/`, y añade antes esos dos ficheros al `.gitignore` del proyecto. Así no hay que preguntar lo mismo dos veces. Nunca guardes contraseñas ni datos de clientes.
 
 ## Licencia
 

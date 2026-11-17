@@ -1,6 +1,6 @@
 # Producto: 6 especialistas
 
-Para: qué construir, opiniones de clientes, prioridades, tendencias. El nombre de cada especialista es el que le puso su autor, en inglés.
+Para: qué construir, opiniones de clientes, prioridades, tendencias. El nombre de cada especialista está en inglés.
 
 | Especialista | Qué hace | Fichero |
 |---|---|---|
