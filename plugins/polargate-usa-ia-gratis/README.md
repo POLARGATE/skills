@@ -1,4 +1,4 @@
-# Usa modelos de IA sin pagar
+# Usa modelos de IA sin pagar con PolarFree
 
 Para probar tus ideas con IA sin gastar dinero.
 
