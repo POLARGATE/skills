@@ -1,4 +1,4 @@
-# polargate-mira-tu-seo
+# Mira el SEO de tu web con PolarSEO y datos reales
 
 Para que Claude te responda de SEO con los números reales de tu web, no con consejos genéricos.
 

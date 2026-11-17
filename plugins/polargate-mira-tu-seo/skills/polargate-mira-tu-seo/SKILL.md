@@ -1,13 +1,13 @@
 ---
 name: polargate-mira-tu-seo
-description: "Trae datos SEO reales a Claude con el panel de SEO de Polargate, que se instala en tu propia cuenta, y pagas a DataForSEO solo lo que consultas: palabras clave, competidores, enlaces, auditoría de webs, posiciones, SEO local y visibilidad en IAs. Usar cuando pidan investigar keywords, ver por qué posiciona un competidor, auditar una web o seguir posiciones, y también para montar el panel por primera vez."
+description: "PolarSEO, de Polargate. Trae datos SEO reales a Claude desde un panel que instalas en tu propia cuenta, en el que solo pagas a DataForSEO lo que consultas: palabras clave, competidores, enlaces, auditoría de webs, posiciones, SEO local y visibilidad en las IA. Usar cuando pidan investigar keywords, ver por qué posiciona un competidor, auditar una web o seguir posiciones, y también para montar el panel por primera vez."
 ---
 
-# SEO con datos reales
+# PolarSEO
 
-Esta skill hace dos cosas: ayuda a montar OpenSEO una vez y marca cómo trabajar con él cada día. Si las herramientas de OpenSEO ya están conectadas, ve a «Cómo trabajar». Si no, ve a «Montarlo».
+Esta skill hace dos cosas: ayuda a montar el panel una vez y marca cómo trabajar con él cada día. Si las herramientas del panel ya están conectadas, ve a «Cómo trabajar». Si no, ve a «Montarlo».
 
-Antes de nada, comprueba si hay conexión llamando a `whoami`. No des OpenSEO por conectado ni por caído sin probarlo.
+Antes de nada, comprueba si hay conexión llamando a `whoami`. No des el panel por conectado ni por caído sin probarlo.
 
 ## Montarlo
 
@@ -78,7 +78,7 @@ pnpm deploy:selfhost --yes
 | Visibilidad en ChatGPT y otras IAs | `estimate_ai_visibility_cost`, `run_ai_visibility_check`, `get_ai_visibility_results` |
 | Datos propios de la web | `get_search_console_performance`, `get_google_analytics_organic_overview` |
 
-Las herramientas pueden cambiar con cada versión de OpenSEO. Si una no aparece, usa la lista real del conector. Si necesitas más detalle, tu copia trae las guías de cada trabajo en `plugins/openseo/skills/`: lee la que toque.
+Las herramientas pueden cambiar con cada versión del panel. Si una no aparece, usa la lista real del conector. Si necesitas más detalle, tu copia trae las guías de cada trabajo en `plugins/openseo/skills/`: lee la que toque.
 
 ## Lo que no se hace
 
