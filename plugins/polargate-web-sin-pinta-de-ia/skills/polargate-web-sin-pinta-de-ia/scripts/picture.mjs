@@ -18,7 +18,7 @@ if (!existsSync(themeFile)) { console.error(`no theme at ${themeFile}`); process
 if (!existsSync(page)) { console.error(`no page at ${page}`); process.exit(1); }
 
 let puppeteer = null;
-const roots = [process.env.HALLMARK_PUPPETEER, process.cwd(), HERE].filter(Boolean);
+const roots = [process.env.POLARDESIGN_PUPPETEER, process.cwd(), HERE].filter(Boolean);
 try { const { execSync } = await import('node:child_process'); roots.push(dirname(execSync('npm root -g', { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim())); } catch {}
 for (const root of roots) {
   for (const name of ['puppeteer-core', 'puppeteer']) {
@@ -27,7 +27,7 @@ for (const root of roots) {
   }
   if (puppeteer) break;
 }
-if (!puppeteer) { console.error('picture.mjs needs puppeteer-core or puppeteer (local, global or HALLMARK_PUPPETEER)'); process.exit(1); }
+if (!puppeteer) { console.error('picture.mjs needs puppeteer-core or puppeteer (local, global or POLARDESIGN_PUPPETEER)'); process.exit(1); }
 const CHROMES = [process.env.CHROME_PATH, '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '/Applications/Chromium.app/Contents/MacOS/Chromium', '/usr/bin/google-chrome', '/usr/bin/google-chrome-stable', '/usr/bin/chromium', '/usr/bin/chromium-browser', '/snap/bin/chromium', 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'];
 const findChrome = () => { const c = CHROMES.find((x) => x && existsSync(x)); if (c) return c; try { const b = typeof puppeteer.executablePath === 'function' ? puppeteer.executablePath() : null; if (typeof b === 'string' && existsSync(b)) return b; } catch {} return null; };
 const chrome = findChrome();
@@ -37,7 +37,7 @@ const p = await browser.newPage();
 await p.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]);
 await p.setViewport({ width: 1440, height: 900, deviceScaleFactor: 1 });
 await p.goto(pathToFileURL(page).href, { waitUntil: 'networkidle0', timeout: 45000 }).catch(() => {});
-await p.evaluate(async () => { document.documentElement.classList.add('hallmark-shot'); await document.fonts.ready; for (const i of document.querySelectorAll('img[loading="lazy"]')) i.loading = 'eager'; for (let y = 0; y < document.documentElement.scrollHeight; y += 700) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 40)); } window.scrollTo(0, 0); const waiting = [...document.images].filter((i) => !i.complete); await Promise.race([Promise.all(waiting.map((i) => new Promise((r) => { i.addEventListener('load', r, { once: true }); i.addEventListener('error', r, { once: true }); }))), new Promise((r) => setTimeout(r, 15000))]); await Promise.all([...document.images].map((i) => (i.complete && i.naturalWidth && i.decode ? i.decode().catch(() => {}) : null))); });
+await p.evaluate(async () => { document.documentElement.classList.add('polardesign-shot'); await document.fonts.ready; for (const i of document.querySelectorAll('img[loading="lazy"]')) i.loading = 'eager'; for (let y = 0; y < document.documentElement.scrollHeight; y += 700) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 40)); } window.scrollTo(0, 0); const waiting = [...document.images].filter((i) => !i.complete); await Promise.race([Promise.all(waiting.map((i) => new Promise((r) => { i.addEventListener('load', r, { once: true }); i.addEventListener('error', r, { once: true }); }))), new Promise((r) => setTimeout(r, 15000))]); await Promise.all([...document.images].map((i) => (i.complete && i.naturalWidth && i.decode ? i.decode().catch(() => {}) : null))); });
 await new Promise((r) => setTimeout(r, 800));
 // the viewport itself, not a clip: a clipped capture re-lays the page out and drops content sized in container units
 await p.bringToFront();

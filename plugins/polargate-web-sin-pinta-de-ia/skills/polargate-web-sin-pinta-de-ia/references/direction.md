@@ -4,7 +4,7 @@ The opt-in path, taken only when the user asks for it (**custom**, "bespoke", "n
 
 ## Yours, all of it
 
-On a custom run nothing is dealt and nothing is prescribed: no theme, no shape, no section list, no component, no palette recipe, no draw. What the page is, how it is built and how it looks are your decisions, made for this one client. Hallmark keeps three things: the floor, the gates against machine-made pages, and the sweep. SKILL.md calls you a capable designer; here it means it in full.
+On a custom run nothing is dealt and nothing is prescribed: no theme, no shape, no section list, no component, no palette recipe, no draw. What the page is, how it is built and how it looks are your decisions, made for this one client. PolarDesign keeps three things: the floor, the gates against machine-made pages, and the sweep. SKILL.md calls you a capable designer; here it means it in full.
 
 So aim higher than a good page. Make the one a design lead would bring to a client who has already turned down every template: something you have never made before, that no other prompt could have produced, that a designer would stop to look at twice. Be ambitious in the idea and exact in the execution.
 

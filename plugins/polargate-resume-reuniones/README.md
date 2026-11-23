@@ -1,4 +1,4 @@
-# Pregúntale a Claude qué quedó pendiente de tus reuniones con PolarNotes
+# Pregúntale a Claude con PolarNotes qué quedó pendiente de tus reuniones
 
 Claude te responde con lo que se dijo en tus reuniones, no con lo que le suena.
 

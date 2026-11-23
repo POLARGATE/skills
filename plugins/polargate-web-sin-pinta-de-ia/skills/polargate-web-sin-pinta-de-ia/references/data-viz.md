@@ -25,7 +25,7 @@ The most underused form is emphasis: one accent series, everything else neutral.
 
 ## Colour
 
-Adapted to Hallmark's one-accent discipline (an 8-hue categorical palette would fight everything else on the page):
+Adapted to PolarDesign's one-accent discipline (an 8-hue categorical palette would fight everything else on the page):
 
 - **Single series**: the accent.
 - **Multi-series**: a lightness ramp on the accent hue (L steps of ~12-15%, chroma constant), assigned in a fixed order, never cycled; context/reference series in `--color-muted`.

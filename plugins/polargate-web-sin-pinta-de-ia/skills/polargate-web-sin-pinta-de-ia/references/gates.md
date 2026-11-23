@@ -1,12 +1,12 @@
 # Gates
 
-The one list of what Hallmark refuses. § 1 to § 4 load at Step 4 (§ 1 to § 3 drive the pre-emit pass, § 4 the build); § 5, the Finish checks and the judged clauses, waits for the Step 7 walk, § 6 for the two reviews. `scripts/sloplint.mjs` implements every gate tagged M and derives its tier map from this file, which wins on any disagreement.
+The one list of what PolarDesign refuses. § 1 to § 4 load at Step 4 (§ 1 to § 3 drive the pre-emit pass, § 4 the build); § 5, the Finish checks and the judged clauses, waits for the Step 7 walk, § 6 for the two reviews. `scripts/sloplint.mjs` implements every gate tagged M and derives its tier map from this file, which wins on any disagreement.
 
 ## 1. How a gate binds
 
 Every gate carries a **tier**, which says whether you may disagree with it:
 
-- **Floor.** Never waivable. A gate is Floor when no admired page breaks it on purpose (correctness, access, honesty, the bans), or when it is a **house rule**, a reflex so reliably machine-made that Hallmark is stricter than the field: 54 (the eyebrow), 58 (the screen budget), 63 (template punctuation) and 67 (the tracked-caps label), and no others.
+- **Floor.** Never waivable. A gate is Floor when no admired page breaks it on purpose (correctness, access, honesty, the bans), or when it is a **house rule**, a reflex so reliably machine-made that PolarDesign is stricter than the field: 54 (the eyebrow), 58 (the screen budget), 63 (template punctuation) and 67 (the tracked-caps label), and no others.
 - **Reflex.** A default a language model falls into. A build with a real reason may waive one on the record; past three waivers sloplint notes a house style, which belongs in a `design.md`.
 - **Finish.** Craft detail, invisible at arm's length: the F-checks (§ 5). Reported and answered, never blocking.
 - **Ledger.** Bookkeeping about repetition (32). Reports at `NOTE`, never counts toward the verdict.
@@ -22,12 +22,12 @@ Every gate carries a **tier**, which says whether you may disagree with it:
 A Reflex gate is waived in the CSS stamp block, below the critique line:
 
 ```css
-/* Hallmark · waive 47b · one frame, a real terminal capture inside · the terminal is the product being sold */
+/* PolarDesign · waive 47b · one frame, a real terminal capture inside · the terminal is the product being sold */
 ```
 
 Three fields: the gate, the **guard evidence**, the reason. sloplint re-derives the guard; a build that cannot state its guard usually finds it does not hold. A waiver naming a Floor gate is rejected and the gate fires. One waiver per gate, named by its clause (`47b`, not `47`). The reason is about this page and shares a word with it; one under 24 characters, boilerplate, or reused word for word on another waiver is rejected. The log entry's `waived` field records them; the same gate waived on three consecutive builds is a house style, not an exception.
 
-A Finish finding is answered the same way, `/* Hallmark · answered F3 · the display head is one word and cannot wrap */`; a `WARN` is confirmed and fixed, or dismissed on the record, `/* Hallmark · dismissed 58 · the window holds a five-row table, counted twice across the sticky pane */`.
+A Finish finding is answered the same way, `/* PolarDesign · answered F3 · the display head is one word and cannot wrap */`; a `WARN` is confirmed and fixed, or dismissed on the record, `/* PolarDesign · dismissed 58 · the window holds a five-row table, counted twice across the sticky pane */`.
 
 Words the user insists on are material, not output: `copy: verbatim` in the stamp reports the copy gates (19, 58, 69) as notes. A redesign records what it gives up with `dropped` (`redesign.md` § After).
 
@@ -44,7 +44,7 @@ Before the sweep, score the planned page 1 to 5 on six axes; anything under 3 tr
 | **R**estraint | keeps one decoration too many | lost something you liked |
 | **V**ariety | differs from the log on three of six structural axes | shares almost nothing with the last three runs |
 
-Stamp: `/* Hallmark · pre-emit critique: P5 H4 E5 S3 R5 V4 · weakest: S, hero could be any dev tool; led with the real deploy log instead of a stock dashboard */`. Name the weakest axis and the fix taken; straight 5s name what was cut to earn them. Never invent a weakness to fill the field.
+Stamp: `/* PolarDesign · pre-emit critique: P5 H4 E5 S3 R5 V4 · weakest: S, hero could be any dev tool; led with the real deploy log instead of a stock dashboard */`. Name the weakest axis and the fix taken; straight 5s name what was cut to earn them. Never invent a weakness to fill the field.
 
 ## 4. The gates
 
@@ -88,7 +88,7 @@ One line each. `a`/`b` clauses share a number and carry their own tier. Genre no
 | 4 | Floor | M | A card inside a card | one containment layer |
 | 6a | Floor | M | A hero sized in `vh` | `dvh` or `svh` |
 | 6b | Reflex | J | A hero 92dvh or taller with no stamped `hero:` posture, or title, lede, action and mark all on one centred axis. Guard: 44b passes. **at** and **pl** reach the centred canvas as their normal answer | at most two centred elements; break one alignment |
-| 8 | Reflex | J | The AI template (hero, three features, call to action, footer), or the same shape as one of the last three logged builds | build differently; read `.hallmark/log.json` |
+| 8 | Reflex | J | The AI template (hero, three features, call to action, footer), or the same shape as one of the last three logged builds | build differently; read `.polardesign/log.json` |
 | 9 | Reflex | J | Every section separated the same way with the same gap | climb different rungs of the surface ladder in different places |
 | 24a | Floor | M | A raw `padding`, `margin` or `gap` length where a `--space-*` token exists | the token |
 | 24b | Reflex | M | Off-scale spacing. Guard: three at most, each an optical nudge | the scale |
@@ -119,7 +119,7 @@ One line each. `a`/`b` clauses share a number and carry their own tier. Genre no
 | Gate | Tier | Class | The tell | The fix |
 | --- | --- | --- | --- | --- |
 | 19 | Floor | M | Copy tells: placeholder names (Jane Doe), startup clichés (Acme, Nexus), buzzwords (seamless, robust, empower, supercharge, elevate, effortless, unlock, unleash, next-generation, world-class, best-in-class, industry-leading, mission-critical, future-proof), the rebuttal cadence three or more times ("Not a feature. A platform."), "quietly trusted by", em or en dashes, filler openers ("Built for the modern team", "In today's landscape"), a stock second action beside the primary (*Learn more*, *Get started*, *Book a demo*). A stock footer line (*All rights reserved*) is a `WARN`; the page's own name is never a cliché | say what the product does, in its own nouns |
-| 20 | Floor | M | The Hallmark stamp missing from the first lines of CSS (build form or checked form) | write it |
+| 20 | Floor | M | The PolarDesign stamp missing from the first lines of CSS (build form or checked form) | write it |
 | 42 | Reflex | M | Chrome by reflex: the AI nav (wordmark left, inline links, button right, hairline under) or the AI footer (four link columns, social row, copyright) without the stamp naming it | decide it and name it (`nav:`, `footer:`), or build another shape |
 | 46a | Floor | M | An invented metric, testimonial, logo wall or case-study count | the user's number, a text slot (`craft.md` § 8), or nothing |
 | 46b | Reflex | J | A bare figure as the hero's only headline. Guard: user-supplied and labelled | pair it with the line that says what it means |
@@ -176,7 +176,7 @@ Loaded at Step 7, with the sweep's findings in hand.
 
 ### Finish (F-checks, never block)
 
-F1 straight quotes in prose · F2 `...` for an ellipsis · F3 no `text-wrap: balance` on display heads · F4 more than one filled-primary button recipe on a page (dialogs count as their own page), or two filled buttons side by side · F5 an icon in a coloured coin · F6 display-size figures without tabular numerals · F7 one container recipe stamped on six or more selectors, or the pill radius on five or more selectors that are not controls, tags or badges · F8 more than one scroll-choreography pattern · F9 fake-human avatar hotlinks (this half is a FAIL) or person-keyword stock URLs · F10 a Lottie where CSS or SVG would do · F11 a highlighter band at the baseline instead of behind the x-height, or an underline thicker than 2px or offset more than 0.25em · F12 a flex row of unequal heights without `align-items: center` · F13 the outlier face carrying more than one role · F14 a helper-text slot with no reserved `min-height: 1lh` · F15 page invariants broken: more than one primary button style, container width, column gap below the hero or radius per nesting level, or more centred heading groups than left-aligned ones · F16 browser surfaces unthemed: no `::selection`, `caret-color` or `scrollbar-color` on a page with a committed palette · F17 a text block squeezed into a sliver at 1440 (under about 16 characters wide over four lines or more) (render) · F18 a `data-slot` rendering under 40px in either dimension at 1440, or a page with slots and no `hallmarkSlots` script (render) · F19 more than three font weights in running use, display and body together (render) · F20 a grid or wrapping row leaving one item alone on its last row under a fuller row (render) · F21 a heading level skipped · F22 justified text without `hyphens: auto` · F23 a document without `lang`, a `<title>` or a meta description · F24 a hairline border under a wide soft shadow (24px or more of blur after a negative spread) on one surface · F25 content a phone never gets: about 40 words or more shown at 1440 and hidden at 375, navigation aside, or a table opening with two or more columns off-screen (render). · F26 a paragraph that leaves one word on its last line, or a head of two or three lines ending on a stub, at 375 or 1280 (balance the head, `pretty` the copy, or rewrite)
+F1 straight quotes in prose · F2 `...` for an ellipsis · F3 no `text-wrap: balance` on display heads · F4 more than one filled-primary button recipe on a page (dialogs count as their own page), or two filled buttons side by side · F5 an icon in a coloured coin · F6 display-size figures without tabular numerals · F7 one container recipe stamped on six or more selectors, or the pill radius on five or more selectors that are not controls, tags or badges · F8 more than one scroll-choreography pattern · F9 fake-human avatar hotlinks (this half is a FAIL) or person-keyword stock URLs · F10 a Lottie where CSS or SVG would do · F11 a highlighter band at the baseline instead of behind the x-height, or an underline thicker than 2px or offset more than 0.25em · F12 a flex row of unequal heights without `align-items: center` · F13 the outlier face carrying more than one role · F14 a helper-text slot with no reserved `min-height: 1lh` · F15 page invariants broken: more than one primary button style, container width, column gap below the hero or radius per nesting level, or more centred heading groups than left-aligned ones · F16 browser surfaces unthemed: no `::selection`, `caret-color` or `scrollbar-color` on a page with a committed palette · F17 a text block squeezed into a sliver at 1440 (under about 16 characters wide over four lines or more) (render) · F18 a `data-slot` rendering under 40px in either dimension at 1440, or a page with slots and no `polardesignSlots` script (render) · F19 more than three font weights in running use, display and body together (render) · F20 a grid or wrapping row leaving one item alone on its last row under a fuller row (render) · F21 a heading level skipped · F22 justified text without `hyphens: auto` · F23 a document without `lang`, a `<title>` or a meta description · F24 a hairline border under a wide soft shadow (24px or more of blur after a negative spread) on one surface · F25 content a phone never gets: about 40 words or more shown at 1440 and hidden at 375, navigation aside, or a table opening with two or more columns off-screen (render). · F26 a paragraph that leaves one word on its last line, or a head of two or three lines ending on a stub, at 375 or 1280 (balance the head, `pretty` the copy, or rewrite)
 
 ### Judged clauses
 
@@ -184,7 +184,7 @@ The gates above that a script cannot settle, with enough to judge them well.
 
 **6b, the hero shape.** A hero built around one centred object is a composition; four things stacked on the centre line is a default. Prefer at most two centred elements with one breaking alignment (margin-aligned, right-flush, numeral-anchored). A hero with a stamped posture fills its screen (`layout.md` § 6); an unstamped one stops short of 92dvh.
 
-**8 and 32, repetition.** Read `.hallmark/log.json` newest first. The page's shape must differ from the last three; the six structural axes in `macrostructures.md` § The fingerprint are the ruler, and the log's `fingerprint` field is what you compare against, never memory. The same composition twice in a row on one page is the template; across pages, a different order or a different lead composition is enough.
+**8 and 32, repetition.** Read `.polardesign/log.json` newest first. The page's shape must differ from the last three; the six structural axes in `macrostructures.md` § The fingerprint are the ruler, and the log's `fingerprint` field is what you compare against, never memory. The same composition twice in a row on one page is the template; across pages, a different order or a different lead composition is enough.
 
 **9, section rhythm.** Whitespace, hairline, tinted well, card: the surface ladder in `craft.md`. A page that climbs the same rung at every seam reads as a template; one that climbs different rungs in different places reads as set.
 

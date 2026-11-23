@@ -24,7 +24,7 @@ A rendered comp carries mass, interval and alignment at a glance, which prose ca
 Two comps, three when the direction genuinely forks. One is not a choice and four is a shopping trip.
 
 ```
-node <skill-dir>/scripts/imagegen.mjs "<prompt>" --size 1280x800 --n 1 --out .hallmark/comps/c1.png
+node <skill-dir>/scripts/imagegen.mjs "<prompt>" --size 1280x800 --n 1 --out .polardesign/comps/c1.png
 ```
 
 The prompt is built from the Picks block and the stamp's idea or theme line, not from the prompt. A prompt that reads like the prompt produces the category default in pixels, the page `direction.md` sets aside. Carry, in this order: the **first viewport** as you planned it (what sits where, how large), the **idea** in a few plain words, the **ground and accent** as plain colour words, the **display class** (not the face name; no generator knows Erode), and the **macrostructure** as a compositional instruction. Then one negative clause naming what the category does, so the generator is pushed off it too.

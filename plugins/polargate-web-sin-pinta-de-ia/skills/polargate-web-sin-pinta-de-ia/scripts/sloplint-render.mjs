@@ -58,7 +58,7 @@ async function pixelBehind(page, probe) {
 
 async function shoot(page, file, tag, fullPage) {
   try {
-    const dir = isUrl(file) ? join(process.cwd(), '.hallmark', SHOT_DIR) : join(dirname(file), '.hallmark', SHOT_DIR);
+    const dir = isUrl(file) ? join(process.cwd(), '.polardesign', SHOT_DIR) : join(dirname(file), '.polardesign', SHOT_DIR);
     mkdirSync(dir, { recursive: true });
     const ignore = join(dirname(dir), '.gitignore');
     if (!existsSync(ignore)) writeFileSync(ignore, 'shots/\nbefore/\nbefore.json\nbefore.txt\ncompare.html\n');
@@ -89,7 +89,7 @@ export async function renderCheck(htmlFiles, metaIn) {
     }
   };
   const local = [process.cwd(), dirname(fileURLToPath(import.meta.url))];
-  if (process.env.HALLMARK_PUPPETEER) local.unshift(process.env.HALLMARK_PUPPETEER);
+  if (process.env.POLARDESIGN_PUPPETEER) local.unshift(process.env.POLARDESIGN_PUPPETEER);
   await tryRoots(local);
   if (!puppeteer) {
     try {
@@ -99,7 +99,7 @@ export async function renderCheck(htmlFiles, metaIn) {
     } catch {}
   }
   if (!puppeteer) {
-    const none = []; none.failed = failed; none.notRun = 'no puppeteer-core found locally, globally or via HALLMARK_PUPPETEER';
+    const none = []; none.failed = failed; none.notRun = 'no puppeteer-core found locally, globally or via POLARDESIGN_PUPPETEER';
     return none;
   }
   let chrome = [process.env.CHROME_PATH, ...CHROMES].find((p) => p && existsSync(p)) || null;
@@ -127,7 +127,7 @@ export async function renderCheck(htmlFiles, metaIn) {
         if (nav.e && !/timeout/i.test(nav.e.message)) throw nav.e;
         if (nav.r && isUrl(file) && !nav.r.ok() && nav.r.status() !== 304) throw new Error(`HTTP ${nav.r.status()} from ${file}`);
         await page.evaluate(async () => {
-          document.documentElement.classList.add('hallmark-shot');
+          document.documentElement.classList.add('polardesign-shot');
           for (const el of [document.documentElement, document.body]) if (el) el.style.setProperty('scroll-behavior', 'auto', 'important');
           const quiet = document.createElement('style');
           quiet.textContent = 'nextjs-portal, astro-dev-toolbar { display: none !important; }';
@@ -257,7 +257,7 @@ export async function renderCheck(htmlFiles, metaIn) {
 export function writeCompare(targets, note) {
   const groups = new Map();
   for (const t of targets) {
-    const dir = isUrl(t) ? join(process.cwd(), '.hallmark') : join(dirname(t), '.hallmark');
+    const dir = isUrl(t) ? join(process.cwd(), '.polardesign') : join(dirname(t), '.polardesign');
     if (!groups.has(dir)) groups.set(dir, []);
     groups.get(dir).push(slugOf(t));
   }

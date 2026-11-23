@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/* sloplint: Hallmark's mechanical gate checker. Zero dependencies, Node 18+. Gate ids and tiers: references/gates.md. */
+/* sloplint: PolarDesign's mechanical gate checker. Zero dependencies, Node 18+. Gate ids and tiers: references/gates.md. */
 import { createHash } from 'node:crypto';
 import { readFileSync, readdirSync, statSync, realpathSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join, extname, dirname, basename, resolve } from 'node:path';
@@ -25,7 +25,7 @@ for (let i = 0; i < args.length; i++) {
 }
 function usage() {
   console.error('usage: node sloplint.mjs <file-or-dir ...> [--genre editorial|modern-minimal|atmospheric|playful] [--scope page|component|app] [--stage hero|page] [--json] [--render] [--url http://localhost:3000] [--tier floor] [--before | --kept]');
-  console.error('--before records what the target says and does (.hallmark/before.json, screenshots in .hallmark/before); --kept checks a redesign against that record');
+  console.error('--before records what the target says and does (.polardesign/before.json, screenshots in .polardesign/before); --kept checks a redesign against that record');
   console.error('reads .html and .css, plus .jsx .tsx .vue .svelte .astro (Tailwind class strings, cn/clsx/cva calls); skips node_modules, dist, build, coverage and dot folders');
 }
 if (!opts.paths.length && !opts.urls.length) { usage(); process.exit(2); }
@@ -923,13 +923,13 @@ function applyWaivers(ctx, dir) {
   VERBATIM = /\bcopy:\s*verbatim\b/i.test(ctx.stampText);
   APPSCREEN = /\bshape:\s*app screen\b/i.test(ctx.stampText);
   LAYOUT_KEPT = (/\bredesign:\s*(polish|restyle|full)\b/i.exec(ctx.stampText) || [])[1]?.toLowerCase() || false;
-  const re = /\/\*\s*Hallmark\s*·\s*waive\s+(\d{1,2}[a-z]{0,3}|F\d+)\s*·\s*([^·*]+?)\s*·\s*([^*]+?)\s*\*\//gi;
+  const re = /\/\*\s*PolarDesign\s*·\s*waive\s+(\d{1,2}[a-z]{0,3}|F\d+)\s*·\s*([^·*]+?)\s*·\s*([^*]+?)\s*\*\//gi;
   const claims = [...ctx.stampText.matchAll(re)].map((m) => ({
     id: m[1], evidence: m[2].trim(), reason: m[3].trim(), raw: m[0],
   }));
 
   const wellFormed = new Set(claims.map((c) => c.raw));
-  const malformed = [...ctx.stampText.matchAll(/\/\*[^*]*Hallmark[^*]*·\s*waive\b[^*]*\*\//gi)]
+  const malformed = [...ctx.stampText.matchAll(/\/\*[^*]*PolarDesign[^*]*·\s*waive\b[^*]*\*\//gi)]
     .map((m) => m[0]).filter((raw) => !wellFormed.has(raw));
   const reasons = new Map();
   for (const c of claims) {
@@ -938,7 +938,7 @@ function applyWaivers(ctx, dir) {
   }
 
   const pageWords = new Set(
-    (ctx.stampText.replace(/\/\*\s*Hallmark\s*·\s*(?:waive|answered|dismissed)\b[^*]*\*\//gi, ' ') + ' ' + ctx.docs.map((d) => d.text).join(' '))
+    (ctx.stampText.replace(/\/\*\s*PolarDesign\s*·\s*(?:waive|answered|dismissed)\b[^*]*\*\//gi, ' ') + ' ' + ctx.docs.map((d) => d.text).join(' '))
       .toLowerCase().match(/[a-z]{4,}/g) || []
   );
   const file = ctx.cssFiles[0]?.file || ctx.docs[0]?.file || dir;
@@ -953,7 +953,7 @@ function applyWaivers(ctx, dir) {
     findings.push({
       gate: 'waive', grade: 'WAIVER', tier: 'reflex', file: rel(file), line: 1,
       evidence: trunc(`malformed waiver, ignored: ${raw.replace(/\s+/g, ' ')}`),
-      fix: 'Three · -separated fields: /* Hallmark · waive <gate> · <guard evidence> · <reason> */',
+      fix: 'Three · -separated fields: /* PolarDesign · waive <gate> · <guard evidence> · <reason> */',
     });
   }
   for (const c of claims) {
@@ -986,7 +986,7 @@ function applyWaivers(ctx, dir) {
     });
   }
 
-  const ansRe = /\/\*\s*Hallmark\s*·\s*answered\s+(\d{1,2}[a-z]{0,3}|F\d+)\s*·\s*([^*]+?)\s*\*\//gi;
+  const ansRe = /\/\*\s*PolarDesign\s*·\s*answered\s+(\d{1,2}[a-z]{0,3}|F\d+)\s*·\s*([^*]+?)\s*\*\//gi;
   for (const m of ctx.stampText.matchAll(ansRe)) {
     const id = baseGate(m[1]);
     const reason = m[2].trim();
@@ -997,19 +997,19 @@ function applyWaivers(ctx, dir) {
       findings.push({
         gate: id, grade: 'WAIVER', tier: tierOf(id), file: rel(file), line: 1,
         evidence: trunc(`answer on ${m[1]} REJECTED (${bad})`),
-        fix: 'Two · -separated fields: /* Hallmark · answered <check> · <reason> */',
+        fix: 'Two · -separated fields: /* PolarDesign · answered <check> · <reason> */',
       });
       continue;
     }
     ANSWERED.add(id);
   }
 
-  const disRe = /\/\*\s*Hallmark\s*·\s*dismissed\s+(\d{1,2}[a-z]{0,3}|F\d+)\s*·\s*([^*]+?)\s*\*\//gi;
+  const disRe = /\/\*\s*PolarDesign\s*·\s*dismissed\s+(\d{1,2}[a-z]{0,3}|F\d+)\s*·\s*([^*]+?)\s*\*\//gi;
   for (const m of ctx.stampText.matchAll(disRe)) {
     const reason = m[2].trim();
     const bad = reason.length < 24 ? 'reason under 24 characters' : reasonIsBoilerplate(reason) ? 'boilerplate reason' : null;
     if (bad) {
-      findings.push({ gate: baseGate(m[1]), grade: 'WAIVER', tier: tierOf(m[1]), file: rel(file), line: 1, evidence: trunc(`dismissal of ${m[1]} REJECTED (${bad})`), fix: 'Two · -separated fields: /* Hallmark · dismissed <gate> · <what you checked and why the warning is wrong here> */' });
+      findings.push({ gate: baseGate(m[1]), grade: 'WAIVER', tier: tierOf(m[1]), file: rel(file), line: 1, evidence: trunc(`dismissal of ${m[1]} REJECTED (${bad})`), fix: 'Two · -separated fields: /* PolarDesign · dismissed <gate> · <what you checked and why the warning is wrong here> */' });
       continue;
     }
     DISMISSED.add(baseGate(m[1]));
@@ -1466,7 +1466,7 @@ function check20(ctx) {
     const lines = src.split('\n').map((l) => l.trim()).filter(Boolean);
     let i = 0;
     while (i < lines.length && /^@charset\b/i.test(lines[i])) i++;
-    return i < lines.length && /^\/\*\s*Hallmark/.test(lines[i]);
+    return i < lines.length && /^\/\*\s*PolarDesign/.test(lines[i]);
   };
   let ok = false;
   const cssSources = [];
@@ -1476,7 +1476,7 @@ function check20(ctx) {
   const pageCss = ctx.cssFiles.length || ctx.docs.some((d) => d.kind === 'html' && d.styles.length);
   if (!ok && cssSources.length && pageCss) {
     const where = ctx.cssFiles[0]?.file || ctx.docs[0]?.file;
-    report(20, 'FAIL', where, 1, 'no Hallmark stamp on the first non-empty line of any CSS', 'The stamp comment is line 1 of the CSS; only @charset may precede it');
+    report(20, 'FAIL', where, 1, 'no PolarDesign stamp on the first non-empty line of any CSS', 'The stamp comment is line 1 of the CSS; only @charset may precede it');
   }
 }
 
@@ -3097,7 +3097,7 @@ function check68(ctx) {
       if (hiddenUp) continue;
       slots.push({ i, t });
     }
-    if (slots.length && !ctx.docs.some((d) => d.kind !== 'html') && !/hallmarkSlots/.test(doc.src) && !ctx.docs.some((d) => d !== doc && /hallmarkSlots/.test(d.src))) report('F18', 'WARN', doc.file, slots[0].t.line, `${slots.length} slot${slots.length > 1 ? 's' : ''} and no slot script`, 'Paste the hallmarkSlots script the scaffold printed before </body>, so the user\'s images drop in (imagery.md § 3)');
+    if (slots.length && !ctx.docs.some((d) => d.kind !== 'html') && !/polardesignSlots/.test(doc.src) && !ctx.docs.some((d) => d !== doc && /polardesignSlots/.test(d.src))) report('F18', 'WARN', doc.file, slots[0].t.line, `${slots.length} slot${slots.length > 1 ? 's' : ''} and no slot script`, 'Paste the polardesignSlots script the scaffold printed before </body>, so the user\'s images drop in (imagery.md § 3)');
     if (slots.length > 5) report(68, 'FAIL', doc.file, slots[5].t.line, `${slots.length} empty slots on one page`, 'Two to four slots carry a page; set the rest in type, names and facts in a list or table');
     const byRun = new Map();
     for (const sl of slots) {
@@ -3829,7 +3829,7 @@ function checkTailwind(ctx) {
     const pal = new Map();
     let palAt = null;
     for (const it of list) for (const p of it.info.pal) if (!pal.has(p)) { pal.set(p, it); if (pal.size === 5) palAt = it; }
-    if (palAt) report(74, 'WARN', doc.file, palAt.line, `default palette instead of theme tokens: ${pal.size} distinct palette classes (${[...pal.keys()].slice(0, 4).join(' ')})`, 'Extend the Tailwind theme with the Hallmark tokens and use those names');
+    if (palAt) report(74, 'WARN', doc.file, palAt.line, `default palette instead of theme tokens: ${pal.size} distinct palette classes (${[...pal.keys()].slice(0, 4).join(' ')})`, 'Extend the Tailwind theme with the PolarDesign tokens and use those names');
     const scaled = list.filter((it) => it.info.hScale);
     if (scaled.length >= 3) report(11, 'WARN', doc.file, scaled[2].line, `hover scale on ${scaled.length} elements in this file (${scaled.slice(0, 3).map((it) => it.info.hScale).join(', ')})`, 'One hover signal per element; not every card grows');
     const first = new Set(['section', 'header'].map((n) => doc.tags.findIndex((t) => !t.close && t.name === n)).filter((x) => x >= 0));
@@ -4034,9 +4034,9 @@ function shareProjects(contexts) {
       shared.prm = shared.prm || /prefers-reduced-motion/i.test(stripComments(c.allCss)) || tv.has('motion-reduce') || tv.has('motion-safe');
     }
     for (const c of list) c.shared = shared;
-    const stamped = list.find((c) => !parts.includes(c) && /Hallmark\s*·/.test(c.stampText));
+    const stamped = list.find((c) => !parts.includes(c) && /PolarDesign\s*·/.test(c.stampText));
     for (const c of parts) {
-      if (stamped && !/Hallmark\s*·/.test(c.stampText)) c.stampText = `${c.stampText}\n${stamped.stampText}`;
+      if (stamped && !/PolarDesign\s*·/.test(c.stampText)) c.stampText = `${c.stampText}\n${stamped.stampText}`;
       c.twTok = { ...tokens, ...c.tokens };
       c._tw = null;
     }
@@ -4168,7 +4168,7 @@ if (opts.render) {
   }
 }
 
-const SNAP = join(process.cwd(), '.hallmark', 'before.json');
+const SNAP = join(process.cwd(), '.polardesign', 'before.json');
 const squash = (t) => t.replace(/\s+/g, ' ').trim();
 const escRe = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 function wiringOf(src) {
@@ -4249,8 +4249,8 @@ if (opts.kept) {
     const outside = Object.keys(was.files || {}).filter((f) => !(f in now.files) && existsSync(resolve(f)));
     if (was.files) was.wiring = unionWiring(Object.entries(was.files).filter(([f]) => !outside.includes(f)).map(([, w]) => w));
     const stamps = contexts.map(([, c]) => c.stampText).join('\n');
-    for (const m of stamps.matchAll(/\/\*\s*Hallmark\s*·\s*(dropped|reworded)\s+([^·*]+?)\s*·\s*([^*]+?)\s*\*\//gi)) if (m[2].trim() && m[3].trim().length < 12) report('kept', 'WARN', SNAP, 1, `${m[1]} ${trunc(m[2].trim(), 40)} is not on the record: its reason is under 12 characters`, 'Say why in a clause');
-    const allowed = [...stamps.matchAll(/\/\*\s*Hallmark\s*·\s*(dropped|reworded)\s+([^·*]+?)\s*·\s*([^*]+?)\s*\*\//gi)].filter((m) => m[3].trim().length >= 12).flatMap((m) => (m[1].toLowerCase() === 'reworded' ? [...m[2].matchAll(/"([^"]+)"/g)].map((q) => q[1]) : m[2].split(',')).map((t) => t.trim().replace(/^[`"']|[`"']$/g, '').toLowerCase()).filter(Boolean));
+    for (const m of stamps.matchAll(/\/\*\s*PolarDesign\s*·\s*(dropped|reworded)\s+([^·*]+?)\s*·\s*([^*]+?)\s*\*\//gi)) if (m[2].trim() && m[3].trim().length < 12) report('kept', 'WARN', SNAP, 1, `${m[1]} ${trunc(m[2].trim(), 40)} is not on the record: its reason is under 12 characters`, 'Say why in a clause');
+    const allowed = [...stamps.matchAll(/\/\*\s*PolarDesign\s*·\s*(dropped|reworded)\s+([^·*]+?)\s*·\s*([^*]+?)\s*\*\//gi)].filter((m) => m[3].trim().length >= 12).flatMap((m) => (m[1].toLowerCase() === 'reworded' ? [...m[2].matchAll(/"([^"]+)"/g)].map((q) => q[1]) : m[2].split(',')).map((t) => t.trim().replace(/^[`"']|[`"']$/g, '').toLowerCase()).filter(Boolean));
     const acked = {};
     const gone = (a, b, cat) => (a || []).filter((x) => {
       if ((b || []).includes(x)) return false;
@@ -4290,7 +4290,7 @@ if (opts.kept) {
       wordsWas += b.words || 0; wordsNow += a.words || 0;
     }
     const list = (set, n = 8) => { const a = [...set]; return a.slice(0, n).map((x) => trunc(x, 48)).join(', ') + (a.length > n ? ` and ${a.length - n} more` : ''); };
-    const fix = 'Restore each one, or record it in the stamp: /* Hallmark · dropped <item>, <item> · <the reason> */';
+    const fix = 'Restore each one, or record it in the stamp: /* PolarDesign · dropped <item>, <item> · <the reason> */';
     total['script hooks'] = new Set(); hard['script hooks'] = new Set();
     for (const [f, h] of Object.entries(was.scripts || {})) {
       if (outside.includes(f)) continue;
@@ -4318,7 +4318,7 @@ if (opts.kept) {
     }
     for (const x of [...hard.fields]) if ([...hard.fields].some((y) => y.startsWith(`${x} in `))) hard.fields.delete(x);
     for (const [k, set] of Object.entries(hard)) if (set.size) report('kept', 'FAIL', SNAP, 1, k === 'script hooks' ? `a script still queries what its page no longer has: ${list(set)}` : k === 'forms' ? `a form lost what it had before: ${list(set)}` : `${k} the page had before and no longer has: ${list(set)}`, k === 'script hooks' ? 'Keep the ids, classes and attributes scripts query, or change the script with the markup' : fix);
-    for (const [k, set] of Object.entries(soft)) if (set.size) report('kept', 'WARN', SNAP, 1, `${k} gone or reworded since the before record: ${list(set)}`, 'Restore it, or record it in the stamp: /* Hallmark · reworded "<old>" to "<new>" · <the gate that named it> */ or dropped <item> · <the reason>');
+    for (const [k, set] of Object.entries(soft)) if (set.size) report('kept', 'WARN', SNAP, 1, `${k} gone or reworded since the before record: ${list(set)}`, 'Restore it, or record it in the stamp: /* PolarDesign · reworded "<old>" to "<new>" · <the gate that named it> */ or dropped <item> · <the reason>');
     if (wordsWas > 80 && wordsNow < wordsWas * 0.6) report('kept', 'WARN', SNAP, 1, `the pages hold ${wordsNow} words where they held ${wordsWas}`, 'Check that no section of content was dropped');
     if (skipped.length) report('kept', 'WARN', SNAP, 1, `not compared, because this run did not render them: ${list(skipped, 4)}`, 'Render the same pages or URLs the before record holds');
     if (outside.length) report('kept', 'WARN', SNAP, 1, `not compared, because this run did not read them: ${list(outside, 4)}`, 'Run --kept on the same target as --before');

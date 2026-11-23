@@ -10,7 +10,7 @@ Loaded when the prompt names a real company or brand to build for ("a page for S
    - Colours: every hex / rgb / hsl / oklch literal in the fetched CSS plus `<meta name="theme-color">`; cluster to the 3-6 recurring values; identify the primary (most-used saturated value on interactive elements) and the surface family.
    - Type: `font-family` declarations and any Google Fonts / font-service CSS family names (names only, never binaries).
    - Logo: a pointer via [`imagery.md`](imagery.md) § 8 (the brand's own media page, Simple Icons); never hotlink from an unrelated site, never redraw a real mark.
-4. **Record** `.hallmark/brand-spec.md`:
+4. **Record** `.polardesign/brand-spec.md`:
 
 ```markdown
 # Brand spec · <brand> · fetched <date>

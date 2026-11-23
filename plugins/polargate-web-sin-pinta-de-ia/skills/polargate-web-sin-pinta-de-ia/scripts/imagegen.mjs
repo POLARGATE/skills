@@ -38,7 +38,7 @@ const steps = parseInt(args.steps ?? "4", 10);
 
 const n = Math.max(1, parseInt(args.n ?? "1", 10) || 1);
 const hash = createHash("sha256").update([model, prompt, size, steps, n].join("|")).digest("hex").slice(0, 16);
-const cacheDir = args.out ? dirname(args.out) : join(process.cwd(), ".hallmark", "img-cache");
+const cacheDir = args.out ? dirname(args.out) : join(process.cwd(), ".polardesign", "img-cache");
 const cachePath = args.out ?? join(cacheDir, `${hash}.png`);
 const stem = cachePath.replace(/\.png$/, "");
 const metaPath = stem + ".json";
