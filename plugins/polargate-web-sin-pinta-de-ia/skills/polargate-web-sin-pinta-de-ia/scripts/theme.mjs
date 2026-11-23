@@ -422,10 +422,10 @@ async function photos() {
       console.log(`  ${p.subject} · ${p.w}x${p.h} ${p.orient} · ${p.tone}, ${p.temp}${p.people !== 'none' ? `, ${p.people}` : ''}${p.match === 'partial' ? ` · partial match, no ${p.missing.join(', ')}` : ''}${p.error ? ` · not saved: ${p.error}` : ''}`);
       const [iw, ih] = p.saved ? [p.sizes[p.sizes.length - 1], Math.round(p.h * p.sizes[p.sizes.length - 1] / p.w)] : [p.w, p.h];
       console.log(`    <img src="${src}"${set}${p.saved ? '' : ' sizes="100vw"'} width="${iw}" height="${ih}" alt="${p.subject}"${pos}>`);
-      console.log(`    credit: ${p.credit}`);
+      console.log(`    credit: ${p.credit ?? `none needed (${p.license})`}`);
     }
   }
-  console.log('\nset sizes to the layout (50vw for a half, 100vw full-bleed) and crop with the frame (aspect-ratio and object-fit: cover; object-position keeps the subject). Every photo carries its credit on the page: one line in the footer, "Photographs: <credit>, <credit>", each linked to its page (imagery.md § 2). Log the ids in the entry\'s photos list.');
+  console.log('\nset sizes to the layout (50vw for a half, 100vw full-bleed) and crop with the frame (aspect-ratio and object-fit: cover; object-position keeps the subject). Every CC BY or CC BY-SA photo carries its credit on the page: one line in the footer, "Photographs: <credit>, <credit>", each linked to its page (imagery.md § 2); CC0 and public-domain photos need none. Log the ids in the entry\'s photos list.');
 }
 
 const WIDTHS = [960, 1280, 1920];
@@ -437,7 +437,8 @@ function thumbOf(p, w) {
   const name = p.file.split('/').pop();
   return `${p.file.replace('/wikipedia/commons/', '/wikipedia/commons/thumb/')}/${w}px-${p.thumbName || name}`;
 }
-function creditOf(p) { return `<a href="${p.page}">${p.author}</a> (${p.license}, Wikimedia Commons)`; }
+// Only CC BY and CC BY-SA require a credit; CC0 and public domain need none (the same rule as credited() in sloplint).
+function creditOf(p) { return /^(CC0|Public domain|PD)/i.test(p.license) ? null : `<a href="${p.page}">${p.author}</a> (${p.license}, Wikimedia Commons)`; }
 
 function tokenBlockOf(src, file) {
   const m = /```css\s*\n:root\s*\{([\s\S]*?)\n\}\s*\n```/.exec(src);

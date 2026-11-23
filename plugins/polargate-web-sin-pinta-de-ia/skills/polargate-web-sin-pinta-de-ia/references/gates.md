@@ -161,7 +161,7 @@ One line each. `a`/`b` clauses share a number and carry their own tier. Genre no
 | 30a | Floor | M | An emoji standing in for an icon | one icon library, custom SVG, or typography |
 | 30b | Reflex | M | Two icon libraries on one page. Guard: the second is a brand or platform mark in two slots at most | one library |
 | 33 | Floor | M | A decorative `<svg>`, `<canvas>` or CSS-art element with neither `aria-hidden="true"` nor a label | hide it or name it |
-| 76 | Floor | M/R | A broken image: an `<img>` with no source or one that does not load; a library photo with no credit on the page; a paid stock photo (a free stock hotlink is a WARN) | the real file, or a library photo credited in the footer (`imagery.md` § 2) |
+| 76 | Floor | M/R | A broken image: an `<img>` with no source or one that does not load; a CC BY or CC BY-SA library photo with no credit on the page; a paid stock photo (a free stock hotlink is a WARN) | the real file, or a library photo credited in the footer (`imagery.md` § 2) |
 | 73 | Floor | R | Text painted under another element: an opaque box, an image or another run of text covers a line of it (sticky and fixed chrome excepted) | give the text its own space, or its own surface above the cover |
 | 40 | Floor | M/R | Text, icon, focus ring or a field's edge under its contrast threshold against its computed background (body 4.5:1 or APCA Lc 60; large text, icons, rings and field edges 3:1 or Lc 45) | fix the pair; a field edge takes `--color-muted` |
 | 41 | Floor | M/R | Button text within 5% L and 0.05 chroma of its fill; `--color-accent-ink` missing where the accent carries text; a dark panel that does not swap its text colour; grey text on a coloured surface | the paired ink token |

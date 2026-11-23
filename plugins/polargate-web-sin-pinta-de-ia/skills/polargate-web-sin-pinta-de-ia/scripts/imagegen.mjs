@@ -54,8 +54,8 @@ if (!key) {
   out({
     error: "no-key",
     message:
-      "TOGETHER_API_KEY not set. Image generation is opt-in; falling back to CSS-art / a labelled placeholder. " +
-      "Set TOGETHER_API_KEY to generate real imagery, or keep the typography-only / placeholder path.",
+      "TOGETHER_API_KEY not set. Image generation is opt-in. Use the user's own photos, library photos (theme.mjs photos), " +
+      "slots for the user's images with no visible label, or a typography-only layout. Set TOGETHER_API_KEY to generate imagery.",
   }, 3);
 }
 

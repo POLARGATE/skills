@@ -32,7 +32,7 @@ node <skill-dir>/scripts/theme.mjs photos "apple orchard in autumn" "hands picki
 It ranks the library for each subject, steers away from the photos the last five builds used, and prints for each pick what it shows, its size, a ready `<img>` with its `srcset`, and its credit. Keep only picks that fit the sentence the section makes; re-ask in other words (the place, the material, the action) before settling for a near miss.
 
 - **Never write an image URL from memory or take one from a stock site** (Unsplash, Pexels and Pixabay bar AI-driven selection in their terms). Use only what the script printed or the user supplied (76).
-- **Credit every library photo:** one line in the footer marked `data-credits` (the word budget skips it), *Photographs:* then each printed credit, in the footer's small style. CC BY and CC BY-SA require it (76).
+- **Credit the CC BY and CC BY-SA library photos:** their licences require it (76). One line in the footer marked `data-credits` (the word budget skips it), *Photographs:* then each printed credit, in the footer's small style. CC0 and public-domain photos print no credit and need none.
 - **Size and crop in CSS:** keep the printed `srcset`, set `sizes` to the layout (`50vw` for a half, `100vw` full-bleed), and crop with the frame: `aspect-ratio` on the slot, `object-fit: cover`, the printed `object-position` (or your own) to keep the subject in frame.
 - **For production,** `--save <dir>` downloads the picks into the project and prints local paths; drafts may link the Commons thumbnails.
 - **The hero photograph is the LCP:** `fetchpriority="high"`, never `loading="lazy"`; every other image is lazy. A full-bleed or hero frame takes a photo 2400px or more on its long side; a smaller one goes soft at 1920.

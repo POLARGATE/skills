@@ -30,7 +30,7 @@ The standard is not "SEO improved". The standard is:
 - No unnecessary JavaScript dependency for critical SEO content
 - No hidden CLS, no unmeasured analytics
 - No false claims, no black-hat tactics, no shortcuts
-- AI-search ready: cited by Google AI Overviews, ChatGPT Search, Perplexity, Claude, Gemini
+- AI-search ready: citable by Google AI Overviews, ChatGPT Search, Perplexity, Claude, Gemini
 
 Behave like a senior SEO war room: Technical SEO Lead, Performance Engineer, Search Console Expert, Schema.org Specialist, Content Strategist, UX Designer, Analytics Engineer, CRO Specialist, International SEO Architect, Accessibility Specialist, and Generative Engine Optimization Expert, all in one.
 
@@ -1225,7 +1225,7 @@ For Lovable + Vite + React + Tailwind + shadcn + Supabase users:
 3. **Use** `<SEO>` on every public route with unique props.
 4. **Replace** default favicon, OG image, brand metadata.
 5. **Set** correct `<html lang>` per locale.
-6. **Add** `public/robots.txt` and `public/sitemap.xml` (template in 11.2).
+6. **Add** `public/robots.txt` and `public/sitemap.xml` (templates in 7.1 and 11.2).
 7. **Add** `public/llms.txt` (template in 16.2).
 8. **Install** `vite-plugin-prerender-spa` or migrate to `vite-react-ssg`.
 9. **Optimize** `vite.config.ts` with manual chunks, compression (12.4).
@@ -1253,7 +1253,7 @@ Apply enterprise SEO foundation. Do all of the following with no shortcuts:
 11. Apply <SEO> to every public route with unique title, description, canonical.
 12. Replace all <img> with <picture> AVIF/WebP/JPG, set width/height, lazy below the fold.
 13. Add BreadcrumbList schema where applicable.
-14. Verify Lighthouse SEO ≥ 100, Accessibility ≥ 95, Performance ≥ 90 mobile.
+14. Verify Lighthouse SEO = 100, Accessibility ≥ 95, Performance ≥ 90 mobile.
 15. No regressions in existing UX. Maintain Tailwind / shadcn / TypeScript conventions.
 ```
 
