@@ -1,6 +1,6 @@
 # LinkedIn Rules Explainer
 
-The educational backbone for the humanizer package. Every rule in `quitar-pinta-de-ia` came from somewhere, Wikipedia's "Signs of AI writing" taxonomy, OriginalityAI's heuristics, GPTZero's stylometry, or 2026 LinkedIn-specific patterns. Some are real forensics (a `[oaicite:0]` marker is undefendable). Some are corporate-speak bans the user wants out for taste reasons. Some are aesthetic overreach, patterns Lincoln, Dickinson, and Didion built careers on, now flagged because GPT-4 happens to use them too.
+The educational backbone for the humanizer package. Every rule in `quitar-pinta-de-ia` came from somewhere, Wikipedia's "Signs of AI writing" taxonomy, OriginalityAI's heuristics, GPTZero's stylometry, or 2026 LinkedIn-specific patterns. Some are real forensics (a `[oaicite:0]` marker is undefendable). Some are corporate-speak bans this guide makes for taste reasons. Some are aesthetic overreach, patterns Lincoln, Dickinson, and Didion built careers on, now flagged because GPT-4 happens to use them too.
 
 This skill answers a simple question: **for any given rule, is the AI-tell verdict forensic, strict, or aesthetic, and how strong is the defense?**
 
@@ -41,11 +41,11 @@ Examples: `oaicite` markers, `contentReference` tokens, `turn0search0` artifacts
 
 ### Strict, corporate-speak, easy to ban for taste
 
-These are real human patterns, but they're patterns the user explicitly wants out. The rule isn't "this proves AI wrote it", it's "I find this voice cheap and want it gone." Defending these is possible but pointless inside a brand voice that has already rejected them.
+These are real human patterns, but they're patterns this guide wants out. The rule isn't "this proves AI wrote it", it's "this voice reads cheap and goes." Defending these is possible but pointless inside a brand voice that has already rejected them.
 
 Examples: leverage / utilize / harness / delve / foster / cultivate, filler adverbs (fundamentally, essentially, ultimately), filler openers ("In today's fast-paced world"), cliché closers ("What do you think?"), negative parallelism ("X isn't Y, it's Z").
 
-**Defense strength: medium** (someone could defend "leverage" as 1980s management vocabulary). **Brand-voice strength: zero**, the user banned them.
+**Defense strength: medium** (someone could defend "leverage" as 1980s management vocabulary). **Brand-voice strength: zero**, this guide bans them.
 
 ### Aesthetic, overreach, defendable
 
@@ -60,7 +60,7 @@ Examples: a single em dash (Emily Dickinson, Cormac McCarthy), the rule of three
 - Don't conflate tiers. A `[oaicite]` marker and a single em dash are not the same kind of evidence.
 - When defending, name the writer and give the example. "Lincoln" is weaker than "Lincoln, Gettysburg Address, 1863: 'of the people, by the people, for the people'."
 - Cite when available. Stanford HAI and the OpenAI classifier shutdown are the strongest external receipts.
-- Don't defend a rule the user has personally banned (em dashes in his own voice, even though Dickinson used them). Brand voice overrides aesthetic defense.
+- Don't defend a rule the user has banned in their voice profile (em dashes, for example, even though Dickinson used them). Brand voice overrides aesthetic defense.
 
 ## Example
 

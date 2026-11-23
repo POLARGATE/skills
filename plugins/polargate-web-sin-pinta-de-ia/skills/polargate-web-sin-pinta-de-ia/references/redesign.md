@@ -1,6 +1,6 @@
 # Redesign
 
-Loaded only when the user names PolarDesign with `redesign` or `audit` (`/polardesign redesign <target>`, *redesign the site with PolarDesign*). A request that changes an existing design without naming PolarDesign (a restyle, new colours or a new theme, a polish, a redesign, a small edit) never loads this file: it is done as asked, in the project's own system. A redesign is a build whose material is the page that exists: SKILL.md still binds, and this file says what the run keeps, what replaces the Step 1 ask and what the sweep adds. The target is the user's own code (a file, a folder, a route on a dev server); a live URL with no source behind it can only be audited, through `--url`.
+Loaded only when the user names PolarDesign with `redesign` or `audit` (*redesign the site with PolarDesign*, or the skill invoked with `redesign <target>`). A request that changes an existing design without naming PolarDesign (a restyle, new colours or a new theme, a polish, a redesign, a small edit) never loads this file: it is done as asked, in the project's own system. A redesign is a build whose material is the page that exists: SKILL.md still binds, and this file says what the run keeps, what replaces the Step 1 ask and what the sweep adds. The target is the user's own code (a file, a folder, a route on a dev server); a live URL with no source behind it can only be audited, through `--url`.
 
 ## What a redesign keeps
 

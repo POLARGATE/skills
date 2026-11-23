@@ -37,7 +37,7 @@ Decaying 2023-24 set (delve, tapestry, realm, journey, paradigm, cultivate): cou
 - [ ] "Needle-moving"
 
 ### Structure
-- [ ] No paragraph reads machine-flat (every sentence the same length, no clause doing work). Fix that one paragraph only; never manufacture variance. On LinkedIn sentence-length variance is not a reach lever (our corpus: null to slightly negative within-creator)
+- [ ] No paragraph reads machine-flat (every sentence the same length, no clause doing work). Fix that one paragraph only; never manufacture variance. On LinkedIn sentence-length variance is not a reach lever (a LinkedIn creator corpus: null to slightly negative within-creator)
 - [ ] One genuinely long sentence next to a short one is fine; a fragment run is the tell. One-idea-per-line posts keep their uniform rhythm
 - [ ] No staccato stacks ("Short. Punchy. Done.", "Simple. Effective. Easy.", "No X. No Y. Just Z.", "All the X. None of the Y.")
 - [ ] No one-word paragraphs ("Still." "Mostly.")

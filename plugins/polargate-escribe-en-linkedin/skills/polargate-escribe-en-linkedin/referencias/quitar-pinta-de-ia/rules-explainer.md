@@ -4,7 +4,7 @@ Fifteen rules from the `quitar-pinta-de-ia` guide, sorted by what kind of eviden
 
 **Tiers:**
 - **Forensic** - real AI signal, undefendable. The model or its template leaked.
-- **Strict** - real human pattern, but the user banned it for taste. Defending it inside this brand voice is pointless.
+- **Strict** - real human pattern, but this guide bans it for taste. Defending it inside this brand voice is pointless.
 - **Aesthetic** - pattern flagged because LLMs use it, not because it signals AI. Famous human writers built careers on these.
 
 **Defense strength:** how well the rule survives a "but a human wrote that" challenge. Low = the rule wins. High = the writer wins.
@@ -68,15 +68,15 @@ Fifteen rules from the `quitar-pinta-de-ia` guide, sorted by what kind of eviden
 ### Rule 6. AI vocabulary: leverage, utilize, harness, delve, foster, cultivate
 
 - **Tier:** strict
-- **Why flagged:** Each of these has a one-syllable Anglo-Saxon equivalent (use, use, use, look, build, grow). LLMs over-use the Latinate version because RLHF training samples skewed corporate. Humans use them too - but the user has banned them in his own voice for taste.
+- **Why flagged:** Each of these has a one-syllable Anglo-Saxon equivalent (use, use, use, look, build, grow). LLMs over-use the Latinate version because RLHF training samples skewed corporate. Humans use them too - but this guide bans them for taste.
 - **Famous human user:** any McKinsey deck, any HBR article from 1995-2015. "Leverage" was the management-consulting verb of the 1990s.
-- **Defense strength:** medium in the abstract, **zero inside this brand voice** - the user explicitly rejected this register.
+- **Defense strength:** medium in the abstract, **zero inside this brand voice** - this guide rejects this register.
 - **Citation:** Wikipedia "Signs of AI writing" lists all six under AI vocabulary
 
 ### Rule 7. Filler adverbs: fundamentally, essentially, ultimately, crucially
 
 - **Tier:** strict
-- **Why flagged:** These are sentence-opener crutches that add no information. "Fundamentally, the issue is X" reduces to "the issue is X." LLMs use them as soft hedges; the user wants them deleted.
+- **Why flagged:** These are sentence-opener crutches that add no information. "Fundamentally, the issue is X" reduces to "the issue is X." LLMs use them as soft hedges; this guide deletes them.
 - **Famous human user:** academic philosophy papers (Daniel Dennett uses "fundamentally" constantly). Academic register is fine in academia, not in a LinkedIn post.
 - **Defense strength:** medium in academic prose, **zero in this voice**.
 - **Citation:** Wikipedia "Signs of AI writing"
@@ -100,8 +100,8 @@ Fifteen rules from the `quitar-pinta-de-ia` guide, sorted by what kind of eviden
 ### Rule 10. Negative parallelism: "X isn't Y, it's Z"
 
 - **Tier:** strict (hard ban)
-- **Why flagged:** "It's not a bug, it's a feature" / "It's not what you say, it's how you say it." LLMs over-deploy this because RLHF reward models favor it as quotable. The user has explicitly banned it as a personal pattern - too clean, too pat, no friction.
-- **Famous human user:** every TED talk 2010-2020. Tony Robbins, Simon Sinek. The pattern is real human rhetoric, but the user rejected it.
+- **Why flagged:** "It's not a bug, it's a feature" / "It's not what you say, it's how you say it." LLMs over-deploy this because RLHF reward models favor it as quotable. This guide bans it: too clean, too pat, no friction.
+- **Famous human user:** every TED talk 2010-2020. Tony Robbins, Simon Sinek. The pattern is real human rhetoric, but this guide rejects it.
 - **Defense strength:** medium in oratory, **zero in this voice** (hard ban).
 - **Citation:** Wikipedia "Signs of AI writing" under "negative parallelism"
 

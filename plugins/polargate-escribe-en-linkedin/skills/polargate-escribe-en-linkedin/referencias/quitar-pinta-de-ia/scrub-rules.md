@@ -97,7 +97,7 @@ PHRASAL_TEMPLATES = [
 
 ### Em dash DENSITY (cap: about 1 per 100 words)
 
-The character is not a tell. GPT-5.4 emits 1.43 em dashes per 1,000 words, below the human baseline of 3.23; 29% of human Instagram captions and 23% of top-creator LinkedIn posts in our corpus use one (author-relative ratio 1.09, i.e. not a reliable tell on LinkedIn). Zero em dashes in a post that wanted one is the tell of someone trying to look human. What is still forensic is the old GPT-4 glue habit: 3+ in a short post.
+The character is not a tell. GPT-5.4 emits 1.43 em dashes per 1,000 words, below the human baseline of 3.23; 29% of human Instagram captions and 23% of top-creator LinkedIn posts in a creator corpus use one (author-relative ratio 1.09, i.e. not a reliable tell on LinkedIn). Zero em dashes in a post that wanted one is the tell of someone trying to look human. What is still forensic is the old GPT-4 glue habit: 3+ in a short post.
 
 ```python
 def em_dash_excess(text: str) -> int:
@@ -469,7 +469,7 @@ def restore_rhythm(text: str) -> str:
 
 Layout vs rhythm: 1-2 sentence paragraphs with blank lines between them are LinkedIn's mobile-native layout and are **not** touched by this pass. A paragraph that is one full 22-word sentence is layout. A paragraph that is "Still." is fragment-for-drama. The pass edits sentences, never the blank lines.
 
-Length note: on LinkedIn our corpus shows sentence-length variance is not an engagement lever (null-to-slightly-negative within-creator); the short-form "don't force variance" rule applies to sibling platforms (Threads, short X). Here it applies at every length.
+Length note: on LinkedIn a creator corpus shows sentence-length variance is not an engagement lever (null-to-slightly-negative within-creator); the short-form "don't force variance" rule applies to sibling platforms (Threads, short X). Here it applies at every length.
 
 ## Pass 3, Forbidden insertions (sincerity markers, hedges)
 

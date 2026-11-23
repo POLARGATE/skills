@@ -1,6 +1,6 @@
 # Sub-skill: Build / update the Voice & Brand Profile
 
-Builds or refreshes `linkedin/voz.md` so every writing skill in
+Builds or refreshes `linkedin/voz.md` so every writing guide in
 this skill drafts in the user's real voice instead of a generic "human" voice.
 It only needs a few posts the user pastes in.
 
@@ -8,7 +8,7 @@ It only needs a few posts the user pastes in.
 
 - User says "build my voice profile", "learn my voice", "set up my profile", or
   invokes `quitar-pinta-de-ia --mode profile`.
-- Also offer it the first time a writing skill runs and finds `filled: no`.
+- Also offer it the first time a writing guide runs and finds `filled: no`.
 
 ## Inputs (any one is enough)
 
@@ -31,9 +31,9 @@ It only needs a few posts the user pastes in.
 4. **Capture hard rules and CTA/link style** the samples reveal or the user states.
 5. **Write `linkedin/voz.md`**: fill sections 1-5, copy the 2-4
    strongest lines verbatim into "Signature examples", and set the Status block to
-   `filled: yes`, `source: <pasted|apify|manual>`, `updated: <today's date>`.
+   `filled: yes`, `source: <pasted|manual>`, `updated: <today's date>`.
 6. **Show the user the filled profile for approval** before saving, and tell them
-   any writing skill will now match it automatically. They can edit the file anytime.
+   any writing guide will now match it automatically. They can edit the file anytime.
 
 ## Hard rules
 

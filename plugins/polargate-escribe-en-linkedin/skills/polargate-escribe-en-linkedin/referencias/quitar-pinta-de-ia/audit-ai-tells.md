@@ -78,7 +78,7 @@ Reveal bridges and negative parallelism are scrubbed on one hit because they are
 
 ## Structural tells
 
-- Every sentence the same length, machine-flat (expert readers cite structure 36% of the time). Fix only where it reads flat; on LinkedIn sentence-length variance is not a reach lever in either direction (our corpus, within-creator: null to slightly negative), so never manufacture it
+- Every sentence the same length, machine-flat (expert readers cite structure 36% of the time). Fix only where it reads flat; on LinkedIn sentence-length variance is not a reach lever in either direction (a LinkedIn creator corpus, within-creator: null to slightly negative), so never manufacture it
 - Staccato stacks: "Short. Punchy. Done.", "Simple. Effective. Easy.", "No X. No Y. Just Z.", "All the X. None of the Y."
 - One-word paragraphs ("Still." "Mostly." "Exactly.")
 - More than 2 standalone fragments (<4 words) in the post

@@ -52,7 +52,7 @@ How your writing actually sounds. Be specific; examples beat adjectives.
 ## 5. Signature examples
 
 Paste 2-4 of your own real lines or short posts that sound most like you. The
-writing skills mirror the rhythm and word choice of these, not a generic voice.
+writing guides mirror the rhythm and word choice of these, not a generic voice.
 
 -
 -

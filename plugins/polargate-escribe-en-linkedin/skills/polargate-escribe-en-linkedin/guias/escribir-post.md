@@ -86,9 +86,9 @@ If the user knows what they want the post to earn, start here, then narrow by to
    - No external links in body (move to first comment)
 4. **Humanizer pass.** Scrub 2026 AI vocab by density, cap em dashes (about one per 100 words), break stacked triads, generic openers and reveal bridges. Add at least 1 specific number, 1 named entity, 1 first-person concrete detail per 100 words.
 5. **Run audit.** Optionally invoke `quitar-pinta-de-ia --mode audit` for algorithm + voice checks before showing to user.
-7. **Approval card.** Show: formula used, full draft, char count, suggested posting window (Tue/Wed/Thu 7:30-9:00 AM local), reaction targets from likely commenters, and the illustration (if any).
+6. **Approval card.** Show: formula used, full draft, char count, suggested posting window (Tue/Wed/Thu 7:30-9:00 AM local), reaction targets from likely commenters, and the illustration (if any).
 
-## Hard rules (from user feedback)
+## Hard rules
 
 Global voice rules: see root `SKILL.md` §Voice rules. Additional skill-specific rules:
 

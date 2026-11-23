@@ -2,7 +2,7 @@
 
 # LinkedIn Interviewer
 
-Every writing skill here demands specifics: one odd-precision number with a named
+Every writing guide here demands specifics: one odd-precision number with a named
 referent, a dated moment, a position someone would argue with. When the input has
 none, the rule is to ask the user rather than invent. That ask happens on every
 request, unstructured, and the answers are thrown away when the session ends.
@@ -23,7 +23,7 @@ can always fill the second, which is the usual reason drafts come out generic.
 ## When to use
 
 - "Interview me", "ask me questions", "help me work out what to post about"
-- A writing skill found the Story Bank empty and had to ask for a number mid-draft
+- A writing guide found the Story Bank empty and had to ask for a number mid-draft
 - The user is new to posting: no archive to analyse, but a career to draw on
 - Before setting up any unattended or scheduled drafting, which has no human
   present to answer a mid-draft question
