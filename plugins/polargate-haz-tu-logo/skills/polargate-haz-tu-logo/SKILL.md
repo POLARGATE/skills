@@ -11,8 +11,7 @@ description: >-
   brand symbol, ontwerp een logo. Activate even when the user does not say SVG, if intent implies
   creating or refining an identity mark. Defaults to clean geometric SVG, passes favicon and
   squint tests, avoids cliché metaphors and AI slop, and flags when a concept needs Figma
-  finishing. Does NOT do full web or app UI design; route those elsewhere. Under-triggering on
-  logo work is costlier than over-triggering.
+  finishing. Does NOT do full web or app UI design; route those elsewhere.
 ---
 
 # PolarLogo
