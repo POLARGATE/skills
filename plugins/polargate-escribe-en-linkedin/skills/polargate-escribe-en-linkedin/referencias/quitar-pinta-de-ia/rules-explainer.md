@@ -199,6 +199,6 @@ Fifteen rules from the `quitar-pinta-de-ia` guide, sorted by what kind of eviden
 
 ---
 
-**Last Updated:** 2026-04-25
+**Last Updated:** 2026-11-23
 **Maintained By:** Polargate
 **Purpose:** Explains why some AI-writing rules are forensic and others are aesthetic overreach.

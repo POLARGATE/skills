@@ -2,7 +2,7 @@
 
 Builds or refreshes `linkedin/voz.md` so every writing guide in
 this skill drafts in the user's real voice instead of a generic "human" voice.
-It only needs a few posts the user pastes in.
+It needs a few posts the user pastes in, or what the user tells you.
 
 ## When this runs
 
@@ -13,7 +13,7 @@ It only needs a few posts the user pastes in.
 ## Inputs (any one is enough)
 
 1. **Pasted samples (portable default).** Ask for 3-6 of the user's own real
-   LinkedIn posts or comments. This alone is enough; no token, no history needed.
+   LinkedIn posts or comments. This alone is enough.
 2. **Manual.** The user can also just tell you their niche, rules, and links.
 
 ## Steps
@@ -30,14 +30,14 @@ It only needs a few posts the user pastes in.
 3. **Infer niche, ICP, and pillars** from the sample topics (manual route: from
    what the user said); confirm with the user rather than guessing.
 4. **Capture hard rules and CTA/link style** the samples reveal or the user states.
-5. **Write `linkedin/voz.md`**: fill sections 1-5, copy the 2-4
+5. **Draft `linkedin/voz.md`**: fill sections 1-5, copy the 2-4
    strongest lines verbatim into "Signature examples", and set the Status block to
    `filled: yes`, `source: <pasted|manual>`, `updated: <today's date>`.
    With the manual route, fill only what the user stated: write "not enough
    samples yet" in section 1, leave "Signature examples" empty, and never invent
    voice traits.
-6. **Show the user the filled profile for approval** before saving, and tell them
-   any writing guide will now match it automatically. They can edit the file anytime.
+6. **Show the user the draft for approval** and save it only after their OK. Tell
+   them any writing guide will now match it automatically. They can edit the file anytime.
 
 ## Hard rules
 

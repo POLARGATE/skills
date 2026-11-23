@@ -1,6 +1,6 @@
 # Voice Fingerprint, Preserving the user's voice while scrubbing
 
-The humanizer is destructive by design. Every pass deletes or substitutes tokens. That's fine for AI tells. It's a bug for the user's actual voice.
+The scrub is destructive by design. Every pass deletes or substitutes tokens. That's fine for AI tells. It's a bug for the user's actual voice.
 
 This file lists the signals to preserve, even when they overlap with rules in `scrub-rules.md`.
 
@@ -22,7 +22,7 @@ These are voice signatures, not AI tells. Leave them alone in every tier includi
 | Pattern | Why it's voice, not AI |
 |---|---|
 | Lowercase sentence starts (`closed our seed on a tuesday...`) | Some writers use this as a deliberate cadence cue. Capitalizing flattens their voice. |
-| `..` as a soft pause | This is the humanizer's officially-blessed alternative to em dash. Removing it has nowhere to go. |
+| `..` as a soft pause | This is this guide's approved alternative to the em dash. Removing it has nowhere to go. |
 | Sentence fragments (`Worth it.`, `Every time.`, `Not even close.`) | The writer's own fragments are voice: keep them, up to the cap of 2 per post. Pass 2 never adds fragments to manufacture rhythm; only a third or later fragment gets merged back. |
 | Contractions (`don't`, `it's`, `you're`, `we're`) | Mandatory for natural rhythm. Scrubbing curly apostrophes is fine; expanding contractions is not. |
 | First-person sensory detail (`my hands shook`, `the room went quiet`) | Pass 3 demands these. Never strip. |
@@ -34,7 +34,7 @@ These are voice signatures, not AI tells. Leave them alone in every tier includi
 
 ## Preserve when sample voice is provided
 
-If the user passes optional `target_voice_samples` (their last 5-10 LinkedIn posts), extract:
+If the user has pasted their last 5-10 LinkedIn posts, extract:
 
 1. **Sentence-length distribution.** If they routinely write 4-6 word sentences, don't force 12+ word "minimum lengths" on Pass 2.
 2. **Vocabulary fingerprint.** Words they use 3+ times across samples are part of their voice, even if those words appear on the strict blacklist. Flag for user review rather than auto-substituting.
@@ -77,7 +77,7 @@ def build_voice_fingerprint(samples: list[str]) -> dict:
     }
 ```
 
-The skill should call this on `target_voice_samples` before running Pass 1.
+Run this on those pasted posts before Pass 1.
 
 ---
 
@@ -115,4 +115,4 @@ Right behavior: flag for user review. Output: `[VOICE-CONFLICT: 'harness' is in 
 
 ## Don't fabricate
 
-The non-negotiable rule (SKILL.md line: "Never introduce facts that weren't in the input") overrides voice-fingerprint matching. If a sample contains specific numbers, do NOT carry those numbers into a different post. Only use numbers the current input already supplies.
+The non-negotiable rule in `REGLAS.md` (nothing gets invented: no figures, clients, dates, anecdotes or quotes) overrides voice-fingerprint matching. If a sample contains specific numbers, do NOT carry those numbers into a different post. Only use numbers the current input already supplies.

@@ -1,6 +1,6 @@
 > Guía en inglés. Manda `REGLAS.md`. Los pasos de publicar y de conectar servicios se han quitado.
 
-# LinkedIn Humanizer V3
+# Quitar pinta de IA (V3)
 
 Rewrites any text to remove the AI tells that human readers notice and that LinkedIn's "AI slop" filter reacts to. Based on Wikipedia's "Signs of AI writing" taxonomy, the 2025-2026 stylometry literature, and a length-controlled creator corpus. **V3 (2026-09):** recalibrated on 2026 evidence. Vocabulary is scored by density, em dashes are capped instead of banned, forced rhythm is now a tell instead of a fix, and there is an over-correction guard.
 
@@ -160,7 +160,6 @@ See `../referencias/quitar-pinta-de-ia/examples.md` for worked examples.
 - `quitar-pinta-de-ia/rules-explainer.md`, when to defend a flagged rule (em dash, rule of three, passive voice)
 - `quitar-pinta-de-ia/emoji-detector.md`, scan / score / suggest workflow for emoji density
 - `quitar-pinta-de-ia/voice-profile.md`, build/update the user's Voice & Brand Profile (`--mode profile`); the filled `linkedin/voz.md` is then read by every writing guide so drafts match the user's real voice
-- Detector-script deps (`requests`, `python-dotenv`) come from the bundle's root `requirements.txt` / `requirements-lock.txt`, not a manifest of their own
 
 ## Related skills
 
