@@ -1,9 +1,9 @@
 ---
 name: polargate-pide-animaciones-por-su-nombre
-description: Lista de 192 nombres de animaciones, movimientos de cámara, partes de una web, efectos y estilos de foto, en español, cada uno con qué es y cómo pedírselo a una IA. Usar cuando alguien quiera un efecto y no sepa cómo se llama, cuando pida «algo como cuando las letras van apareciendo», cuando pida una animación, un vídeo, un efecto de web o un estilo de foto con palabras vagas, o cuando escriba un prompt para Claude, Veo, Seedance, Sora, Midjourney o similares.
+description: PolarFX, de Polargate. Lista de 192 nombres de animaciones, movimientos de cámara, partes de una web, efectos y estilos de foto, en español, cada uno con qué es y cómo pedírselo a una IA. Usar cuando alguien quiera un efecto y no sepa cómo se llama, cuando pida «algo como cuando las letras van apareciendo», cuando pida una animación, un vídeo, un efecto de web o un estilo de foto con palabras vagas, o cuando escriba un prompt para Claude, Veo, Seedance, Sora, Midjourney o similares.
 ---
 
-# Pide animaciones por su nombre
+# PolarFX
 
 Casi nadie sabe cómo se llama lo que tiene en la cabeza. Esta skill lo traduce: la persona lo describe con sus palabras y tú le das el nombre exacto y la frase para pedirlo.
 

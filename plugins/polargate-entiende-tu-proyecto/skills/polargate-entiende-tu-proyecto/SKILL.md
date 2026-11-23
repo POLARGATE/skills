@@ -1,9 +1,9 @@
 ---
 name: polargate-entiende-tu-proyecto
-description: Crea con Graphify un mapa del código de un proyecto y lo consulta en vez de leer fichero por fichero. Usar en un repo grande o desconocido, cuando pidan entender cómo está montado, qué depende de qué o por dónde tocar algo, y cuando exista la carpeta graphify-out en el proyecto.
+description: PolarMap, de Polargate. Crea con Graphify un mapa del código de un proyecto y lo consulta en vez de leer fichero por fichero. Usar en un repo grande o desconocido, cuando pidan entender cómo está montado, qué depende de qué o por dónde tocar algo, y cuando exista la carpeta graphify-out en el proyecto.
 ---
 
-# Mapa de un repo
+# PolarMap
 
 Graphify lee el código y hace un grafo: qué funciones, clases y ficheros hay, y cómo se conectan. Con ese mapa respondes preguntas sobre el proyecto sin leerlo entero.
 

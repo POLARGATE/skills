@@ -1,4 +1,4 @@
-# polargate-web-sin-pinta-de-ia
+# Haz que tu web NO parezca hecha por IA con PolarDesign
 
 Para que Claude deje de hacerte siempre la misma web.
 

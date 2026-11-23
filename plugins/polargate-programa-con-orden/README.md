@@ -1,4 +1,4 @@
-# Haz que Claude programe con orden
+# Haz que Claude programe con orden usando PolarMethod
 
 Para que no se lance a escribir código sin pensar.
 

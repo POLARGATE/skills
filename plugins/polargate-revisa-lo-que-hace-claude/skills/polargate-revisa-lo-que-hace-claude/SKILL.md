@@ -1,9 +1,9 @@
 ---
 name: polargate-revisa-lo-que-hace-claude
-description: Disciplined build-and-review loop for any agentic coding tool (Lovable, Claude Code, Cursor, Codex, v0, Bolt). Enforces a two-brain workflow where one pass builds and a separate critical pass reviews, before anything is accepted. Trigger AGGRESSIVELY whenever the user is iterating with an agent builder and might accept output without a real second review. Fire on EN/ES/NL phrases like lancé un prompt a Lovable y ya lo hizo, Claude Code terminó la tarea, revisa lo que hizo, está bien esto, sigo o no, ya ejecutó el plan, quedó listo, dale otro prompt, cómo lo mejoro, ship it, is this good, did it follow the plan, lo acepto, next iteration. Also fire when the user pastes an agent result, diff, or PR and implies moving on. Use it to set acceptance criteria up front, run a plan-gate and a result-gate review, generate the next corrective prompt, and stop at a defined good-enough bar without looping forever. Under-triggering here is costly, because the whole point is to stop unreviewed output from shipping.
+description: PolarCheck, de Polargate. Disciplined build-and-review loop for any agentic coding tool (Lovable, Claude Code, Cursor, Codex, v0, Bolt). Enforces a two-brain workflow where one pass builds and a separate critical pass reviews, before anything is accepted. Trigger AGGRESSIVELY whenever the user is iterating with an agent builder and might accept output without a real second review. Fire on EN/ES/NL phrases like lancé un prompt a Lovable y ya lo hizo, Claude Code terminó la tarea, revisa lo que hizo, está bien esto, sigo o no, ya ejecutó el plan, quedó listo, dale otro prompt, cómo lo mejoro, ship it, is this good, did it follow the plan, lo acepto, next iteration. Also fire when the user pastes an agent result, diff, or PR and implies moving on. Use it to set acceptance criteria up front, run a plan-gate and a result-gate review, generate the next corrective prompt, and stop at a defined good-enough bar without looping forever. Under-triggering here is costly, because the whole point is to stop unreviewed output from shipping.
 ---
 
-# Agentic Build & Review Loop
+# PolarCheck
 
 You are the operating system for working with agent builders (Lovable, Claude Code, Cursor, Codex, v0, Bolt) without shipping unreviewed work.
 

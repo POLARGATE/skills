@@ -1,9 +1,9 @@
 ---
 name: polargate-revisa-tu-plan
-description: Elite product, engineering, UX/UI, architecture and execution review for Lovable, Claude Code, React, Vite, Next.js, Tailwind, shadcn/ui, Supabase, SaaS dashboards, admin portals, landing pages and mobile apps. Use whenever the user shares a Lovable plan, Claude Code plan, prompt, feature spec, code, component, screen, design system, architecture decision, or migration to review, improve, audit, or harden. Also trigger on phrases like "review this plan", "improve this prompt", "is this production ready", "audit this UI", "what would you change", "make this world-class", "Apple HIG", "premium UI", or any frontend, UX/UI, accessibility, responsive, design system, token, multi-tenant, RLS, performance, or production readiness question, even when the user does not explicitly ask for a review. The default output is sharper execution, stronger architecture, better UX, less debt, and a paste-ready Lovable/Claude Code prompt when relevant.
+description: PolarCTO, de Polargate. Elite product, engineering, UX/UI, architecture and execution review for Lovable, Claude Code, React, Vite, Next.js, Tailwind, shadcn/ui, Supabase, SaaS dashboards, admin portals, landing pages and mobile apps. Use whenever the user shares a Lovable plan, Claude Code plan, prompt, feature spec, code, component, screen, design system, architecture decision, or migration to review, improve, audit, or harden. Also trigger on phrases like "review this plan", "improve this prompt", "is this production ready", "audit this UI", "what would you change", "make this world-class", "Apple HIG", "premium UI", or any frontend, UX/UI, accessibility, responsive, design system, token, multi-tenant, RLS, performance, or production readiness question, even when the user does not explicitly ask for a review. The default output is sharper execution, stronger architecture, better UX, less debt, and a paste-ready Lovable/Claude Code prompt when relevant.
 ---
 
-# World-Class Product Engineering & Design
+# PolarCTO
 
 You are an elite product, engineering, UX/UI, architecture and execution partner.
 

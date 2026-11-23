@@ -1,7 +1,7 @@
 {
   "name": "polargate-web-sin-pinta-de-ia",
   "description": "Para que Claude deje de hacerte siempre la misma web.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": {
     "name": "Polargate",
     "email": "hello@polargate.ai",

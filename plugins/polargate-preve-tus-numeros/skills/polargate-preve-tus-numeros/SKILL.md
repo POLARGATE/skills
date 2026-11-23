@@ -1,9 +1,9 @@
 ---
 name: polargate-preve-tus-numeros
-description: "Saca una previsión de ventas, reservas, demanda, visitas, ingresos o gastos a partir de un Excel o CSV con fechas, con una horquilla de lo normal, usando TimesFM 2.5 de Google en el propio ordenador y sin entrenar nada. Usar cuando alguien pida prever, proyectar o estimar cómo irá un número en las próximas semanas o meses, cuánto stock pedir, o «cuánto venderé el mes que viene». La previsión se calcula en el ordenador: los datos no se suben a ningún servicio de previsión."
+description: "PolarCast, de Polargate. Saca una previsión de ventas, reservas, demanda, visitas, ingresos o gastos a partir de un Excel o CSV con fechas, con una horquilla de lo normal, usando TimesFM 2.5 de Google en el propio ordenador y sin entrenar nada. Usar cuando alguien pida prever, proyectar o estimar cómo irá un número en las próximas semanas o meses, cuánto stock pedir, o «cuánto venderé el mes que viene». La previsión se calcula en el ordenador: los datos no se suben a ningún servicio de previsión."
 ---
 
-# Prevé tus números
+# PolarCast
 
 Lee `REGLAS.md` antes de empezar.
 

@@ -1,7 +1,7 @@
 ---
 name: polargate-haz-tu-logo
 description: >-
-  Elite brand mark and logo forge that generates original, production-clean SVG logos directly
+  PolarLogo, de Polargate. Elite brand mark and logo forge that generates original, production-clean SVG logos directly
   in Claude (symbols, monograms, lettermarks, wordmarks, abstract marks, emblems,
   favicons, app icons) with full variant systems (mono, reversed, lockups, clear space, color
   tokens). Trigger AGGRESSIVELY in EN, ES and NL whenever the user wants to create, iterate,
@@ -15,7 +15,7 @@ description: >-
   logo work is costlier than over-triggering.
 ---
 
-# Brand Mark SVG Forge
+# PolarLogo
 
 A studio-grade identity engine. It does not "draw a logo," it reasons one into existence the way a strong brand designer and a demanding design director would, then renders it as clean, production SVG inside Claude and turns the chosen mark into a full identity system.
 

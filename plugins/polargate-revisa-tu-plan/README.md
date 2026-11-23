@@ -1,4 +1,4 @@
-# polargate-revisa-tu-plan
+# Revisa tu plan con PolarCTO, como lo haría un CTO
 
 Le pasas lo que te ha propuesto la IA y te dice qué cambiaría antes de construirlo.
 

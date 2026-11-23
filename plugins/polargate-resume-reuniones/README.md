@@ -1,4 +1,4 @@
-# polargate-resume-reuniones
+# Pregúntale a Claude qué quedó pendiente de tus reuniones con PolarNotes
 
 Claude te responde con lo que se dijo en tus reuniones, no con lo que le suena.
 

@@ -1,4 +1,4 @@
-# Pide animaciones y efectos por su nombre
+# Pide animaciones y efectos por su nombre con PolarFX
 
 Para explicarle a Claude justo el efecto que tienes en la cabeza.
 

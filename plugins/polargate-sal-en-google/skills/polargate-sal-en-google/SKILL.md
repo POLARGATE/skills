@@ -1,9 +1,9 @@
 ---
 name: polargate-sal-en-google
-description: Enterprise SEO, technical SEO, performance, structured data, AI-search (GEO), Core Web Vitals (LCP/INP/CLS), analytics, internal linking, international SEO, accessibility-as-SEO and conversion-ready optimization for sites built with Lovable, Vite, React, Next.js, Tailwind, shadcn/ui, Supabase, Webflow, WordPress, Shopify, Vercel. Trigger aggressively on EN/ES/NL phrases like SEO, indexar, no aparece en Google, ranking, metadata, Open Graph, canonical, hreflang, robots.txt, sitemap, schema.org, JSON-LD, rich results, LCP, INP, CLS, Lighthouse, PageSpeed, Search Console, GA4, GTM, AI Overviews, ChatGPT search, Perplexity, llms.txt, GEO, prerender, SSR, SSG, SPA SEO, Lovable SEO, Vite SEO, React SEO, mi web no rankea, está lento, audit my site, review my landing, production ready. Activate even when user does not say SEO if request implies discoverability, indexation, performance, conversion-ready landing or production readiness. Under-triggering is far costlier than over-triggering.
+description: PolarRank, de Polargate. Enterprise SEO, technical SEO, performance, structured data, AI-search (GEO), Core Web Vitals (LCP/INP/CLS), analytics, internal linking, international SEO, accessibility-as-SEO and conversion-ready optimization for sites built with Lovable, Vite, React, Next.js, Tailwind, shadcn/ui, Supabase, Webflow, WordPress, Shopify, Vercel. Trigger aggressively on EN/ES/NL phrases like SEO, indexar, no aparece en Google, ranking, metadata, Open Graph, canonical, hreflang, robots.txt, sitemap, schema.org, JSON-LD, rich results, LCP, INP, CLS, Lighthouse, PageSpeed, Search Console, GA4, GTM, AI Overviews, ChatGPT search, Perplexity, llms.txt, GEO, prerender, SSR, SSG, SPA SEO, Lovable SEO, Vite SEO, React SEO, mi web no rankea, está lento, audit my site, review my landing, production ready. Activate even when user does not say SEO if request implies discoverability, indexation, performance, conversion-ready landing or production readiness. Under-triggering is far costlier than over-triggering.
 ---
 
-# THE FINAL BOSS SEO SKILL
+# PolarRank
 
 > Enterprise-grade SEO + Performance + AI-Search + UX + CRO execution mode for Lovable, Vite, React, and modern web stacks.
 

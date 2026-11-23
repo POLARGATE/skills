@@ -1,4 +1,4 @@
-# polargate-sube-tu-app
+# Sube tu app a App Store y Google Play con PolarLaunch
 
 Para que Apple y Google no te rechacen la app hecha con Capacitor.
 

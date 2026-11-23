@@ -1,4 +1,4 @@
-# polargate-haz-tu-logo
+# Haz el logo de tu marca con PolarLogo
 
 Le pides un logo y te lo entrega en SVG, listo para usar.
 
