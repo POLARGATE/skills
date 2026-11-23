@@ -14,7 +14,7 @@ F1-F10 are the original long-form thought-leadership set. F11-F16 were validated
 - **[crowd]** AuthoredUp, 3M posts, Mar 2025-Feb 2026. Analytics-tool aggregate, not a platform statement.
 - **[consensus]** 2026 AI-tell lists: Ethan Mollick's mute list (Apr 2026), Forbes / Jodie Cook (May 2026), Bullshitology (Sep 2026), tropes.fyi "false vulnerability". Crowd-sourced pattern lists, no reach numbers attached.
 - **[platform]** LinkedIn statements and press: the March 2026 authenticity update (engagement-bait and comment-gate CTAs named as the target) and the July 2026 "AI slop" report button (flagged posts lose roughly 40% of views).
-- **[inference]** Our reading where no direct number exists.
+- **[inference]** This guide's reading where no direct number exists.
 
 The headline finding: **98-100% of the top 100 human creators still use the flagged devices** (question hooks, contrasts, triples, reveal bridges). The penalty attaches to autopilot density and missing specifics, not to the device itself. See "What still lifts reach in 2026" and "Density rule" at the end of this file.
 

@@ -71,7 +71,7 @@ Patterns AI uses but humans use legitimately. Banning them blindly catches Hemin
 ### The 5 most controversial rules in this tier
 
 #### Em dashes (the last one under the cap)
-- **Defense**: Emily Dickinson built her poetry on em dashes. Cormac McCarthy uses them throughout *The Road* and *Blood Meridian*. The *New Yorker* has used em dashes as house style since 1925. And in 2026 the frontier models use *fewer* than humans (GPT-5.4: 1.43 per 1,000 words vs. human 3.23). The Economist called it "no longer a reliable sign." 29% of human captions in our own corpus use one.
+- **Defense**: Emily Dickinson built her poetry on em dashes. Cormac McCarthy uses them throughout *The Road* and *Blood Meridian*. The *New Yorker* has used em dashes as house style since 1925. And in 2026 the frontier models use *fewer* than humans (GPT-5.4: 1.43 per 1,000 words vs. human 3.23). The Economist called it "no longer a reliable sign." 29% of human captions in a creator corpus use one.
 - **The real signal isn't the character.** It's frequency above ~1 per 100 words (covered in forensic tier). Below that, self-censoring your dashes is itself the tell of someone trying to look human.
 - **When to use aesthetic mode**: writing for audiences that still treat any dash as suspicious. Otherwise leave the one dash alone, and never replace it with a period (fragment stacking is the worse tell).
 
@@ -118,7 +118,7 @@ The previous one-size-fits-all approach pretended every rule had equal weight. T
 
 ## V3 recalibration (2026 evidence, with confidence labels)
 
-Confidence labels: **[strong]** = replicated across 2+ independent 2025-2026 studies or our own length-controlled corpus (X n=445, Threads n=311); **[vendor]** = single platform or vendor dataset; **[weak]** = one study or an expert-panel report.
+Confidence labels: **[strong]** = replicated across 2+ independent 2025-2026 studies or a length-controlled creator corpus (X n=445, Threads n=311); **[vendor]** = single platform or vendor dataset; **[weak]** = one study or an expert-panel report.
 
 ### 1. Detectors are not the target
 
@@ -130,13 +130,13 @@ Consequence: the skill no longer promises to pass any detector, and no rule in t
 
 The conspicuous 2023-24 words (delve, tapestry, realm, intricate, journey, paradigm) are decaying as humans avoid them (Geng & Trotta 2025) [strong]. The durable 2026 markers are common words: significant, crucial, notably, particularly, comprehensive, insights, robust, leverage, foster, landscape, nuanced, multifaceted, holistic, streamline, elevate, empower (Kobak Sci Adv 2025; Wu et al 2026 across GPT-5.5 / Claude 4.8 / Gemini 3.1) [strong]. Plus grammar: nominalisations and present-participial "-ing" clause openers at 5.3x human rate (PNAS 2025) [strong]. Plus a LinkedIn-specific 2026 layer (quietly, matters, compound, signal, "the work", "built different", load-bearing, "doing the heavy lifting", "let that sink in", "that's the real story") [vendor]. Reveal bridges are reach-negative on LinkedIn: "The result?" -4.8%, "It's not X, it's Y" -4.9%, "Stop X, start Y" -6.7%, "Here's what/how" -4.3% [vendor].
 
-Our own LinkedIn corpus agrees on the vocabulary side: AI vocabulary is the one marker consistently reach-negative within-creator (0.74-0.84 author-relative) [strong], so the vocabulary pass stays even though its word list changed.
+A LinkedIn creator corpus agrees on the vocabulary side: AI vocabulary is the one marker consistently reach-negative within-creator (0.74-0.84 author-relative) [strong], so the vocabulary pass stays even though its word list changed.
 
 Consequence: the signal is density per paragraph. 3+ markers = rewrite the paragraph. 1 = leave it, unless it is a reveal bridge or negative parallelism (single-hit scrub because of the reach data).
 
 ### 3. Em dash: capped, not banned
 
-GPT-5.4 emits 1.43 em dashes per 1,000 words, below the human baseline of 3.23. The Economist (2026): "no longer a reliable sign." Isolated em dashes carry no LinkedIn reach penalty [vendor]. 29% of human Instagram captions use one, and 23% of top-creator LinkedIn posts do, at an author-relative ratio of 1.09 (our 2026-09 LinkedIn corpus, n=397) [strong]. Self-censoring your dashes is itself the tell of someone trying to look human.
+GPT-5.4 emits 1.43 em dashes per 1,000 words, below the human baseline of 3.23. The Economist (2026): "no longer a reliable sign." Isolated em dashes carry no LinkedIn reach penalty [vendor]. 29% of human Instagram captions use one, and 23% of top-creator LinkedIn posts do, at an author-relative ratio of 1.09 (a 2026-09 LinkedIn creator corpus, n=397) [strong]. Self-censoring your dashes is itself the tell of someone trying to look human.
 
 Consequence: cap at ~1 per 100 words (1-2 per post). Replace the excess with a comma, colon, parentheses or a rewrite. Never a period, because a split dash creates fragment stacking, which is a worse tell than the dash.
 
@@ -148,7 +148,7 @@ Consequence: scrub stacked or perfectly parallel triads and any third triad in a
 
 ### 5. Burstiness: restore, do not force
 
-LLM sentence-length SD is about half of human [strong], but no detector scores it, and mechanical long/short alternation is itself a learnable humanizer fingerprint (DAMAGE 2025) [weak]. The top 2026 reader-cited tells are exactly forced rhythm: "Short. Punchy. Done.", "No X. No Y. Just Z.", "All the X. None of the Y.", "Simple. Effective. Easy.", "The result?" reveals, one-word paragraphs ("Still." "Mostly."), pseudo-Socratic "Why? Because." [strong: multiple 2026 tell lists + a LinkedIn creator corpus]. On LinkedIn specifically, sentence-length variance is not an engagement lever in either direction: our author-normalised corpus (keyword n=205 + 15 top creators n=192, 2026-09) shows within-creator CV ratios of 0.96 / 0.80 / 0.92 across length bands, Spearman -0.06, no length-dependent flip, and a mild uniform-rhythm advantage for one-idea-per-line posts at 112-204 words [strong]. The earlier X/Threads result ("bursty wins on long posts") was an author confound and collapses after normalisation; it applies to sibling platforms, not here.
+LLM sentence-length SD is about half of human [strong], but no detector scores it, and mechanical long/short alternation is itself a learnable humanizer fingerprint (DAMAGE 2025) [weak]. The top 2026 reader-cited tells are exactly forced rhythm: "Short. Punchy. Done.", "No X. No Y. Just Z.", "All the X. None of the Y.", "Simple. Effective. Easy.", "The result?" reveals, one-word paragraphs ("Still." "Mostly."), pseudo-Socratic "Why? Because." [strong: multiple 2026 tell lists + a LinkedIn creator corpus]. On LinkedIn specifically, sentence-length variance is not an engagement lever in either direction: an author-normalised LinkedIn creator corpus (keyword n=205 + 15 top creators n=192, 2026-09) shows within-creator CV ratios of 0.96 / 0.80 / 0.92 across length bands, Spearman -0.06, no length-dependent flip, and a mild uniform-rhythm advantage for one-idea-per-line posts at 112-204 words [strong]. The earlier X/Threads result ("bursty wins on long posts") was an author confound and collapses after normalisation; it applies to sibling platforms, not here.
 
 Consequence: Pass 2 is RHYTHM, not BREAK, and rhythm is not a reach tactic. Its only positive goal is to avoid the mechanical-uniformity tell that expert readers notice (structure = 36% of their judgments): do not leave a paragraph machine-flat, but never manufacture variance. One genuinely long sentence next to a short one is fine; fragment runs are the tell. Fragments capped at 2 per post. Staccato patterns banned. Broetry layout (1-2 sentence paragraphs, blank lines) is fine and mobile-native; fragment-for-drama is the tell.
 

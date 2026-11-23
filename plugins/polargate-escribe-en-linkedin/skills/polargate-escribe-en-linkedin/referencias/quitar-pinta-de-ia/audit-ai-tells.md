@@ -26,7 +26,7 @@ Scored the way readers read: by density per paragraph, not per word. One marker 
 
 ## Vocabulary markers (density-scored)
 
-Count per paragraph. **3+ = rewrite the paragraph. 2 = replace the weakest. 1 = leave it.** AI vocabulary is the one marker that is consistently reach-negative on LinkedIn in our own corpus (0.74-0.84 author-relative), so this pass stays even though the word list changed.
+Count per paragraph. **3+ = rewrite the paragraph. 2 = replace the weakest. 1 = leave it.** AI vocabulary is the one marker that is consistently reach-negative on LinkedIn in a LinkedIn creator corpus (0.74-0.84 author-relative), so this pass stays even though the word list changed.
 
 **Durable 2026 set (common words, 2-5x human rate across GPT-5.5 / Claude 4.8 / Gemini 3.1):** significant, crucial, notably, particularly, comprehensive, insights, robust, leverage, foster, landscape, nuanced, multifaceted, holistic, streamline, elevate, empower
 
