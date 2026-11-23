@@ -1070,7 +1070,7 @@ When auditing, look for and flag these immediately:
 | Google Rich Results Test | Schema validation | search.google.com/test/rich-results |
 | Schema Validator | Generic schema check | validator.schema.org |
 | PageSpeed Insights | Lighthouse + CrUX | pagespeed.web.dev |
-| Lighthouse CI | CWV regression | github.com/GoogleChrome/lighthouse-ci |
+| Lighthouse CI | CWV regression | npm: `@lhci/cli` |
 | Screaming Frog | Crawl audit | screamingfrog.co.uk |
 | Ahrefs | Backlinks, keywords | ahrefs.com |
 | Semrush | Competitive, keyword research | semrush.com |
