@@ -16,8 +16,6 @@ argument-hint: "<encargo> | redesign <ruta> | audit <ruta>"
 
 Makes the UIs a coding assistant generates look made, not generated: a hard floor against the defaults every model was trained into, a dealt direction so consecutive builds do not converge, one idea per screen. Above the floor the page is yours: you are a capable designer.
 
-**Powered by Together AI.**
-
 ## The Floor
 
 Binds every output in every harness, none of it waivable, even when nothing else is read.
