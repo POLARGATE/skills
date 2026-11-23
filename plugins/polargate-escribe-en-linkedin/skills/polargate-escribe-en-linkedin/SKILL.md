@@ -1,6 +1,6 @@
 ---
 name: polargate-escribe-en-linkedin
-description: "PolarPost, de Polargate. Escribe posts de LinkedIn en español que suenan a la persona y no a una IA. Primero le saca historias y datos reales con preguntas, luego elige un gancho, escribe el borrador y le quita las muletillas de IA. También convierte un artículo, vídeo o hilo en un post, planifica una semana de contenido y mejora el perfil. Usar cuando alguien pida un post de LinkedIn, ideas para LinkedIn, revisar un borrador, reescribir algo que suena a ChatGPT, o «write me a LinkedIn post». Solo deja borradores: nunca publica."
+description: "PolarPost, de Polargate. Escribe posts de LinkedIn en español que suenan a la persona y no a una IA. Primero le saca historias y datos reales con preguntas, luego le propone dos o tres ganchos, escribe el borrador con el que elija y le quita las muletillas de IA. También convierte un artículo, vídeo o hilo en un post, planifica una semana de contenido y mejora el perfil. Usar cuando alguien pida un post de LinkedIn, ideas para LinkedIn, revisar un borrador, reescribir algo que suena a ChatGPT, o «write me a LinkedIn post». Solo deja borradores: nunca publica."
 ---
 
 # PolarPost

@@ -18,19 +18,24 @@ It only needs a few posts the user pastes in.
 
 ## Steps
 
-1. **Gather 3+ real samples** of the user's writing (pasted).
-2. **Extract the voice fingerprint** from the samples, not from assumptions:
+1. **Gather what the user gives.** With samples: 3+ real posts of theirs, pasted.
+   With the manual route: what they tell you about their niche, rules, and links.
+2. **Extract the voice fingerprint** from the samples, not from assumptions
+   (manual route: skip this step, see step 5):
    - sentence-length rhythm (short/medium/mixed, and how often a long line appears)
    - recurring openers and transitions they actually use
    - punctuation habits (soft `..` pause? never em dashes? line breaks per idea?)
    - vocabulary they lean on, and any words/cliches they clearly avoid
    - emoji and hashtag behavior
-3. **Infer niche, ICP, and pillars** from the sample topics; confirm with the user
-   rather than guessing.
+3. **Infer niche, ICP, and pillars** from the sample topics (manual route: from
+   what the user said); confirm with the user rather than guessing.
 4. **Capture hard rules and CTA/link style** the samples reveal or the user states.
 5. **Write `linkedin/voz.md`**: fill sections 1-5, copy the 2-4
    strongest lines verbatim into "Signature examples", and set the Status block to
    `filled: yes`, `source: <pasted|manual>`, `updated: <today's date>`.
+   With the manual route, fill only what the user stated: write "not enough
+   samples yet" in section 1, leave "Signature examples" empty, and never invent
+   voice traits.
 6. **Show the user the filled profile for approval** before saving, and tell them
    any writing guide will now match it automatically. They can edit the file anytime.
 
