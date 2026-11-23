@@ -14,12 +14,11 @@ It only needs a few posts the user pastes in.
 
 1. **Pasted samples (portable default).** Ask for 3-6 of the user's own real
    LinkedIn posts or comments. This alone is enough; no token, no history needed.
-   Treat as an accelerator on top of, not a replacement for, pasted samples.
-3. **Manual.** The user can also just tell you their niche, rules, and links.
+2. **Manual.** The user can also just tell you their niche, rules, and links.
 
 ## Steps
 
-1. **Gather 3+ real samples** of the user's writing (pasted or pulled).
+1. **Gather 3+ real samples** of the user's writing (pasted).
 2. **Extract the voice fingerprint** from the samples, not from assumptions:
    - sentence-length rhythm (short/medium/mixed, and how often a long line appears)
    - recurring openers and transitions they actually use

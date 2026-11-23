@@ -23,7 +23,7 @@ These are voice signatures, not AI tells. Leave them alone in every tier includi
 |---|---|
 | Lowercase sentence starts (`closed our seed on a tuesday...`) | Some writers use this as a deliberate cadence cue. Capitalizing flattens their voice. |
 | `..` as a soft pause | This is the humanizer's officially-blessed alternative to em dash. Removing it has nowhere to go. |
-| Sentence fragments (`Worth it.`, `Every time.`, `Not even close.`) | Pass 2 ADDS fragments. Don't remove the ones already there. |
+| Sentence fragments (`Worth it.`, `Every time.`, `Not even close.`) | The writer's own fragments are voice: keep them, up to the cap of 2 per post. Pass 2 never adds fragments to manufacture rhythm; only a third or later fragment gets merged back. |
 | Contractions (`don't`, `it's`, `you're`, `we're`) | Mandatory for natural rhythm. Scrubbing curly apostrophes is fine; expanding contractions is not. |
 | First-person sensory detail (`my hands shook`, `the room went quiet`) | Pass 3 demands these. Never strip. |
 | Specific numbers (`$47k`, `9:14am`, `47 days`) | Pass 3 demands these. Never strip. |
