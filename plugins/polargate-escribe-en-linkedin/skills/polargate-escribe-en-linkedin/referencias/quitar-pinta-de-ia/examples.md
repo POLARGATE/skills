@@ -1,4 +1,4 @@
-# Examples, LinkedIn Humanizer
+# Examples, quitar-pinta-de-ia
 
 ## Example
 

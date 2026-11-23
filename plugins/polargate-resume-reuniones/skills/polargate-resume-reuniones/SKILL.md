@@ -1,9 +1,9 @@
 ---
 name: polargate-resume-reuniones
-description: Work from recorded meetings instead of memory. Use when the user asks what was decided, what is still pending, who owes what, or wants to prepare a meeting, chase follow-ups, draft a recap or update a project from past calls. Reads meeting notes through the PolarParrot connector when it is available, and from pasted or local notes when it is not. Trigger on phrases like "what did we agree", "what's pending from the meeting", "prepare my call with", "qué quedó pendiente", "qué decidimos", "prepárame la reunión con", "resume las reuniones de esta semana".
+description: PolarNotes, de Polargate. Work from recorded meetings instead of memory. Use when the user asks what was decided, what is still pending, who owes what, or wants to prepare a meeting, chase follow-ups, draft a recap or update a project from past calls. Reads meeting notes through the PolarParrot connector when it is available, and from pasted or local notes when it is not. Trigger on phrases like "what did we agree", "what's pending from the meeting", "prepare my call with", "qué quedó pendiente", "qué decidimos", "prepárame la reunión con", "resume las reuniones de esta semana".
 ---
 
-# Meeting notes for AI
+# PolarNotes
 
 Answer from what was said in the meeting, not from what sounds likely.
 

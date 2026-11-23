@@ -4,7 +4,7 @@ The raw material your posts are made of: what you have actually done, in numbers
 with names and dates. The Voice Profile holds *how you sound*. This holds *what
 you have to say*.
 
-Every writing skill in this bundle reads it before drafting, so it stops asking
+Every writing guide in this bundle reads it before drafting, so it stops asking
 you for "a specific number or moment" on every single request and starts drawing
 from what you already told it once.
 

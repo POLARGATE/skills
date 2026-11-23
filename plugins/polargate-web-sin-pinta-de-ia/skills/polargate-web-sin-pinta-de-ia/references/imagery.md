@@ -23,16 +23,16 @@ A photograph never stands in for a fact: numbers, names and claims stay in type,
 
 ## 2. The library
 
-Hallmark carries 755 verified photographs from Wikimedia Commons, each CC0, public domain, CC BY or CC BY-SA, tagged by subject, tone and temperature. Ask for each subject the page needs, concretely:
+PolarDesign carries 755 verified photographs from Wikimedia Commons, each CC0, public domain, CC BY or CC BY-SA, tagged by subject, tone and temperature. Ask for each subject the page needs, concretely:
 
 ```
-node <skill-dir>/scripts/theme.mjs photos "apple orchard in autumn" "hands picking apples" --theme <slug> [--n 3] [--orient portrait|landscape|square] [--seed <draw seed>] [--log .hallmark/log.json]
+node <skill-dir>/scripts/theme.mjs photos "apple orchard in autumn" "hands picking apples" --theme <slug> [--n 3] [--orient portrait|landscape|square] [--seed <draw seed>] [--log .polardesign/log.json]
 ```
 
 It ranks the library for each subject, steers away from the photos the last five builds used, and prints for each pick what it shows, its size, a ready `<img>` with its `srcset`, and its credit. Keep only picks that fit the sentence the section makes; re-ask in other words (the place, the material, the action) before settling for a near miss.
 
 - **Never write an image URL from memory or take one from a stock site** (Unsplash, Pexels and Pixabay bar AI-driven selection in their terms). Use only what the script printed or the user supplied (76).
-- **Credit every library photo:** one line in the footer marked `data-credits` (the word budget skips it), *Photographs:* then each printed credit, in the footer's small style. CC BY and CC BY-SA require it (76).
+- **Credit the CC BY and CC BY-SA library photos:** their licences require it (76). One line in the footer marked `data-credits` (the word budget skips it), *Photographs:* then each printed credit, in the footer's small style. CC0 and public-domain photos print no credit and need none.
 - **Size and crop in CSS:** keep the printed `srcset`, set `sizes` to the layout (`50vw` for a half, `100vw` full-bleed), and crop with the frame: `aspect-ratio` on the slot, `object-fit: cover`, the printed `object-position` (or your own) to keep the subject in frame.
 - **For production,** `--save <dir>` downloads the picks into the project and prints local paths; drafts may link the Commons thumbnails.
 - **The hero photograph is the LCP:** `fetchpriority="high"`, never `loading="lazy"`; every other image is lazy. A full-bleed or hero frame takes a photo 2400px or more on its long side; a smaller one goes soft at 1920.
@@ -41,7 +41,7 @@ It ranks the library for each subject, steers away from the photos the last five
 
 ## 3. Slots
 
-A slot is any picture the user will replace: `data-slot="<name>"` (`hero`, `demo-2`, `photo-1`), a `data-alt` saying what belongs there, and a real size (an `aspect-ratio` or a fixed height). The scaffold's `base.css` holds the slot CSS, and the scaffold prints the `hallmarkSlots` script: paste it once before `</body>` (F18). It swaps in the user's files without touching the layout (`hallmarkSlots({ hero: 'shop.jpg' })`) and drops a stand-in that fails to load.
+A slot is any picture the user will replace: `data-slot="<name>"` (`hero`, `demo-2`, `photo-1`), a `data-alt` saying what belongs there, and a real size (an `aspect-ratio` or a fixed height). The scaffold's `base.css` holds the slot CSS, and the scaffold prints the `polardesignSlots` script: paste it once before `</body>` (F18). It swaps in the user's files without touching the layout (`polardesignSlots({ hero: 'shop.jpg' })`) and drops a stand-in that fails to load.
 
 - **A slot always shows something:** the user's image, a library photograph, or the product built at full fidelity. Its wash (`--color-paper-2` to `--color-paper-3`) is only the colour behind a photo while it loads; a slot showing nothing but its wash is an empty picture (81).
 - **No visible placeholder labels:** no "your screenshot here", ratio notes or "sample" chips; `data-alt` and the handoff carry that.

@@ -1,4 +1,4 @@
-# Escribe en LinkedIn sin que se note la IA
+# Escribe en LinkedIn con PolarPost sin que se note la IA
 
 Para que tus posts digan algo tuyo y suenen a ti.
 

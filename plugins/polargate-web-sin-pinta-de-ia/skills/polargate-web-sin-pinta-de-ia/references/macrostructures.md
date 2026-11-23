@@ -72,12 +72,12 @@ On a theme build the draw deals the shape (SKILL.md Step 2); these steps are for
 
 0. **Read the material inventory** (SKILL.md Step 2). A shape built on screenshots or figures needs them, real or as slots the user asked for; with neither, pick a shape that carries type and facts.
 1. **Read the prompt.** Note any words that strongly signal one shape ("data heavy", "tell a story", "a list of links", "many small features", "personal note").
-2. **Read `.hallmark/log.json`** (newest first) and the `shape:` field of any Hallmark stamp in the project; the last three shapes are excluded.
+2. **Read `.polardesign/log.json`** (newest first) and the `shape:` field of any PolarDesign stamp in the project; the last three shapes are excluded.
 3. **Match the prompt to a shape** using the index lines above and § Domain to trio below, then open only the file you land on. Most prompts match two to four; pick the one most distant from the logged shapes, and check the mirror test in SKILL.md Step 2.
 4. **State the pick once**, in the Picks block's Shape row and the stamp's `shape:` field.
 5. If torn, take the domain's trio (§ Domain to trio) and pick the one most distant from the log.
 
-Two pages Hallmark builds for two different prompts must look like different sites, not colour swaps of one template.
+Two pages PolarDesign builds for two different prompts must look like different sites, not colour swaps of one template.
 
 ## The fingerprint: six axes
 

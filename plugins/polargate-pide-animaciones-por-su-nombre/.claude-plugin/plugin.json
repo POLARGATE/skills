@@ -1,7 +1,7 @@
 {
   "name": "polargate-pide-animaciones-por-su-nombre",
   "description": "Para explicarle a Claude justo el efecto que tienes en la cabeza.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": {
     "name": "Polargate",
     "email": "hello@polargate.ai",

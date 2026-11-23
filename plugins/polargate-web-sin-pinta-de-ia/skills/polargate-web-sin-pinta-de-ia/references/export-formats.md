@@ -17,7 +17,7 @@ A page that needs another token names it by role and declares it in `tokens.css`
 
 ## `tokens.css` in a project
 
-The scaffold writes `tokens.css` and `base.css` beside the project's entry stylesheet (`src/index.css`, `app/globals.css`; `--dir` names another folder) and prints the two imports that fit it. They go right after the file's last `@import`, never below a rule: CSS drops an `@import` that follows one, and the tokens vanish without an error. Where the project already names its tokens (`--background`, a Tailwind `@theme`), map Hallmark's roles onto those names rather than adding a parallel set. Replace the file only when the user asks for a full takeover.
+The scaffold writes `tokens.css` and `base.css` beside the project's entry stylesheet (`src/index.css`, `app/globals.css`; `--dir` names another folder) and prints the two imports that fit it. They go right after the file's last `@import`, never below a rule: CSS drops an `@import` that follows one, and the tokens vanish without an error. Where the project already names its tokens (`--background`, a Tailwind `@theme`), map PolarDesign's roles onto those names rather than adding a parallel set. Replace the file only when the user asks for a full takeover.
 
 ## Tailwind v4
 
@@ -60,7 +60,7 @@ For Style Dictionary or Tokens Studio pipelines. Path-based, a `$type` on every 
 
 ## shadcn/ui
 
-shadcn keeps full colour values in its own variables and maps them in `@theme inline`. Point its variables at Hallmark's tokens:
+shadcn keeps full colour values in its own variables and maps them in `@theme inline`. Point its variables at PolarDesign's tokens:
 
 ```css
 :root {
@@ -77,4 +77,4 @@ shadcn keeps full colour values in its own variables and maps them in `@theme in
 }
 ```
 
-shadcn's `accent` is a hover surface and its `muted` a quiet background, so its `@theme inline` block defines `--color-accent` and `--color-muted` with meanings that collide with Hallmark's. In a shadcn project, keep Hallmark's two tokens out of `@theme` and let the page CSS reach them through `var()`, or rename them there (`--color-signal`, `--color-ink-3`) and say so in the handoff.
+shadcn's `accent` is a hover surface and its `muted` a quiet background, so its `@theme inline` block defines `--color-accent` and `--color-muted` with meanings that collide with PolarDesign's. In a shadcn project, keep PolarDesign's two tokens out of `@theme` and let the page CSS reach them through `var()`, or rename them there (`--color-signal`, `--color-ink-3`) and say so in the handoff.

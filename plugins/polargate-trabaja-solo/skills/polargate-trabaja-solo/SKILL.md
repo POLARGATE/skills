@@ -1,9 +1,9 @@
 ---
 name: polargate-trabaja-solo
-description: Autonomous execution mode for development and multi-step work in Lovable, Claude Code, Cursor, Supabase, or any agent builder. When active, Claude takes every reversible low-stakes decision itself without asking the user, works through the whole task to a predefined done, then self-reviews, researches whether a clearly better approach exists, applies safe improvements, and ends with one simple visual summary of what was done and why. Activate ONLY when the user explicitly says autopilot on, modo autopilot, ponemos el autopilot, activa autopilot, or zet autopilot aan. Deactivate on autopilot off or stop autopilot. Do NOT auto-trigger from context, ever, because granting autonomy by accident is dangerous. Always stop and ask before irreversible or costly actions like destructive data changes, auth or RLS edits, production deploys, spending money, or force-push.
+description: PolarPilot, de Polargate. Autonomous execution mode for development and multi-step work in Lovable, Claude Code, Cursor, Supabase, or any agent builder. When active, Claude takes every reversible low-stakes decision itself without asking the user, works through the whole task to a predefined done, then self-reviews, researches whether a clearly better approach exists, applies safe improvements, and ends with one simple visual summary of what was done and why. Activate ONLY when the user explicitly says autopilot on, modo autopilot, ponemos el autopilot, activa autopilot, or zet autopilot aan. Deactivate on autopilot off or stop autopilot. Do NOT auto-trigger from context, ever, because granting autonomy by accident is dangerous. Always stop and ask before irreversible or costly actions like destructive data changes, auth or RLS edits, production deploys, spending money, or force-push.
 ---
 
-# Autopilot
+# PolarPilot
 
 This is the mode where the user hands you the wheel. They do not want to be asked which button, which name, which pattern, which library, A or B. They want you to decide, build, finish, check your own work, find what could be better, and hand back a clean summary. The whole point is to remove the user from the decision loop so they can stay out of the weeds.
 

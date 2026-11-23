@@ -16,7 +16,7 @@ At the project root, in the project's case convention, about 45 lines: enough to
 ````markdown
 # Design: <project name>
 
-The locked system. Every Hallmark run reads this first and pages share it. Change it on purpose; the file is the rule.
+The locked system. Every PolarDesign run reads this first and pages share it. Change it on purpose; the file is the rule.
 
 ## System
 - Genre: <editorial | modern-minimal | atmospheric | playful>

@@ -1,4 +1,4 @@
-# polargate-trabaja-solo
+# Deja a Claude trabajando solo con PolarPilot
 
 Decide lo pequeño sin molestarte y te pregunta antes de hacer algo peligroso.
 

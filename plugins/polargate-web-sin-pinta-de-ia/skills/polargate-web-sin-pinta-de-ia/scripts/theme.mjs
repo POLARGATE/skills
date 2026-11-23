@@ -21,15 +21,15 @@ const isSlug = (s) => /^[a-z0-9][a-z0-9-]*$/.test(s);
 
 function usage() {
   console.error(`usage:
-  node theme.mjs deal --genre <g> --prompt "<prompt>" [--log .hallmark/log.json] [--n 3] [--reroll 0] [--json]
+  node theme.mjs deal --genre <g> --prompt "<prompt>" [--log .polardesign/log.json] [--n 3] [--reroll 0] [--json]
   node theme.mjs scaffold <slug> [--dealt "<n>/3, seed <seed>"] [--redesign polish|restyle|full] [--scope app] [--dir <beside the stylesheet>] [--force]
   node theme.mjs scaffold --custom | --brand [--redesign polish|restyle|full] [--scope app] [--dir <beside the stylesheet>] [--force]
-  node theme.mjs check [--axes "<paper>/<display>/<accent>"] [--face "<display face>"] [--hue <accent hue>] [--log .hallmark/log.json]
+  node theme.mjs check [--axes "<paper>/<display>/<accent>"] [--face "<display face>"] [--hue <accent hue>] [--log .polardesign/log.json]
       paper: light | mid | dark · accent: warm | cool | neutral | chromatic-<hue name>
       display: roman-serif | high-contrast-serif | slab-serif | grotesk-sans | grotesk-heavy | geometric-sans | rounded-sans | display-condensed | display-heavy | mono | pixel | handwritten | blackletter
-  node theme.mjs draw --material photo|product|words --job <subscribe|book|visit|attend|buy|try|sign up|hire|join|listen> [--theme <slug>] [--log .hallmark/log.json] [--seed <hex>]
-  node theme.mjs photos "<subject>" ["<subject>" ...] [--theme <slug>] [--n 3] [--orient landscape|portrait|square] [--log .hallmark/log.json] [--avoid <file naming photos>] [--save <dir>] [--json]
-  node theme.mjs log --entry '<one JSON object>' [--log .hallmark/log.json]
+  node theme.mjs draw --material photo|product|words --job <subscribe|book|visit|attend|buy|try|sign up|hire|join|listen> [--theme <slug>] [--log .polardesign/log.json] [--seed <hex>]
+  node theme.mjs photos "<subject>" ["<subject>" ...] [--theme <slug>] [--n 3] [--orient landscape|portrait|square] [--log .polardesign/log.json] [--avoid <file naming photos>] [--save <dir>] [--json]
+  node theme.mjs log --entry '<one JSON object>' [--log .polardesign/log.json]
   node theme.mjs index
   node theme.mjs list
   node theme.mjs validate <files...>`);
@@ -79,7 +79,7 @@ function loadIndex() {
 }
 
 function addLog() {
-  const file = resolve(flag('log', '.hallmark/log.json'));
+  const file = resolve(flag('log', '.polardesign/log.json'));
   let entry;
   try { entry = JSON.parse(flag('entry', '')); } catch { entry = null; }
   if (!entry || Array.isArray(entry) || typeof entry !== 'object') { console.error('--entry takes one JSON object, the build\'s log entry'); process.exit(2); }
@@ -148,7 +148,7 @@ function pickFrom(pool, n, exclude) {
 // A project's own salt, so two projects dealing the same prompt on the same day get different hands;
 // one project still gets the same deal back (reroll moves it on).
 function projectSalt() {
-  const f = resolve(dirname(resolve(flag('log', '.hallmark/log.json'))), 'salt');
+  const f = resolve(dirname(resolve(flag('log', '.polardesign/log.json'))), 'salt');
   try { if (existsSync(f)) return readFileSync(f, 'utf8').trim(); mkdirSync(dirname(f), { recursive: true }); const salt = randomBytes(4).toString('hex'); writeFileSync(f, salt + '\n'); return salt; } catch { return 'nosalt'; }
 }
 
@@ -184,7 +184,7 @@ function draw() {
   if (!DRAW.shapes[material]) { console.error('--material is photo, product or words'); process.exit(2); }
   const seed = flag('seed', '') || randomBytes(3).toString('hex');
   const rand = seededRand(`draw·${seed}`);
-  const log = readLog(flag('log', '.hallmark/log.json'));
+  const log = readLog(flag('log', '.polardesign/log.json'));
   const low = (x) => String(x || '').toLowerCase();
   let pictured = [];
   const slug = flag('theme', '');
@@ -220,7 +220,7 @@ function deal() {
   const prompt = flag('prompt', flag('brief', '')); // --brief is the older name
   const n = Number(flag('n', 3));
   const reroll = Number(flag('reroll', 0));
-  const log = readLog(flag('log', '.hallmark/log.json'));
+  const log = readLog(flag('log', '.polardesign/log.json'));
   const themes = loadIndex();
   const recent = log.slice(0, 3);
   const recentNames = new Set(recent.map((r) => String(r.theme || '').toLowerCase()));
@@ -275,7 +275,7 @@ function check() {
   const face = (flag('face', '') || '').toLowerCase().trim();
   const hue = flag('hue') != null ? Number(flag('hue')) : null;
   const themes = loadIndex();
-  const log = readLog(flag('log', '.hallmark/log.json'));
+  const log = readLog(flag('log', '.polardesign/log.json'));
   let bad = 0, near = 0;
   const named = new Set();
   const look = (t) => `look at references/themes/${t.slug}.jpg beside your plan and move an axis only if the two would read alike`;
@@ -354,7 +354,7 @@ async function photos() {
     treat = treatmentOf(header.photo, tokensOf(src, file));
     if (treat.bad.length) console.error(`${slug}'s photo: line: ${treat.bad.join('; ')}`);
   }
-  const recent = new Set(readLog(flag('log', '.hallmark/log.json')).slice(0, 5).flatMap((r) => Array.isArray(r.photos) ? r.photos : []));
+  const recent = new Set(readLog(flag('log', '.polardesign/log.json')).slice(0, 5).flatMap((r) => Array.isArray(r.photos) ? r.photos : []));
   const avoidText = flag('avoid', '') && existsSync(flag('avoid', '')) ? readFileSync(flag('avoid', ''), 'utf8') : '';
   const avoid = { has: (id) => !!avoidText && (avoidText.includes(id) || avoidText.includes(id.replace(/ /g, '_'))) };
   const shape = (p) => { const r = p.w / p.h; return r > 1.18 ? 'landscape' : r < 0.85 ? 'portrait' : 'square'; };
@@ -422,10 +422,10 @@ async function photos() {
       console.log(`  ${p.subject} · ${p.w}x${p.h} ${p.orient} · ${p.tone}, ${p.temp}${p.people !== 'none' ? `, ${p.people}` : ''}${p.match === 'partial' ? ` · partial match, no ${p.missing.join(', ')}` : ''}${p.error ? ` · not saved: ${p.error}` : ''}`);
       const [iw, ih] = p.saved ? [p.sizes[p.sizes.length - 1], Math.round(p.h * p.sizes[p.sizes.length - 1] / p.w)] : [p.w, p.h];
       console.log(`    <img src="${src}"${set}${p.saved ? '' : ' sizes="100vw"'} width="${iw}" height="${ih}" alt="${p.subject}"${pos}>`);
-      console.log(`    credit: ${p.credit}`);
+      console.log(`    credit: ${p.credit ?? `none needed (${p.license})`}`);
     }
   }
-  console.log('\nset sizes to the layout (50vw for a half, 100vw full-bleed) and crop with the frame (aspect-ratio and object-fit: cover; object-position keeps the subject). Every photo carries its credit on the page: one line in the footer, "Photographs: <credit>, <credit>", each linked to its page (imagery.md § 2). Log the ids in the entry\'s photos list.');
+  console.log('\nset sizes to the layout (50vw for a half, 100vw full-bleed) and crop with the frame (aspect-ratio and object-fit: cover; object-position keeps the subject). Every CC BY or CC BY-SA photo carries its credit on the page: one line in the footer, "Photographs: <credit>, <credit>", each linked to its page (imagery.md § 2); CC0 and public-domain photos need none. Log the ids in the entry\'s photos list.');
 }
 
 const WIDTHS = [960, 1280, 1920];
@@ -437,7 +437,8 @@ function thumbOf(p, w) {
   const name = p.file.split('/').pop();
   return `${p.file.replace('/wikipedia/commons/', '/wikipedia/commons/thumb/')}/${w}px-${p.thumbName || name}`;
 }
-function creditOf(p) { return `<a href="${p.page}">${p.author}</a> (${p.license}, Wikimedia Commons)`; }
+// Only CC BY and CC BY-SA require a credit; CC0 and public domain need none (the same rule as credited() in sloplint).
+function creditOf(p) { return /^(CC0|Public domain|PD)/i.test(p.license) ? null : `<a href="${p.page}">${p.author}</a> (${p.license}, Wikimedia Commons)`; }
 
 function tokenBlockOf(src, file) {
   const m = /```css\s*\n:root\s*\{([\s\S]*?)\n\}\s*\n```/.exec(src);
@@ -492,7 +493,7 @@ button, input, select, textarea { font: inherit; }
 // A custom run sets its own type: its base keeps the Floor's rules and drops the heading sizes, weight, leading and measure.
 const BASE_CUSTOM = BASE.replace(/^h1, h2, h3 \{[^}]*\}$/m, 'h1, h2, h3 { margin: 0; font-family: var(--font-display); font-synthesis: none; overflow-wrap: break-word; min-width: 0; text-wrap: balance; }').replace(/^h1 \{ max-width[^\n]*\n/m, '').replace(/^\.lead \{[^\n]*\n/m, '');
 
-const SLOTS_JS = `window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(\`[data-slot="\${k}"]\`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };\ndocument.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });`;
+const SLOTS_JS = `window.polardesignSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(\`[data-slot="\${k}"]\`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };\ndocument.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });`;
 
 function scaffold() {
   const brand = has('brand');
@@ -546,12 +547,12 @@ function scaffold() {
   const axes = custom ? '<paper>/<display>/<accent> · posture: <posture>' : `${triple(header)} · posture: ${header.posture}`;
   const kept = depth ? ', or kept' : '';
   const stamp = app
-    ? `/* Hallmark · shape: app screen · genre: ${header ? header.genre : '<genre>'} · theme: ${theme}${tail}${made}\n * nav: <the shell${kept}> · signature: <the one object${kept}> · states: <the ones the screens have>${dial ? ` · ${dial[1]}: <the dials>` : ''}\n * axes: ${axes} · contrast: pass · v${VERSION} */`
+    ? `/* PolarDesign · shape: app screen · genre: ${header ? header.genre : '<genre>'} · theme: ${theme}${tail}${made}\n * nav: <the shell${kept}> · signature: <the one object${kept}> · states: <the ones the screens have>${dial ? ` · ${dial[1]}: <the dials>` : ''}\n * axes: ${axes} · contrast: pass · v${VERSION} */`
     : brand
-    ? `/* Hallmark · shape: <shape, or kept> · genre: <genre> · theme: brand${tail}${made} · hero: <posture, or kept> · nav: <shape, or kept> · footer: <shape, or kept> · signature: <the one move, or kept>\n * axes: ${axes} · contrast: pass · fold: pass · v${VERSION} */`
+    ? `/* PolarDesign · shape: <shape, or kept> · genre: <genre> · theme: brand${tail}${made} · hero: <posture, or kept> · nav: <shape, or kept> · footer: <shape, or kept> · signature: <the one move, or kept>\n * axes: ${axes} · contrast: pass · fold: pass · v${VERSION} */`
     : custom
-    ? `/* Hallmark · shape: <your name for the structure> · genre: <genre> · theme: custom${tail} · job: <subscribe|book|visit|attend|buy|try|sign up|hire|join|listen> · idea: "<one sentence>" · vibe: "<4 to 8 words>"${made} · hero: <in your own words> · nav: <shape> · footer: <shape> · imagery: <photographs, the product, or none> · signature: <the one thing a visitor remembers>\n * axes: ${axes} · contrast: pass · fold: pass · v${VERSION} */`
-    : `/* Hallmark · shape: <shape${kept}> · genre: ${header.genre} · theme: ${theme}${tail}${depth ? '' : ' · job: <subscribe|book|visit|attend|buy|try|sign up|hire|join|listen> · draw: <seed>'}\n * hero: <posture${kept}> · nav: <shape${kept}> · footer: <shape${kept}> · imagery: <photographs, the product, or none> · signature: <the one move>${dial ? ` · ${dial[1]}: <the dials>` : ''}\n * axes: ${axes} · contrast: pass · fold: pass · v${VERSION} */`;
+    ? `/* PolarDesign · shape: <your name for the structure> · genre: <genre> · theme: custom${tail} · job: <subscribe|book|visit|attend|buy|try|sign up|hire|join|listen> · idea: "<one sentence>" · vibe: "<4 to 8 words>"${made} · hero: <in your own words> · nav: <shape> · footer: <shape> · imagery: <photographs, the product, or none> · signature: <the one thing a visitor remembers>\n * axes: ${axes} · contrast: pass · fold: pass · v${VERSION} */`
+    : `/* PolarDesign · shape: <shape${kept}> · genre: ${header.genre} · theme: ${theme}${tail}${depth ? '' : ' · job: <subscribe|book|visit|attend|buy|try|sign up|hire|join|listen> · draw: <seed>'}\n * hero: <posture${kept}> · nav: <shape${kept}> · footer: <shape${kept}> · imagery: <photographs, the product, or none> · signature: <the one move>${dial ? ` · ${dial[1]}: <the dials>` : ''}\n * axes: ${axes} · contrast: pass · fold: pass · v${VERSION} */`;
   console.log(`wrote ${out} (${brand ? 'the shared scale; fill every --color-* and --font-* from the palette and faces the pre-flight found' : custom ? 'a starting scale, yours to rewrite; fill every --color-* and --font-* before building' : `${name} tokens plus the shared scale`}) and ${baseOut} (the base rules the Floor already decided)${sheet && !flag('dir', '') ? `, beside ${sheet}` : ''}`);
   if (!custom && !flag('dealt', '')) {
     const pic = join(THEMES, `${slug}.jpg`);
@@ -560,7 +561,7 @@ function scaffold() {
   console.log('');
   console.log('start the page\'s stylesheet with these lines, then write only the page:');
   console.log(stamp);
-  console.log('/* Hallmark · pre-emit critique: P_ H_ E_ S_ R_ V_ · weakest: _, <what you did about it> */');
+  console.log('/* PolarDesign · pre-emit critique: P_ H_ E_ S_ R_ V_ · weakest: _, <what you did about it> */');
   console.log(tw || tw3 ? '@import "./tokens.css";' : '@import url("./tokens.css");');
   console.log(tw || tw3 ? '@import "./base.css" layer(base);' : '@import url("./base.css");');
   if (tw3) console.log('Tailwind 3: the stamp and both imports go above the @tailwind directives; an @import below them is dropped without an error.');

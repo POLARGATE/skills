@@ -97,7 +97,7 @@ PHRASAL_TEMPLATES = [
 
 ### Em dash DENSITY (cap: about 1 per 100 words)
 
-The character is not a tell. GPT-5.4 emits 1.43 em dashes per 1,000 words, below the human baseline of 3.23; 29% of human Instagram captions and 23% of top-creator LinkedIn posts in our corpus use one (author-relative ratio 1.09, i.e. not a reliable tell on LinkedIn). Zero em dashes in a post that wanted one is the tell of someone trying to look human. What is still forensic is the old GPT-4 glue habit: 3+ in a short post.
+The character is not a tell. GPT-5.4 emits 1.43 em dashes per 1,000 words, below the human baseline of 3.23; 29% of human Instagram captions and 23% of top-creator LinkedIn posts in a creator corpus use one (author-relative ratio 1.09, i.e. not a reliable tell on LinkedIn). Zero em dashes in a post that wanted one is the tell of someone trying to look human. What is still forensic is the old GPT-4 glue habit: 3+ in a short post.
 
 ```python
 def em_dash_excess(text: str) -> int:
@@ -411,7 +411,7 @@ PASSIVE_TARGETS = [
 
 ## Pass 2, Rhythm restoration (all tiers)
 
-Replaces V2's `enforce_burstiness()`. Detectors do not score burstiness (GPTZero dropped it in 2023). On LinkedIn, sentence-length variance is not an engagement lever in either direction: our author-normalised corpus (keyword n=205 + top-creator n=192, 2026-09) shows within-creator ratios of 0.96 / 0.80 / 0.92 across length bands, Spearman -0.06, and a mild uniform-rhythm advantage for one-idea-per-line posts at 112-204 words. The earlier X/Threads finding ("bursty wins on long posts") was an author confound and does not transfer. What readers do notice is machine-flat uniformity (structure = 36% of expert judgments) and, worse, staged variance: mechanical long/short alternation is a learnable humanizer fingerprint (DAMAGE 2025). So: fix rhythm only where it reads machine-flat, remove manufactured variance everywhere, never add variance as a tactic.
+Replaces V2's `enforce_burstiness()`. Detectors do not score burstiness (GPTZero dropped it in 2023). On LinkedIn, sentence-length variance is not an engagement lever in either direction: an author-normalised LinkedIn creator corpus (keyword n=205 + top-creator n=192, 2026-09) shows within-creator ratios of 0.96 / 0.80 / 0.92 across length bands, Spearman -0.06, and a mild uniform-rhythm advantage for one-idea-per-line posts at 112-204 words. The earlier X/Threads finding ("bursty wins on long posts") was an author confound and does not transfer. What readers do notice is machine-flat uniformity (structure = 36% of expert judgments) and, worse, staged variance: mechanical long/short alternation is a learnable humanizer fingerprint (DAMAGE 2025). So: fix rhythm only where it reads machine-flat, remove manufactured variance everywhere, never add variance as a tactic.
 
 ```python
 STACCATO_TELLS = [
@@ -469,7 +469,7 @@ def restore_rhythm(text: str) -> str:
 
 Layout vs rhythm: 1-2 sentence paragraphs with blank lines between them are LinkedIn's mobile-native layout and are **not** touched by this pass. A paragraph that is one full 22-word sentence is layout. A paragraph that is "Still." is fragment-for-drama. The pass edits sentences, never the blank lines.
 
-Length note: on LinkedIn our corpus shows sentence-length variance is not an engagement lever (null-to-slightly-negative within-creator); the short-form "don't force variance" rule applies to sibling platforms (Threads, short X). Here it applies at every length.
+Length note: on LinkedIn a creator corpus shows sentence-length variance is not an engagement lever (null-to-slightly-negative within-creator); the short-form "don't force variance" rule applies to sibling platforms (Threads, short X). Here it applies at every length.
 
 ## Pass 3, Forbidden insertions (sincerity markers, hedges)
 

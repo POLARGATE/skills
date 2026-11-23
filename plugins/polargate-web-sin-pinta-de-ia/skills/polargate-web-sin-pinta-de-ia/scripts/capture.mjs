@@ -39,7 +39,7 @@ const selector = flag('selector', '');
 const SIZES = { desktop: [1440, 900, false], laptop: [1280, 800, false], tablet: [834, 1112, true], phone: [390, 844, true] };
 
 let puppeteer = null;
-const roots = [process.env.HALLMARK_PUPPETEER, process.cwd(), HERE].filter(Boolean);
+const roots = [process.env.POLARDESIGN_PUPPETEER, process.cwd(), HERE].filter(Boolean);
 const globalRoot = async () => { try { const { execSync } = await import('node:child_process'); return dirname(execSync('npm root -g', { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim()); } catch { return null; } };
 for (const root of roots) {
   for (const n of ['puppeteer-core', 'puppeteer']) {
@@ -49,7 +49,7 @@ for (const root of roots) {
   if (puppeteer) break;
 }
 if (!puppeteer) { const g = await globalRoot(); for (const n of ['puppeteer-core', 'puppeteer']) { if (puppeteer || !g) break; try { puppeteer = (await import(pathToFileURL(createRequire(join(g, 'noop.js')).resolve(n)).href)).default; } catch {} } }
-if (!puppeteer) { console.error('capture.mjs needs puppeteer-core or puppeteer (local, global or HALLMARK_PUPPETEER). Without it, take the screenshots with the harness or the OS (imagery.md § 4).'); process.exit(1); }
+if (!puppeteer) { console.error('capture.mjs needs puppeteer-core or puppeteer (local, global or POLARDESIGN_PUPPETEER). Without it, take the screenshots with the harness or the OS (imagery.md § 4).'); process.exit(1); }
 const CHROMES = [process.env.CHROME_PATH, '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '/Applications/Chromium.app/Contents/MacOS/Chromium', '/usr/bin/google-chrome', '/usr/bin/google-chrome-stable', '/usr/bin/chromium', '/usr/bin/chromium-browser', '/snap/bin/chromium', 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'];
 const findChrome = () => { const c = CHROMES.find((x) => x && existsSync(x)); if (c) return c; try { const b = typeof puppeteer.executablePath === 'function' ? puppeteer.executablePath() : null; if (typeof b === 'string' && existsSync(b)) return b; } catch {} return null; };
 const chrome = findChrome();

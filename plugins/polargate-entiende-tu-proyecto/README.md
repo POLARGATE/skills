@@ -1,4 +1,4 @@
-# polargate-entiende-tu-proyecto
+# Haz que Claude entienda tu proyecto entero con PolarMap
 
 Para que Claude entienda un proyecto grande sin leérselo entero en cada sesión.
 

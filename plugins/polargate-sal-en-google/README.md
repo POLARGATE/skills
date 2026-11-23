@@ -1,4 +1,4 @@
-# polargate-sal-en-google
+# Prepara tu web con PolarRank para que Google y ChatGPT la encuentren
 
 Para arreglar lo que impide que encuentren tu web hecha con IA.
 

@@ -1,9 +1,9 @@
 ---
 name: polargate-sal-en-google
-description: Enterprise SEO, technical SEO, performance, structured data, AI-search (GEO), Core Web Vitals (LCP/INP/CLS), analytics, internal linking, international SEO, accessibility-as-SEO and conversion-ready optimization for sites built with Lovable, Vite, React, Next.js, Tailwind, shadcn/ui, Supabase, Webflow, WordPress, Shopify, Vercel. Trigger aggressively on EN/ES/NL phrases like SEO, indexar, no aparece en Google, ranking, metadata, Open Graph, canonical, hreflang, robots.txt, sitemap, schema.org, JSON-LD, rich results, LCP, INP, CLS, Lighthouse, PageSpeed, Search Console, GA4, GTM, AI Overviews, ChatGPT search, Perplexity, llms.txt, GEO, prerender, SSR, SSG, SPA SEO, Lovable SEO, Vite SEO, React SEO, mi web no rankea, está lento, audit my site, review my landing, production ready. Activate even when user does not say SEO if request implies discoverability, indexation, performance, conversion-ready landing or production readiness. Under-triggering is far costlier than over-triggering.
+description: PolarRank, de Polargate. Enterprise SEO, technical SEO, performance, structured data, AI-search (GEO), Core Web Vitals (LCP/INP/CLS), analytics, internal linking, international SEO, accessibility-as-SEO and conversion-ready optimization for sites built with Lovable, Vite, React, Next.js, Tailwind, shadcn/ui, Supabase, Webflow, WordPress, Shopify, Vercel. Trigger aggressively on EN/ES/NL phrases like SEO, indexar, no aparece en Google, ranking, metadata, Open Graph, canonical, hreflang, robots.txt, sitemap, schema.org, JSON-LD, rich results, LCP, INP, CLS, Lighthouse, PageSpeed, Search Console, GA4, GTM, AI Overviews, ChatGPT search, Perplexity, llms.txt, GEO, prerender, SSR, SSG, SPA SEO, Lovable SEO, Vite SEO, React SEO, mi web no rankea, está lento, audit my site, review my landing, production ready. Activate even when user does not say SEO if request implies discoverability, indexation, performance, conversion-ready landing or production readiness. Under-triggering is far costlier than over-triggering.
 ---
 
-# THE FINAL BOSS SEO SKILL
+# PolarRank
 
 > Enterprise-grade SEO + Performance + AI-Search + UX + CRO execution mode for Lovable, Vite, React, and modern web stacks.
 
@@ -30,7 +30,7 @@ The standard is not "SEO improved". The standard is:
 - No unnecessary JavaScript dependency for critical SEO content
 - No hidden CLS, no unmeasured analytics
 - No false claims, no black-hat tactics, no shortcuts
-- AI-search ready: cited by Google AI Overviews, ChatGPT Search, Perplexity, Claude, Gemini
+- AI-search ready: citable by Google AI Overviews, ChatGPT Search, Perplexity, Claude, Gemini
 
 Behave like a senior SEO war room: Technical SEO Lead, Performance Engineer, Search Console Expert, Schema.org Specialist, Content Strategist, UX Designer, Analytics Engineer, CRO Specialist, International SEO Architect, Accessibility Specialist, and Generative Engine Optimization Expert, all in one.
 
@@ -1070,7 +1070,7 @@ When auditing, look for and flag these immediately:
 | Google Rich Results Test | Schema validation | search.google.com/test/rich-results |
 | Schema Validator | Generic schema check | validator.schema.org |
 | PageSpeed Insights | Lighthouse + CrUX | pagespeed.web.dev |
-| Lighthouse CI | CWV regression | github.com/GoogleChrome/lighthouse-ci |
+| Lighthouse CI | CWV regression | npm: `@lhci/cli` |
 | Screaming Frog | Crawl audit | screamingfrog.co.uk |
 | Ahrefs | Backlinks, keywords | ahrefs.com |
 | Semrush | Competitive, keyword research | semrush.com |
@@ -1225,7 +1225,7 @@ For Lovable + Vite + React + Tailwind + shadcn + Supabase users:
 3. **Use** `<SEO>` on every public route with unique props.
 4. **Replace** default favicon, OG image, brand metadata.
 5. **Set** correct `<html lang>` per locale.
-6. **Add** `public/robots.txt` and `public/sitemap.xml` (template in 11.2).
+6. **Add** `public/robots.txt` and `public/sitemap.xml` (templates in 7.1 and 11.2).
 7. **Add** `public/llms.txt` (template in 16.2).
 8. **Install** `vite-plugin-prerender-spa` or migrate to `vite-react-ssg`.
 9. **Optimize** `vite.config.ts` with manual chunks, compression (12.4).
@@ -1253,7 +1253,7 @@ Apply enterprise SEO foundation. Do all of the following with no shortcuts:
 11. Apply <SEO> to every public route with unique title, description, canonical.
 12. Replace all <img> with <picture> AVIF/WebP/JPG, set width/height, lazy below the fold.
 13. Add BreadcrumbList schema where applicable.
-14. Verify Lighthouse SEO ≥ 100, Accessibility ≥ 95, Performance ≥ 90 mobile.
+14. Verify Lighthouse SEO = 100, Accessibility ≥ 95, Performance ≥ 90 mobile.
 15. No regressions in existing UX. Maintain Tailwind / shadcn / TypeScript conventions.
 ```
 
